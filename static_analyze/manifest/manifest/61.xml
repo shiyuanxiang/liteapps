@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:installLocation="internalOnly" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="sg.bigo.live" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="video.like.permission.Bepulled"/>
+    <uses-permission android:name="com.imo.android.imoim.permission.Bepulled"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.settings.action.MANAGE_OVERLAY_PERMISSION"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <package android:name="com.google.android.webview"/>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="sg.tt.live"/>
+        <package android:name="sg.bigo.live.huawei"/>
+        <package android:name="livestream.inslive.live"/>
+        <package android:name="funvideo.funkie.chat"/>
+        <package android:name="sg.bigo.live.xiaomi"/>
+        <package android:name="onestore.bigo.sg"/>
+        <package android:name="sg.bigo.enterprise.live"/>
+        <package android:name="sg.bigo.live.channel.samsung"/>
+        <package android:name="com.dts.freefireth"/>
+        <package android:name="com.proficientcity.ddtank"/>
+        <package android:name="com.garena.game.ddttw"/>
+        <package android:name="com.proficientcity.ddtankbrazil"/>
+        <package android:name="com.mmog.mddtank"/>
+        <package android:name="com.mmog.mddt"/>
+        <package android:name="com.baplay.ddtgp"/>
+        <package android:name="com.blizzard.wtcg.hearthstone"/>
+        <package android:name="net.peakgames.toonblast"/>
+        <package android:name="com.ndemiccreations.scenariocreator"/>
+        <package android:name="com.miniclip.plagueinc"/>
+        <package android:name="com.fantablade.icey"/>
+        <package android:name="com.rockstargames.gtavc"/>
+        <package android:name="com.xxyx.an.en4399"/>
+        <package android:name="net.wargaming.wows.blitz"/>
+        <package android:name="com.netmarble.revolutionthm"/>
+        <package android:name="com.netease.chiji"/>
+        <package android:name="com.netease.rs"/>
+        <package android:name="com.gameloft.android.ANMP.GloftASHM"/>
+        <package android:name="air.com.hypah.io.slither"/>
+        <package android:name="com.Lilith.Abi"/>
+        <package android:name="com.gameloft.android.ANMP.GloftICHM"/>
+        <package android:name="com.herogames.gplay.weracevn"/>
+        <package android:name="com.sefc.efun.sea"/>
+        <package android:name="com.garena.game.kgvn"/>
+        <package android:name="com.garena.game.kgth"/>
+        <package android:name="com.garena.game.kgtw"/>
+        <package android:name="com.garena.game.kgid"/>
+        <package android:name="com.gs5.cfm"/>
+        <package android:name="com.supercell.clashofclans"/>
+        <package android:name="com.supercell.clashofclans.qihoo"/>
+        <package android:name="com.igg.android.lordsmobile"/>
+        <package android:name="com.mojang.minecraftpe"/>
+        <package android:name="B00992CF6W"/>
+        <package android:name="com.fds.infiniteflight"/>
+        <package android:name="com.hcg.cok.gp"/>
+        <package android:name="com.crisisfire.android.efun.ru"/>
+        <package android:name="com.herogames.gplay.crisisactionna"/>
+        <package android:name="com.herogames.gplay.crisisactionsa"/>
+        <package android:name="com.dkgame.gplay.crisisactiontw"/>
+        <package android:name="com.herogame.gplay.crisisactionkr"/>
+        <package android:name="com.herogames.gplay.crisisaction"/>
+        <package android:name="com.gtarcade.lod"/>
+        <package android:name="com.funcell.wf.korea.google"/>
+        <package android:name="com.icantw.wings"/>
+        <package android:name="com.epicwaronline.ms"/>
+        <package android:name="com.nexon.dynastywarriors"/>
+        <package android:name="com.wordconnectgamesfree.baseballboy"/>
+        <package android:name="com.king.candycrushsodasaga"/>
+        <package android:name="com.ea.gp.fifamobile"/>
+        <package android:name="com.firsttouchgames.dls3"/>
+        <package android:name="com.magnat.extreme.trafficcar"/>
+        <package android:name="com.heroesofchaos.ggplay.koramgame.na"/>
+        <package android:name="com.heroesofchaos.ggplay.koramgame.ru"/>
+        <package android:name="com.heroesofchaos.ggplay.koramgame.sa"/>
+        <package android:name="com.heroesofchaos.koramgame.global"/>
+        <package android:name="com.heroesofchaos.ggplay.koramgame.eu"/>
+        <package android:name="com.kimi.ggplay.smsytw"/>
+        <package android:name="com.Locos.Telolet"/>
+        <package android:name="com.nintendo.zara"/>
+        <package android:name="com.gamedreamer.mcen"/>
+        <package android:name="com.octro.rummy"/>
+        <package android:name="com.migu.su8hk"/>
+        <package android:name="com.migu.su8tw"/>
+        <package android:name="com.ujoy.yhjy"/>
+        <package android:name="com.ujoy.rings"/>
+        <package android:name="com.gm99.mjtw"/>
+        <package android:name="com.gm99.mjhk"/>
+        <package android:name="com.jungleegames.teenpatti"/>
+        <package android:name="com.jungleegames.rummy"/>
+        <package android:name="com.zlab.planestorm"/>
+        <package android:name="com.nazara.cbchallenge"/>
+        <package android:name="com.junesoftware.nazara.cbrace"/>
+        <package android:name="com.aladinfun.clashofsky_vn_pig"/>
+        <package android:name="com.aladinfun.clashofsky_th_pig"/>
+        <package android:name="com.rafotech.piggyboom"/>
+        <package android:name="com.yogrtgame.petsislands"/>
+        <package android:name="com.digipixie.piggy.gplay"/>
+        <package android:name="ko.txwy.and.zll"/>
+        <package android:name="com.netease.g78na.gb"/>
+        <package android:name="com.gambirstudio.tekatekilontong"/>
+        <package android:name="com.gamedreamer.tw.ql"/>
+        <package android:name="com.netease.onmyoji.gb"/>
+        <package android:name="com.garena.game.yysth"/>
+        <package android:name="com.garena.game.yysvn"/>
+        <package android:name="com.netease.onmyoji.na"/>
+        <package android:name="com.kakaogames.onmyouji"/>
+        <package android:name="com.twincorp.bancaonline"/>
+        <package android:name="com.and.riseofthekings"/>
+        <package android:name="com.vng.vltkm"/>
+        <package android:name="com.skynet.jx"/>
+        <package android:name="com.galasports.football"/>
+        <package android:name="com.nexon.pbs"/>
+        <package android:name="com.garena.game.ak47en"/>
+        <package android:name="com.garena.game.headvn"/>
+        <package android:name="com.garena.game.ak47tw"/>
+        <package android:name="com.garena.game.ak47th"/>
+        <package android:name="com.com2us.smon.normal.freefull.google.kr.android.common"/>
+        <package android:name="com.miHoYo.bh3oversea"/>
+        <package android:name="com.miHoYo.bh3rdJP"/>
+        <package android:name="com.miHoYo.bh3korea"/>
+        <package android:name="com.miHoYo.bh3tw"/>
+        <package android:name="com.supercell.hayday"/>
+        <package android:name="com.bbqstudio.bbqqoversea"/>
+        <package android:name="com.mobile.legends"/>
+        <package android:name="com.gameparadiso.milkchoco"/>
+        <package android:name="com.nianticlabs.pokemongo"/>
+        <package android:name="com.xgg.ml"/>
+        <package android:name="com.supercell.clashroyale"/>
+        <package android:name="txwy.and.hsqj"/>
+        <package android:name="com.vng.ngoisaothoitrang"/>
+        <package android:name="com.funplus.kingofavalon"/>
+        <package android:name="com.superevilmegacorp.game"/>
+        <package android:name="com.playmini.miniworld"/>
+        <package android:name="com.garena.game.fomvn"/>
+        <package android:name="com.webzen.muorigin.global.google"/>
+        <package android:name="com.siamgame.ggplay.qjmuru"/>
+        <package android:name="com.mplay8.vn.ggplay.qjmu"/>
+        <package android:name="com.ifunweb.ggplay.qjmuid"/>
+        <package android:name="com.siamgame.ggplay.qjmuen"/>
+        <package android:name="th.in.siamgame.ggplay.qjmu"/>
+        <package android:name="com.kimi.ggplay.qjmutw"/>
+        <package android:name="com.webzen.muorigin.google"/>
+        <package android:name="com.gravity.ror.and"/>
+        <package android:name="com.wegames.ror.th.and"/>
+        <package android:name="com.gravity.ror.hk.and"/>
+        <package android:name="com.gravity.ror.kr"/>
+        <package android:name="com.longtech.lastwars.gp"/>
+        <package android:name="com.miniclip.eightballpool.B00DVKOYBM"/>
+        <package android:name="com.ngame.allstar.eu"/>
+        <package android:name="com.garena.game.kgsam"/>
+        <package android:name="com.netmarble.penta"/>
+        <package android:name="com.herogames.basketballhero"/>
+        <package android:name="com.miniclip.bowmasters"/>
+        <package android:name="com.cmplay.dancingline"/>
+        <package android:name="com.igg.clashoflords2"/>
+        <package android:name="com.igg.android.clashoflords2_pt"/>
+        <package android:name="com.igg.clashoflords2_fr"/>
+        <package android:name="com.igg.clashoflords2_de"/>
+        <package android:name="com.igg.android.clashoflords2es"/>
+        <package android:name="com.igg.android.clashoflords2it"/>
+        <package android:name="com.igg.android.clashoflords2tr"/>
+        <package android:name="com.igg.clashoflords2_ru"/>
+        <package android:name="com.igg.android.clashoflords2_"/>
+        <package android:name="com.id.finalfantasy"/>
+        <package android:name="com.rsg.heroesevolved"/>
+        <package android:name="com.tencent.tmgp.sgame"/>
+        <package android:name="zombie.survival.craft.z"/>
+        <package android:name="com.ludo.king"/>
+        <package android:name="com.superking.ludo.star"/>
+        <package android:name="air.jp.ne.hap.purin"/>
+        <package android:name="com.allstargame.ggplay.sealus"/>
+        <package android:name="th.in.siamgame.ggplay.xw"/>
+        <package android:name="com.kimi.ggplay.xwtw"/>
+        <package android:name="com.koramgame.ggplay.xwkr"/>
+        <package android:name="com.nexon.durango"/>
+        <package android:name="com.and.games505.Terraria"/>
+        <package android:name="com.and.games505.TerrariaPaid"/>
+        <package android:name="jp.co.spikechunsoft.android.terrariajp"/>
+        <package android:name="com.and.games505.terrariacompanion"/>
+        <package android:name="com.fungames.sniper3d"/>
+        <package android:name="com.ustwo.monumentvalley2"/>
+        <package android:name="com.roblox.client"/>
+        <package android:name="eu.bandainamcoent.tekkenmobile"/>
+        <package android:name="com.ujoy.ts"/>
+        <package android:name="com.games37.eoa"/>
+        <package android:name="com.games37.roa2"/>
+        <package android:name="com.djwl.PLD3"/>
+        <package android:name="com.ea.game.pvzfree_row"/>
+        <package android:name="com.netease.ko"/>
+        <package android:name="com.netease.hyxdtw"/>
+        <package android:name="com.pixonic.wwr"/>
+        <package android:name="com.netmarble.sknightsgb"/>
+        <package android:name="com.netmarble.sknightsjp"/>
+        <package android:name="com.cjenm.sknights"/>
+        <package android:name="com.gameloft.android.ANMP.GloftOLHM"/>
+        <package android:name="com.axlebolt.standoff2"/>
+        <package android:name="com.megaxus.ayodance"/>
+        <package android:name="com.linecorp.LGPANGYAM"/>
+        <package android:name="com.gameloft.android.ANMP.GloftM5HM"/>
+        <package android:name="com.imangi.templerun"/>
+        <package android:name="com.squareenixmontreal.hitmansniperandroid"/>
+        <package android:name="com.rovio.angrybirds"/>
+        <package android:name="com.rovio.abclassickakaotalk"/>
+        <package android:name="com.playdead.limbo.full"/>
+        <package android:name="com.playdead.limbo"/>
+        <package android:name="com.kiloo.subwaysurf"/>
+        <package android:name="com.idreamsky.subwaysurf.google"/>
+        <package android:name="com.ea.game.pvz2_row"/>
+        <package android:name="com.ea.game.pvz2_na"/>
+        <package android:name="com.appsomniacs.da2"/>
+        <package android:name="gsn.game.zingplaynew1"/>
+        <package android:name="com.halfbrick.fruitninja"/>
+        <package android:name="com.halfbrick.fruitninjafree"/>
+        <package android:name="com.disney.WMW"/>
+        <package android:name="com.disney.WMWLite"/>
+        <package android:name="com.zeptolab.ctrexperiments.google.paid"/>
+        <package android:name="com.zeptolab.ctrexperiments.ads"/>
+        <package android:name="com.zeptolab.ctrexperiments.hd.google.paid"/>
+        <package android:name="com.yxqz.an.en4399"/>
+        <package android:name="com.hyperkani.bomberfriends"/>
+        <package android:name="com.activision.callofduty.shooter"/>
+        <package android:name="com.gameinsight.gobandroid"/>
+        <package android:name="com.criticalforceentertainment.criticalops"/>
+        <package android:name="com.pomelogames.TowerGame"/>
+        <package android:name="com.ea.gp.simsmobile"/>
+        <package android:name="and.onemt.war.en"/>
+        <package android:name="and.onemt.war.ar"/>
+        <package android:name="com.darv.pci"/>
+        <package android:name="com.tencent.ig"/>
+        <package android:name="com.verzeni.luca.fortnite_android"/>
+        <package android:name="com.longtugame.yulgang"/>
+        <package android:name="com.playrix.homescapes"/>
+        <package android:name="com.playrix.gardenscapes"/>
+        <package android:name="com.headupgames.bridgeconstructor"/>
+        <package android:name="com.ea.game.simcitymobile_row"/>
+        <package android:name="com.madfingergames.legends"/>
+        <package android:name="com.koyokiservices.FoF"/>
+        <package android:name="jp.konami.pesclubmanager"/>
+        <package android:name="jp.konami.pesam"/>
+        <package android:name="com.cygames.Shadowverse"/>
+        <package android:name="com.ChillyRoom.DungeonShooter"/>
+        <package android:name="com.bethsoft.theelderscrollslegends"/>
+        <package android:name="com.sega.sprint"/>
+        <package android:name="com.gameloft.android.ANMP.GloftA8HM"/>
+        <package android:name="com.kabam.marvelbattle"/>
+        <package android:name="com.allstargames.ggplay.wsjjeu"/>
+        <package android:name="com.robtopx.geometryjump"/>
+        <package android:name="com.esportshooting.fps.thekillbox.de"/>
+        <package android:name="com.wb.goog.mkx"/>
+        <package android:name="com.Sansonight.ZChampionsTournament"/>
+        <package android:name="com.gamedevltd.wwh"/>
+        <package android:name="jp.konami.duellinks"/>
+        <package android:name="com.funtergames.stillalive"/>
+        <package android:name="com.andromo.dev691939.app758645"/>
+        <package android:name="com.asobimo.toramonline"/>
+        <package android:name="com.my.awa"/>
+        <package android:name="com.netease.z3.android"/>
+        <package android:name="com.gamedevltd.modernstrike"/>
+        <package android:name="com.herogame.gplay.hopelessland"/>
+        <package android:name="com.tencent.godgame"/>
+        <package android:name="com.dvloper.granny"/>
+        <package android:name="com.igg.castleclash"/>
+        <package android:name="com.igg.castleclash_fr"/>
+        <package android:name="com.igg.castleclash_jp"/>
+        <package android:name="com.igg.castleclash_es"/>
+        <package android:name="com.igg.castleclash_de"/>
+        <package android:name="com.igg.castleclash_id"/>
+        <package android:name="com.playfungame.ggplay.lzgsea"/>
+        <package android:name="com.lnrgame.StarKnight"/>
+        <package android:name="com.supercell.brawlstars"/>
+        <package android:name="com.innersloth.spacemafia"/>
+        <package android:name="com.snapchat.android"/>
+        <package android:name="com.tysk.knightcombat"/>
+        <package android:name="com.affinityapps.blk"/>
+        <package android:name="com.cupidmedia.wrapper.afrointroductions"/>
+        <package android:name="com.peoplemedia.blackpeoplemeet"/>
+        <package android:name="com.rljentertainment.umc.android"/>
+        <package android:name="com.blk.blackdating"/>
+        <package android:name="com.innovate.BlackPeopleMingle"/>
+        <package android:name="com.ht.realblacklove"/>
+        <package android:name="com.ionicframework.eatokra167593"/>
+        <package android:name="com.grindrapp.android"/>
+        <package android:name="com.blued.international"/>
+        <package android:name="com.takimi.android"/>
+        <package android:name="mobi.jackd.android"/>
+        <package android:name="co.hinge.app"/>
+        <package android:name="com.appspot.scruffapp"/>
+        <package android:name="com.weareher.her"/>
+        <package android:name="com.adam4adam.radar2.ui"/>
+        <package android:name="com.initechapps.growlr"/>
+        <package android:name="com.lavendrapp.lavendr"/>
+        <package android:name="com.surgeapp.zoe"/>
+        <package android:name="com.dhservices.daddyhunt"/>
+        <package android:name="biz.trans"/>
+        <package android:name="co.uk.qsoft.gaydar"/>
+        <package android:name="gayfriendly.gay.dating.app"/>
+        <package android:name="com.ts.trans.transgender.dating.one"/>
+        <package android:name="com.brotechllc.thebroapp"/>
+        <package android:name="com.leslyclubdating"/>
+        <package android:name="com.cupidmedia.wrapper.pinkcupid"/>
+        <package android:name="com.datingnode.onlywomen"/>
+        <package android:name="com.datingnode.onlylads"/>
+        <package android:name="com.dating.justshe"/>
+        <package android:name="com.m123.cybermen.android"/>
+        <package android:name="com.americasbestpics"/>
+        <package android:name="com.affinityapps.chispa"/>
+        <package android:name="com.dating.latiner"/>
+        <package android:name="com.lionsgate.pantaya"/>
+        <package android:name="com.univision.android"/>
+        <package android:name="com.cupidmedia.wrapper.latinamericancupid"/>
+        <package android:name="com.mingle.LatinMingle"/>
+        <package android:name="com.zing.zalo"/>
+        <package android:name="com.zing.znews"/>
+        <package android:name="com.grabtaxi.passenger"/>
+        <package android:name="com.angkas.passenger"/>
+        <package android:name="com.klook"/>
+        <package android:name="com.thaifriendly.app"/>
+        <package android:name="com.bigc.appbigc"/>
+        <package android:name="com.cupidmedia.wrapper.thaicupid"/>
+        <package android:name="com.ais.mimo.eservice"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="jp.ne.sakura.ccice.norikae"/>
+        <package android:name="jp.mixi"/>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.nhn.android.search"/>
+        <package android:name="com.singoldating.app01"/>
+        <package android:name="streetdirectory.mobile"/>
+        <package android:name="bKash.customerapp"/>
+        <package android:name="com.tos.namajtime"/>
+        <package android:name="ridmik.keyboard"/>
+        <package android:name="com.portonics.mygp"/>
+        <package android:name="com.govpk.citizensportal"/>
+        <package android:name="com.pakdata.easyurdu"/>
+        <package android:name="com.mxtech.videoplayer.ad"/>
+        <package android:name="com.ttech.android.onlineislem"/>
+        <package android:name="com.tmob.AveaOIM"/>
+        <package android:name="com.turkcell.paycell"/>
+        <package android:name="com.mobillium.papara"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.espn.score_center"/>
+        <package android:name="com.camerasideas.instashot"/>
+        <package android:name="com.lemon.lvoverseas"/>
+        <package android:name="com.xt.retouchoversea"/>
+        <package android:name="com.meitu.beautyplusme"/>
+        <package android:name="com.meetyou.intl"/>
+        <package android:name="com.ss.android.ugc.aweme.mobile"/>
+        <package android:name="com.xingin.xhs"/>
+        <package android:name="uz.dida.payme"/>
+        <package android:name="air.com.ssdsoftwaresolutions.clickuz"/>
+        <package android:name="com.torg.torg"/>
+        <package android:name="ge.space.app.uzbekistan"/>
+        <package android:name="uz.uzum.app"/>
+        <package android:name="tj.alif.mobi"/>
+        <package android:name="tj.somon.somontj"/>
+        <package android:name="expresspay.wallet"/>
+        <package android:name="com.eskhata.online"/>
+        <package android:name="com.lalafo"/>
+        <package android:name="kg.o.nurtelecom"/>
+        <package android:name="com.maanavan.mb_kyrgyzstan"/>
+        <package android:name="am.listmobile"/>
+        <package android:name="am.imwallet.android"/>
+        <package android:name="kz.kaspi.mobile"/>
+        <package android:name="kz.kkb.homebank"/>
+        <package android:name="kz.tsb.app24"/>
+        <package android:name="iba.mobilbank"/>
+        <package android:name="org.tapaz.android"/>
+        <package android:name="com.mico"/>
+        <package android:name="com.weieyu.yalla"/>
+        <package android:name="com.yalla.yallagames"/>
+        <package android:name="com.juhaoliao.vochat"/>
+        <package android:name="com.voicechat.live.group"/>
+        <package android:name="com.game.friends.android"/>
+        <package android:name="com.wejoy.weplay.us"/>
+        <package android:name="com.sgiggle.production"/>
+        <package android:name="com.voicemaker.android"/>
+        <package android:name="video.chat.joi"/>
+        <package android:name="com.fun.share"/>
+        <package android:name="com.plusme.live"/>
+        <package android:name="com.superlive.liveapp"/>
+        <package android:name="com.wheat.mango"/>
+        <package android:name="com.tigo.flower"/>
+        <package android:name="com.ichat.miyo"/>
+        <package android:name="com.starmakerinteractive.starmaker"/>
+        <package android:name="com.cwj.hsing"/>
+        <package android:name="com.asiainno.uplive"/>
+        <package android:name="com.weo.projectz"/>
+        <package android:name="com.hawatalk.live"/>
+        <package android:name="sg.partying.lcb.android"/>
+        <package android:name="com.global.live"/>
+        <package android:name="com.voicechat.volla"/>
+        <package android:name="com.huya.nimo"/>
+        <package android:name="com.pico.live"/>
+        <package android:name="com.haochang.party"/>
+        <package android:name="com.yiwuzhibo"/>
+        <package android:name="com.yy.hiyo"/>
+        <package android:name="br.com.handtalk"/>
+        <package android:name="com.mobireactor.signlanguage"/>
+        <package android:name="com.toleio.us"/>
+        <package android:name="com.lingvano.app"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.kakao.talk.alpha"/>
+        <package android:name="com.kakao.talk.sandbox"/>
+        <package android:name="com.kakao.onetalk"/>
+        <intent>
+            <action android:name="com.yandex.auth.action.YA_SDK_LOGIN"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="sg.bigo.live.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="sg.bigo.live.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="sg.bigo.live.permission.PERMISSION_SAFE_BROADCAST"/>
+    <permission android:name="sg.bigo.live.permission.PERMISSION_SAFE_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="sg.bigo.live.permission.PERMISSION_TITAN_SAFE_BROADCAST"/>
+    <permission android:name="sg.bigo.live.permission.PERMISSION_TITAN_SAFE_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE "/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <permission android:name="sg.bigo.live.permission.Bepulled"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.LiveAppComponentFactory" android:enabled="true" android:extractNativeLibs="true" android:fullBackupContent="@xml/a" android:hardwareAccelerated="true" android:icon="@mipmap/a" android:isSplitRequired="true" android:label="@string/gt" android:largeHeap="true" android:name="com.yy.iheima.MyApplication" android:networkSecurityConfig="@xml/j" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/al">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:icon="@mipmap/a" android:launchMode="singleTask" android:name="sg.bigo.live.DeepLinkActivity" android:theme="@style/vz">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigolink.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigolive.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="webcele.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="tabhere.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="vlog.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bigolive"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="sg.bigo.live.DEEP_LINK_FCM_OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="slink.bigobuzz.tv" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="slink.bigobuzz.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="slink.bigovideo.tv" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="slink.bigo-official.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigo.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sekol1.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pugc.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mybl.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="campaignt.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="ttglobal.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="livestream.onelink.me" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel" android:value="@string/r4"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="true"/>
+        <meta-data android:name="imo_client_id" android:value="c5397aff5e1b426d8cb43d595067d3f3"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.dialog.RealMatchSuccessActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:name="sg.bigo.base.BigoQuickFragmentActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="com.yy.iheima.login.CountrySelectionActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="true" android:label="@string/gt" android:name="sg.bigo.live.setting.DataAccessRationaleActivity" android:permission="android.permission.START_VIEW_PERMISSION_USAGE" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE"/>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE_FOR_PERIOD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/a7f" android:launchMode="singleTask" android:name="sg.bigo.live.home.tabroom.nearby.location.LocationActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/a7g" android:launchMode="singleTask" android:name="sg.bigo.live.home.tabroom.nearby.location.MyLocationActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.login.VisitorLoginActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.login.raceinfo.RaceInfoActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.login.raceinfo.social.SocialInfoActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.login.raceinfo.place.CountrySelectActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="sg.bigo.live.home.MainActivity" android:screenOrientation="portrait" android:theme="@style/vz" android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="sg.bigo.live.EXTRA_APP_OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="sg.bigo.live.TABS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/gt" android:name="com.yy.iheima.util.clipimage.ClipImageActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:launchMode="singleTop" android:name="com.yy.iheima.login.CommonFillPhoneNumberActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/f40" android:launchMode="singleTop" android:name="sg.bigo.live.ScanQRCodeActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/bk2" android:launchMode="singleTop" android:name="sg.bigo.live.home.tabroom.popular.hotlive.HotLiveActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/bk2" android:launchMode="singleTop" android:name="sg.bigo.live.home.tabroom.popular.newgirl.NewAnchorRankActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <service android:enabled="true" android:label="BigoLiveService" android:name="com.yy.sdk.service.YYService" android:process=":service" android:stopWithTask="true"/>
+        <service android:enabled="true" android:name="com.yy.sdk.service.InnerService" android:process=":service"/>
+        <service android:exported="true" android:name="com.yy.sdk.service.CheckJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <service android:exported="true" android:name="sg.bigo.sdk.network.linkd.PushPingJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <service android:enabled="true" android:label="YYMediaService" android:name="com.yysdk.mobile.mediasdk.YYMediaService"/>
+        <service android:name="sg.bigo.live.livefloatwindow.LiveFloatWindowService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.component.screenshare.MultiLiveShareRecordService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.room.thirdpartygame.record.ThirdPartyGameRecordService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.game.LiveScreenService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.ScreenShotService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.service.projection.ScreenShotServiceV2"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.ScreenRecordService"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="sg.bigo.live.service.projection.ScreenRecordServiceV2"/>
+        <service android:enabled="true" android:exported="false" android:name="sg.bigo.live.livevieweractivity.RoomTaskRemovedObserver" android:stopWithTask="false"/>
+        <meta-data android:name="APP_CHANNEL" android:value="@string/sc"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="sg.bigo.live.OthersReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.live.ACTION_OTHERS_DATA"/>
+            </intent-filter>
+        </receiver>
+        <activity android:hardwareAccelerated="false" android:label="@string/gt" android:launchMode="singleTask" android:name="sg.bigo.live.liveswitchable.LiveVideoAudienceActivity" android:screenOrientation="portrait" android:theme="@style/am" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/gt" android:launchMode="singleTop" android:name="sg.bigo.live.livevieweractivity.LiveCameraOwnerPureActivity" android:screenOrientation="portrait" android:theme="@style/am" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/gt" android:launchMode="singleTask" android:name="sg.bigo.live.LiveGameScreenOwnerActivity" android:screenOrientation="portrait" android:theme="@style/am" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/gt" android:launchMode="singleTop" android:name="sg.bigo.live.LiveVideoOwnerActivity" android:screenOrientation="portrait" android:theme="@style/am" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.user.UserInfoDetailActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.wealth.UserWealthActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.wealth.assets.AddWalletActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.wealth.assets.AddCarActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/g_s" android:name="sg.bigo.live.wealth.UserWealthSettingActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:exported="false" android:label="@string/gt" android:name="sg.bigo.live.setting.WalletActivity" android:screenOrientation="portrait" android:theme="@style/al">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bigopayoneq"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/epm" android:name="sg.bigo.live.setting.profile.BigoProfileSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingLanguageActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingSocialTagsActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingInterestActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingIdentityActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingInfoInputActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingSchoolCompanyActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingGenderActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.profile.SettingEmojiChooseActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.setting.AvatarSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/b2z" android:name="sg.bigo.live.contribution.GiftContributionListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/eb8" android:name="sg.bigo.live.setting.BigoLiveSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/aeq" android:name="sg.bigo.live.login.devicemgr.DeviceManagerActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/c25" android:launchMode="singleTask" android:name="sg.bigo.live.setting.BigoLiveMultiResolutionModeActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/c1j" android:launchMode="singleTask" android:name="sg.bigo.live.setting.BigoLiveLowEndDeviceOptUserOptionActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/dq7" android:name="sg.bigo.live.setting.MessageNotificationActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/oa" android:name="sg.bigo.live.setting.BlacklistManagerActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.setting.VideoQualitySettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.setting.NetworkQualitySettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.setting.CleanCacheSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.search.SearchActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="sg.bigo.live.search.rank.MoreRankingActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.home.reminder.ReminderActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.login.recommend.RecommendActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.web.WebProcessActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.web.WebPageForTwitterActivity" android:screenOrientation="portrait" android:theme="@style/q4"/>
+        <activity android:label="@string/di" android:launchMode="singleTop" android:name="sg.bigo.live.setting.BigoLiveAccountActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/ae6" android:name="sg.bigo.live.deleteaccount.verifyaccount.VerifyAccountActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.setting.BigoLiveAccountDeatilActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/ek9" android:launchMode="singleTask" android:name="sg.bigo.live.setting.BigoLiveBindEmailActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:label="@string/ec5" android:name="sg.bigo.live.setting.SchoolEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/ec3" android:name="sg.bigo.live.setting.CompanyEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/axs" android:name="sg.bigo.live.FansActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/b7r" android:name="sg.bigo.live.FollowActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/axe" android:launchMode="singleTask" android:name="sg.bigo.live.user.fangke.FangkeRecordActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/eqq" android:name="sg.bigo.live.family.activity.FamilyWaitListActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/ar0" android:name="sg.bigo.live.family.activity.FamilyAdminManagerActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/eqq" android:name="sg.bigo.live.family.activity.FamilyAdminOperateActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/eqq" android:name="sg.bigo.live.family.activity.FamilyAdminListActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.family.activity.FamilyTabActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/b97" android:name="sg.bigo.live.FriendsActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:label="@string/f9v" android:launchMode="singleTask" android:name="sg.bigo.live.taskcenter.main.TaskCenterActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/det" android:launchMode="singleTop" android:name="sg.bigo.live.activities.ActivitiesCenterActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.OtherRoomActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/ewd" android:name="sg.bigo.live.home.tabroom.multi.PartyListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.TabListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.pay.gpay.GPayActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fu_" android:name="sg.bigo.live.ranking.RankingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fu_" android:name="sg.bigo.live.ranking.RankingRewardsActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="com.yy.iheima.widget.picture.GalleryActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.user.RoomUserInfoDetailActivity" android:screenOrientation="portrait" android:theme="@style/pw"/>
+        <activity android:name="sg.bigo.live.home.tabroom.game.LiveGameActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.home.tabroom.game.GameListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.list.RecommendBroadcasterListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.list.CountryListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/a_e" android:name="sg.bigo.live.list.countrypicker.CountryPickerActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.list.regioncountry.CountrySearchActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.list.MultiCountryListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.setting.LocationPrivateActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fcm" android:launchMode="singleTop" android:name="sg.bigo.live.login.weblogin.WebLoginActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.component.StandardCoverDescActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.list.ImageTabActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ent" android:name="sg.bigo.live.vip.VIPActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/bb1" android:name="sg.bigo.live.gift.props.BaggageActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app" android:name="sg.bigo.live.gift.props.BaggageExpiredActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app" android:name="sg.bigo.live.gift.props.BaggagePreviewActivity" android:screenOrientation="portrait" android:theme="@style/pt"/>
+        <activity android:label="@string/doj" android:name="sg.bigo.live.wonderfulmoments.WonderfulSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.live.community.mediashare.video.music.VideoSelectMusicActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.live.community.mediashare.video.record.AlbumRecordActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.community.mediashare.video.VideoAlbumInputActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/ayh" android:name="sg.bigo.live.fans.manager.FansClubManagerActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/b3o" android:name="sg.bigo.live.component.fansroulette.view.FansRouletteMaterialLibraryActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/azb" android:name="sg.bigo.live.fans.FansClubSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.fans.privilege.PrivilegeActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/eax" android:name="sg.bigo.live.setting.BigoLiveSensitiveContentSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/b0q" android:name="sg.bigo.live.fans.FanMedalNameEditActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.setting.PreferCountrySelectActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.likeList.RealMatchLikeListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.me.RealMatchMyCardActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.me.RealMatchMeCardActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.preview.RealMatchPreviewActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/a9j" android:name="sg.bigo.live.setting.ImoDownloadActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.videoUtils.VideoPublishPreviewActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.login.accountAuth.weblogin.WebLoginActivity" android:theme="@style/al"/>
+        <activity android:label="@string/gbd" android:launchMode="singleTop" android:name="sg.bigo.live.home.recommendowner.RecommendOwnerActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.login.flashcall.FlashCallActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:exported="false" android:label="@string/uv" android:name="sg.bigo.live.setting.update.CheckUpdateActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <service android:exported="true" android:name="sg.bigo.live.collocation.job.CollocationJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="sg.bigo.live.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.startup.InitBaseLibrary" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="sg.bigo.live.provider.user_info" android:exported="false" android:name="sg.bigo.live.database.content.UserInfoProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.gift_status" android:exported="false" android:name="sg.bigo.live.database.content.GiftStatusProvider"/>
+        <provider android:authorities="sg.bigo.live.bigostickerprovider" android:enabled="true" android:exported="true" android:name="sg.bigo.live.component.emoji.whatsapp.StickerContentProvider" android:readPermission="com.whatsapp.sticker.READ"/>
+        <provider android:authorities="sg.bigo.live.provider.follow" android:exported="false" android:name="sg.bigo.live.database.content.FollowProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.follow_chat_entry" android:exported="false" android:name="sg.bigo.live.database.content.FollowChatEntryProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.kkcommunity" android:exported="false" android:name="sg.bigo.live.database.content.KKProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.share_friend" android:exported="false" android:name="sg.bigo.live.database.content.ShareFriendProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.my_music_list" android:exported="false" android:name="sg.bigo.live.database.content.MusicListProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.post_like_list" android:exported="false" android:name="sg.bigo.live.database.content.PostLikeStatusProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.post_read_list" android:exported="false" android:name="sg.bigo.live.database.content.PostReadStatusProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.post_reward_list" android:exported="false" android:name="sg.bigo.live.database.content.PostRewardStatusProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.loginstate" android:exported="false" android:name="sg.bigo.live.login.loginstate.LoginStateProvider"/>
+        <provider android:authorities="sg.bigo.live.provider.file_used_time" android:exported="false" android:name="sg.bigo.live.database.content.FileUsedTimeProvider"/>
+        <receiver android:exported="false" android:name="sg.bigo.live.gift.AccessCodeEventReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.live.action.ACTION_GIFT_STATUS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="sg.bigo.live.call.BgCallReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.live.action.INCOMING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="sg.bigo.live.slim.StorageClearBroadcast">
+            <intent-filter>
+                <action android:name="sg.bigo.live.slim.StorageClearBroadcast"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="sg.bigo.live.dynamic.ludo.LudoGameLoadingActivity" android:screenOrientation="portrait" android:theme="@style/hk" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="sg.bigo.live.component.preparepage.activity.ChooseGameActivity" android:screenOrientation="portrait" android:theme="@style/am" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:label="@string/eon" android:name="sg.bigo.live.share.contactshare.ContactShareActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <meta-data android:name="com.twitter.sdk.key" android:value="Su7WX79vQ7g1DDAMgnfKJi42c"/>
+        <meta-data android:name="com.twitter.sdk.secret" android:value="z7QADjlxpTwDtcdpXBUHUCAfwAtHPhrHUIq3O26Pd4BDJMBzno"/>
+        <meta-data android:name="com.vk.sdk.app.id" android:value="5485680"/>
+        <provider android:authorities="sg.bigo.live.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="sg.bigo.live.share.universalshare.third.ThirdShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/g"/>
+        </provider>
+        <receiver android:name="sg.bigo.live.login.flashcall.receiver.PhoneStateReceiver"/>
+        <receiver android:exported="false" android:name="sg.bigo.apm.ui.NotifyReceiver">
+            <intent-filter android:priority="500">
+                <action android:name="sg.bigo.performance.notify"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="false" android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeActivity" android:permission="sg.bigo.live.permission.Bepulled" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeService" android:permission="sg.bigo.live.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeBroadCast" android:permission="sg.bigo.live.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="sg.bigo.sdk.push.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="sg.bigo.live.retain.RetainActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.retain.UninstallActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/cgi" android:name="sg.bigo.live.member.MemberOrderActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.member.MemberSubsListActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.member.MemberCenterActivity" android:screenOrientation="portrait" android:theme="@style/an" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="sg.bigo.live.home.tabroom.nearby.realmatch.autobeautify.AutoBeautifyActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:enabled="true" android:exported="true" android:name="sg.bigo.live.login.whatsapp.WhatsAppOtpReceiveCodeActivity">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.imo.internal.ImoSsoActivity" android:theme="@style/nl"/>
+        <activity android:name="sg.bigo.al.share.handler.sdk.ui.TwitterWebPageActivity" android:screenOrientation="portrait" android:theme="@style/kp"/>
+        <service android:exported="false" android:name="sg.bigo.apm.plugins.memoryinfo.hprof.HeapAnalyzeService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":work_1"/>
+        <receiver android:exported="false" android:name="sg.bigo.apm.plugins.memoryinfo.hprof.HeapAnalyzeReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.apm.hprof.action.HEAP_ANALYSIS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/gt" android:name="sg.bigo.threeparty.common.WebPageForTwitterActivity" android:screenOrientation="portrait" android:theme="@style/pm"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/aqm"/>
+        <provider android:authorities="@string/aqn" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/hd"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:exported="true" android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fb953097631439235"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.sg.bigo.live" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity" android:theme="@style/pm"/>
+        <activity android:label="ServiceActivity" android:name="com.vk.sdk.VKServiceActivity" android:theme="@style/q1"/>
+        <activity android:name="sg.bigo.threeparty.common.BaseWebPageActivity" android:theme="@style/pm"/>
+        <activity android:name="sg.bigo.threeparty.common.InstagramHandleTokenActivity" android:screenOrientation="portrait" android:theme="@style/pm"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="sg.bigo.threeparty.common.RedirectUriReceiverActivity" android:screenOrientation="portrait" android:theme="@style/pm">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="connect" android:scheme="instagram"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="sg.bigo.threeparty.common.WebPageForInstagram" android:screenOrientation="portrait" android:theme="@style/pm"/>
+        <activity android:launchMode="standard" android:name="sg.bigo.threeparty.common.BaseInstagramLoginActivity" android:screenOrientation="portrait" android:theme="@style/pm"/>
+        <meta-data android:name="com.google.client.id" android:value="322067568803-p11qbhovgr87s4n51en6n876b7q57l6k.apps.googleusercontent.com"/>
+        <meta-data android:name="com.instagram.android.client.id" android:value="1.1952583E15"/>
+        <meta-data android:name="com.instagram.android.secret" android:value="e3344694d080559c7f2503f35f32875c"/>
+        <meta-data android:name="com.instagram.android.redirect" android:value="https://www.bigo.tv/instagram/auth"/>
+        <meta-data android:name="com.instagram.android.open.chrome" android:value="true"/>
+        <meta-data android:name="com.facebook.katana.open.chrome" android:value="true"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:name="sg.bigo.mobile.android.srouter.api.interceptor.InterceptorProcessorActivity" android:theme="@style/o7"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <provider android:authorities="sg.bigo.live.content.provider.pushmsg" android:exported="false" android:name="sg.bigo.sdk.push.database.content.PushMessageProvider"/>
+        <receiver android:exported="false" android:name="sg.bigo.sdk.push.ipc.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_SDK_DATA"/>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_SDK_EMPTY_DATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="sg.bigo.sdk.push.token.TokenReceiver"/>
+        <receiver android:name="sg.bigo.sdk.push.token.AccountChangeReceiver"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/h"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/a3"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/j" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/l" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/k" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/j" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="sg.bigo.live.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/g"/>
+        </provider>
+        <provider android:authorities="sg.bigo.live.provider2.MultiprocessSharedPreferences" android:exported="false" android:name="sg.bigo.core.pref.MultiprocessSharedPreferences"/>
+        <service android:directBootAware="false" android:enabled="true" android:exported="true" android:name="sg.bigo.protox.schedule.systemjob.BigoWorkJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <service android:directBootAware="false" android:enabled="true" android:exported="true" android:name="sg.bigo.protox.schedule.systemalarm.BigoWorkAlarmService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <service android:name="sg.bigo.titan.ipc.TitanIpcService" android:process=":service"/>
+        <activity android:name="com.common.settings.ui.AbDebugSettingActivity" android:theme="@style/o5" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:enabled="true" android:exported="false" android:name="sg.bigo.sdk.libnotification.strategies.notify.NotificationRemoveDetectService"/>
+        <service android:enabled="true" android:label="YYMediaService" android:name="com.bigosdk.goose.mediasdk.YYMediaService"/>
+        <service android:enabled="true" android:label="YYMediaService" android:name="com.phoenix.mobile.mediasdk.YYMediaService"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/p1"/>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoAccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/f"/>
+        </service>
+        <provider android:authorities="sg.bigo.live.content.provider.accountsync" android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoSyncContentProvider" android:syncable="true"/>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/k"/>
+        </service>
+        <provider android:authorities="sg.bigo.live.sg.bigo.alive.awake.bepulled.AwakeContentProvider" android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeContentProvider" android:permission="sg.bigo.live.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </provider>
+        <activity android:exported="false" android:name="sg.bigo.live.tieba.goddess.GoddessCollectionActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.create.CreateCircleActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.mycircle.MyCircleActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.detail.CircleDetailActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.home.hot.CircleHotActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.detail.manager.CircleManagerActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.detail.manager.CircleListPrioritySetActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.detail.manager.post.CirclePostManagerActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.edit.CircleInfoEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.membermanager.MemberListActivity" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.membermanager.postpublicmember.PostPublicMemberActivity" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.membermanager.postpublicmember.PostPublicSettingActivity" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.tieba.publish.circlepost.CircleListSelectActivity" android:theme="@style/al"/>
+        <activity android:exported="false" android:name="sg.bigo.live.circle.membermanager.ApplyingListActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="sg.bigo.live.tieba.PostbarPlaceHolderActivity"/>
+        <activity android:name="sg.bigo.live.tieba.post.preview.PostPreviewActivity" android:screenOrientation="portrait" android:theme="@style/pt"/>
+        <activity android:name="sg.bigo.live.tieba.publish.preview.TiebaVideoPublishPreviewActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.publish.preview.TiebaPicturePublishPreviewActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.publish.edit.TiebaPicturePublishEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.publish.edit.clip.PictureClipActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.post.label.PostLabelListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/elf" android:name="sg.bigo.live.tieba.tiebalist.TiebaListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.post.postdetail.PostDetailActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="" android:name="sg.bigo.live.tieba.publish.PostPublishActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/az5" android:name="sg.bigo.live.tieba.publish.privilege.PostPrivilegeSelectActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fpy" android:name="sg.bigo.live.tieba.audio.TiebaAudioRecordActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fl4" android:name="sg.bigo.live.tieba.post.myposts.MyPostsActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.post.tiebaposts.TiebaActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.FansNoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.LikeNoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.CommentNoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.SystemNoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.NoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.newnotice.NewNoticeActivity" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.notice.view.RewardNoticeActivity" android:theme="@style/al"/>
+        <activity android:label="@string/elf" android:name="sg.bigo.live.tieba.post.home.topic.AllTopicActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.postset.PostSetActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fgm" android:name="sg.bigo.live.tieba.post.talent.TiebaTalentActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fol" android:name="sg.bigo.live.tieba.publish.poll.PollPostEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.publish.template.TextTemplateActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.duet.VideoDuetActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.imchat.report.IMReportMsgListActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.tieba.publish.atlist.AtTargetListActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.circle.membermanager.MemberSearchActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.tieba.audio.original.OriginalAudioPageActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.tieba.audio.original.OriginalAudioNameActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <receiver android:name="sg.bigo.live.circle.muslim.CircleNotifyAlarmReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/dgx" android:name="sg.bigo.live.albumutils.AllPicBrowserActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="sg.bigo.live.albumutils.unify.AlbumTabActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="sg.bigo.live.albumutils.ImageEmojiPreviewActivity" android:screenOrientation="portrait" android:theme="@style/an"/>
+        <activity android:name="sg.bigo.live.spine.TestActivity"/>
+        <activity android:name="sg.bigo.live.imchat.debug.IMDebugActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.imchat.VideoPreviewActivity" android:screenOrientation="portrait" android:theme="@style/pt"/>
+        <activity android:label="@string/fcz" android:launchMode="singleTask" android:name="sg.bigo.live.imchat.TempChatHistoryActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.imchat.groupchat.CreateChatGroupActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.imchat.groupchat.GroupOperationActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/etv" android:launchMode="singleTop" android:name="sg.bigo.live.imchat.groupchat.MyGroupActivity" android:screenOrientation="portrait" android:theme="@style/an" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="sg.bigo.live.imchat.sayhi.SayHiPanelActivity" android:screenOrientation="portrait" android:theme="@style/vf" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:label="@string/tp" android:launchMode="singleTask" android:name="sg.bigo.live.imchat.ChatHistoryActivity" android:parentActivityName="sg.bigo.live.home.MainActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/d6y" android:launchMode="singleTask" android:name="sg.bigo.live.imchat.OfficialChatHistoryActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/gt" android:launchMode="singleTask" android:name="sg.bigo.live.imchat.TimelineActivity" android:screenOrientation="portrait" android:theme="@style/an" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:name="sg.bigo.live.imchat.picture.PicturePreviewActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.imchat.sharelocation.ShareLocationMapActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/d14" android:launchMode="singleTop" android:name="sg.bigo.live.imchat.NewFriendChatActivity" android:screenOrientation="portrait" android:theme="@style/an" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/gt" android:name="sg.bigo.live.imchat.TxtMsgShowActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.live.imchat.search.ChatSearchActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="sg.bigo.live.imchat.assistant.listing.AssistantListingActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/bz3" android:name="sg.bigo.live.memory.LiveMemoryPreviewActivity" android:screenOrientation="portrait" android:theme="@style/pt"/>
+        <provider android:authorities="sg.bigo.live.content.provider.initializer" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.BigoProvider"/>
+        <provider android:authorities="sg.bigo.live.content.provider.chat" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.database.content.ChatProvider"/>
+        <provider android:authorities="sg.bigo.live.content.provider.message" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.database.content.MessageProvider"/>
+        <provider android:authorities="sg.bigo.live.content.provider.service" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.service.ServiceProvider" android:process=":service"/>
+        <provider android:authorities="sg.bigo.live.content.provider.group.info" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.groupchat.database.content.GroupInfoProvider"/>
+        <provider android:authorities="sg.bigo.live.content.provider.group.member" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.groupchat.database.content.GroupMemberProvider"/>
+        <activity android:name="sg.bigo.live.videochat.VideoChatActivity" android:screenOrientation="portrait" android:theme="@style/am"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.game.ui.game.local.LudoLocalGameActivity" android:screenOrientation="portrait" android:theme="@style/hk"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.game.home.LudoGameHomeActivity" android:screenOrientation="portrait" android:theme="@style/hp" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="sg.bigo.game.profile.LudoProfileActivity" android:screenOrientation="portrait" android:theme="@style/al" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="sg.bigo.game.ui.game.GamePlayerActivity" android:screenOrientation="portrait" android:theme="@style/hk"/>
+        <activity android:name="sg.bigo.game.ui.shop.skin.SkinShopActivity" android:screenOrientation="portrait" android:theme="@style/hk"/>
+        <activity android:name="sg.bigo.live.dynamicfeature1.TestActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.live.videorecord.record.VideoRecordActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.live.videorecord.edit.VideoEditActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.videorecord.edit.cover.VideoChooseCoverActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.live.videorecord.cut.VideoCutActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.appwidget.AppWidgetsSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <receiver android:enabled="true" android:exported="true" android:name="sg.bigo.live.appwidget.receiver.AppWidgetReceiver"/>
+        <receiver android:exported="true" android:label="@string/h4" android:name="sg.bigo.live.appwidget.widgets.CheckInSquareWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/b"/>
+        </receiver>
+        <receiver android:exported="true" android:label="@string/h4" android:name="sg.bigo.live.appwidget.widgets.CheckInWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/c"/>
+        </receiver>
+        <receiver android:exported="true" android:label="@string/h5" android:name="sg.bigo.live.appwidget.widgets.FollowWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/e"/>
+        </receiver>
+        <receiver android:exported="true" android:label="@string/h5" android:name="sg.bigo.live.appwidget.widgets.FollowSquareWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/d"/>
+        </receiver>
+        <activity android:exported="false" android:name="sg.bigo.live.personal.PersonalTestActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:name="sg.bigo.live.overwall.TestActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.record.TestActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/g1b" android:launchMode="singleTop" android:name="sg.bigo.live.verify.center.VerifyCenterActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/fzz" android:launchMode="singleTop" android:name="sg.bigo.live.verify.avatar.VerifyAvatarActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:label="@string/g0l" android:launchMode="singleTop" android:name="sg.bigo.live.verify.process.VerifyProcessActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:launchMode="singleTop" android:name="sg.bigo.live.effect.newvirtual.share.VirtualShareActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <receiver android:exported="false" android:name="sg.bigo.live.push.push.PushReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_DATA"/>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_EMPTY_DATA"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_DATA"/>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_EMPTY_DATA"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="NotificationCreatorActivity" android:name="sg.bigo.live.push.push.NotificationCreatorActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <activity android:name="sg.bigo.live.push.notification.PushDialogActivity" android:screenOrientation="portrait" android:theme="@style/pt" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <receiver android:enabled="true" android:exported="false" android:name="sg.bigo.live.push.notification.DeleteNotifyRemoveBroadcast">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/dpb" android:launchMode="singleTask" android:name="sg.bigo.live.push.pushsetting.PushSettingActivity" android:screenOrientation="portrait" android:theme="@style/al">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/dq2" android:launchMode="singleTask" android:name="sg.bigo.live.push.pushsetting.PushLiveSettingActivity" android:screenOrientation="portrait" android:theme="@style/al"/>
+        <provider android:authorities="sg.bigo.live.SnapKitInitProvider" android:enabled="false" android:exported="false" android:name="com.snapchat.kit.sdk.SnapKitInitProvider"/>
+        <meta-data android:name="com.snapchat.kit.sdk.clientId" android:value="9c9aa206-a395-40ad-9167-b066d7602c7c"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.snapchat.kit.sdk.creative.internal.SnapCreativeShareResultHandler"/>
+        <meta-data android:name="com.linecorp.linesdk.channel.id" android:value="1657894016"/>
+        <activity android:name="com.linecorp.linesdk.openchat.ui.CreateOpenChatActivity" android:theme="@style/ap"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity" android:theme="@style/hx"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lineauth"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.kakao.sdk.key" android:value="c701a4df39c2ce9f96b447976267fa1a"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" android:theme="@style/px">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="oauth" android:scheme="kakaoc701a4df39c2ce9f96b447976267fa1a"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.TalkAuthCodeActivity" android:theme="@style/px"/>
+        <activity android:label="" android:name="com.yandex.authsdk.internal.AuthSdkActivity" android:theme="@style/o9"/>
+        <activity android:launchMode="singleTop" android:name="com.yandex.authsdk.internal.BrowserLoginActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.yandex.authsdk.internal.WebViewLoginActivity" android:theme="@style/o8"/>
+        <activity android:exported="true" android:name="com.yandex.authsdk.internal.BrowserDataActivity" android:theme="@style/o9">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="yx7f6e74c18b1c40aca3200f548c881dd9.oauth.yandex.ru" android:path="/auth/finish" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:path="/auth/finish" android:scheme="yx7f6e74c18b1c40aca3200f548c881dd9"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.yandex.auth.CLIENT_ID" android:value="7f6e74c18b1c40aca3200f548c881dd9"/>
+        <meta-data android:name="com.yandex.auth.OAUTH_HOST" android:value="oauth.yandex.ru"/>
+        <meta-data android:name="com.snap.kit.clientId" android:value="9c9aa206-a395-40ad-9167-b066d7602c7c"/>
+        <meta-data android:name="com.snap.kit.redirectUrl" android:value="bigosnap://snap-kit/oauth2"/>
+        <meta-data android:name="com.snap.kit.scopes" android:resource="@array/a7"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.snap.corekit.SnapKitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="snap-kit" android:path="/oauth2" android:scheme="bigosnap"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="sg.bigo.live.SnapKitInitProvider" android:enabled="false" android:exported="false" android:name="com.snap.corekit.SnapKitInitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=100663255"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="albumloader,appwidget,base,deeplink,dynamicfeature1,effect,gps,imchat,personal,pk,postbar,push,videochat,videorecord"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

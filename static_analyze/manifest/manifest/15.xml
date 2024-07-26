@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" package="free.vpn.unblock.proxy.turbovpn" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.android.permission.GET_INSTALLED_APPS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <queries>
+        <package android:name="com.activision.callofduty.shooter"/>
+        <package android:name="com.tencent.iglite"/>
+        <package android:name="com.tencent.ig"/>
+        <package android:name="com.igg.android.lordsmobile"/>
+        <package android:name="com.supercell.clashofclans"/>
+        <package android:name="com.dts.freefireth"/>
+        <package android:name="com.more.dayzsurvival.gp"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="com.appnext.core"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.browser.customtabs.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.github.shadowsocks.ConfigBackupHelper" android:banner="@mipmap/banner" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:fullBackupOnly="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:maxAspectRatio="2.5" android:minAspectRatio="1.6" android:name="free.vpn.unblock.proxy.turbovpn.application.AppContext" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.StartupActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeLaunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.VpnMainActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeLaunch"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.GDPRActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeLaunch"/>
+        <service android:exported="false" android:name="co.allconnected.lib.ACVpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <activity android:label="@string/help_support" android:name="free.vpn.unblock.proxy.turbovpn.activity.HelpSupportActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/settings_title" android:name="free.vpn.unblock.proxy.turbovpn.activity.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/smart_dns" android:name="free.vpn.unblock.proxy.turbovpn.activity.SmartDnsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/protocols" android:name="free.vpn.unblock.proxy.turbovpn.activity.ProtocolsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/connection_in_bg" android:name="free.vpn.unblock.proxy.turbovpn.activity.ConnectionSettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/settings_about" android:name="free.vpn.unblock.proxy.turbovpn.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="free.vpn.unblock.proxy.turbovpn.activity.NoEmailAppGuideActivity" android:screenOrientation="behind"/>
+        <activity android:label="@string/privacy_policy" android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.PrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.WebViewPayActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.activity.WebViewBaseActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="firebase_url" android:value="https://turbo-vpn-28b76.firebaseio.com"/>
+        <meta-data android:name="gzip" android:value="true"/>
+        <activity android:label="@string/vpn_servers" android:name="free.vpn.unblock.proxy.turbovpn.activity.ServersActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/vpn_servers" android:name="free.vpn.unblock.proxy.turbovpn.activity.SimpleServersActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/app_name" android:name="free.vpn.unblock.proxy.turbovpn.activity.FullNativeAdActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/apps_using_vpn" android:name="free.vpn.unblock.proxy.turbovpn.activity.BypassVpnActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="free.vpn.unblock.proxy.turbovpn.activity.BypassVpnSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/app_name" android:name="free.vpn.unblock.proxy.turbovpn.activity.ProxyActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="free.vpn.unblock.proxy.turbovpn.activity.PushProxyActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="free.vpn.unblock.proxy.vpn.master.pro.livechat"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="" android:name="free.vpn.unblock.proxy.turbovpn.activity.CustomWebViewActivity" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:exported="false" android:label="" android:name="free.vpn.unblock.proxy.turbovpn.activity.BaseWebActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="" android:name="free.vpn.unblock.proxy.turbovpn.activity.AutoDisconnectActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeLaunch"/>
+        <activity android:label="@string/unable_connect_feedback" android:name="free.vpn.unblock.proxy.turbovpn.activity.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="free.vpn.unblock.proxy.turbovpn.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:name="free.vpn.unblock.proxy.turbovpn.activity.NotificationInterchangeActivity"/>
+        <activity android:label=" " android:name="free.vpn.unblock.proxy.turbovpn.activity.AccountPageActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/sign_in" android:name="free.vpn.unblock.proxy.turbovpn.activity.SignInActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label=" " android:name="free.vpn.unblock.proxy.turbovpn.activity.SignInUnbindActivity" android:screenOrientation="behind" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/create_account" android:name="free.vpn.unblock.proxy.turbovpn.activity.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="free.vpn.unblock.proxy.turbovpn.activity.ACFeedbackNewActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data android:name="app_type" android:value="104"/>
+        <meta-data android:name="ac_fb_email" android:value="turbovpn-support@inconnecting.com"/>
+        <meta-data android:name="android.max_aspect" android:value="2.056"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-6887521785290583~9513366553"/>
+        <meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true"/>
+        <meta-data android:name="auth_key" android:value="YmxvY2twcm94eXR1cmJvdnBub25saW5l"/>
+        <meta-data android:name="ipsec_remote_id" android:value="ThisIsSparta.we20220610"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="free.vpn.unblock.proxy.turbovpn.service.AppFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/icon_vpn_status_connecting"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_bg_color"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/messaging_channel_id_other_notifications"/>
+        <meta-data android:name="vungle_app_id" android:value="5d8977f0c8e0320017598a33"/>
+        <meta-data android:name="unity_game_id" android:value="3366246"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.INTEGRATION_MANAGER" android:value="webview"/>
+        <service android:name="co.allconnected.lib.VpnNotifyService"/>
+        <receiver android:name="co.allconnected.lib.VpnNotifyReceiver"/>
+        <activity android:exported="false" android:name="zendesk.support.request.RequestActivity" android:theme="@style/liveChat" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/request_list_activity_title" android:name="zendesk.support.requestlist.RequestListActivity" android:theme="@style/liveChat"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/zs_view_article_loading_title" android:name="zendesk.support.guide.ViewArticleActivity" android:theme="@style/liveChat"/>
+        <activity android:exported="false" android:label="@string/support_activity_title" android:name="zendesk.support.guide.HelpCenterActivity" android:theme="@style/liveChat" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="zendesk.messaging.MessagingActivity" android:theme="@style/liveChat" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="zendesk.answerbot.AnswerBotArticleActivity" android:theme="@style/liveChat" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/website_filter" android:name="free.vpn.unblock.proxy.turbovpn.activity.WebsiteFilterActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/speed_test" android:name="free.vpn.unblock.proxy.turbovpn.activity.SpeedTestActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="free.vpn.unblock.proxy.turbovpn.subs.SubscribeActivity" android:screenOrientation="behind" android:theme="@style/TranslucentStyle"/>
+        <activity android:launchMode="singleTask" android:name="free.vpn.unblock.proxy.turbovpn.subs.VipInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:exported="true" android:name="free.vpn.unblock.proxy.turbovpn.service.LanguageChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="" android:name="free.vpn.unblock.proxy.turbovpn.activity.VpnAuthorityFailGuideActivity" android:screenOrientation="behind" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/grant_vpn_permission" android:name="free.vpn.unblock.proxy.turbovpn.activity.VpnGrantPermissionActivity" android:screenOrientation="behind" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/disable_always_on" android:name="free.vpn.unblock.proxy.turbovpn.activity.VpnDisableAlwaysOnActivity" android:screenOrientation="behind" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:label="@string/always_on_vpn" android:name="free.vpn.unblock.proxy.turbovpn.activity.VpnAlwaysOnGuideActivity" android:screenOrientation="behind" android:theme="@style/AppThemeNoActionBar"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="external_plugins" android:value=""/>
+        <meta-data android:name="openvpn" android:value="true"/>
+        <meta-data android:name="strongswan" android:value="true"/>
+        <meta-data android:name="ssr" android:value="true"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAI_zVxZthz2HDuz9toTvkYvL0L5GA-OjeUIfBeXg"/>
+        <meta-data android:name="ssr" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.github.shadowsocks.bg.TransproxyService" android:process=":bg"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.github.shadowsocks.bg.ProxyService" android:process=":bg"/>
+        <service android:directBootAware="true" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:process=":bg"/>
+        <service android:directBootAware="true" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":bg"/>
+        <receiver android:directBootAware="true" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:process=":bg"/>
+        <receiver android:directBootAware="true" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:process=":bg">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:process=":bg">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:process=":bg">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:process=":bg">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:process=":bg">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:process=":bg">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="co.allconnected.lib.vip.webpay.WebPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="co.allconnected.lib.ad.HomeAdActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <activity android:name="co.allconnected.lib.fb.activity.ACFeedbackActivity" android:theme="@style/ACFbBaseTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="co.allconnected.lib.fb.activity.ACFaqActivity" android:theme="@style/ACFbBaseTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="co.allconnected.lib.tool.MultiToolActivity" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data android:name="free.vpn.unblock.proxy.turbovpn_CHANNEL" android:value="google"/>
+        <meta-data android:name="AC_SDK_SERVICE_SYSTEM" android:value="gms"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_notification_delegation_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.1.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="zendesk.support.DeepLinkingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="zendesk.support"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.zendesk.support.SupportSdkStartupProvider" android:enabled="true" android:exported="false" android:name="zendesk.support.SupportSdkStartupProvider"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.zendesk.support.GuideSdkStartupProvider" android:enabled="true" android:exported="false" android:name="zendesk.support.guide.GuideSdkStartupProvider"/>
+        <activity android:exported="false" android:name="zendesk.classic.messaging.MessagingActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.yandex.mobile.ads.common.AdActivity" android:theme="@style/MonetizationAdsInternal.AdActivity"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.MobileAdsInitializeProvider" android:exported="false" android:name="com.yandex.mobile.ads.core.initializer.MobileAdsInitializeProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:multiprocess="true" android:name="com.appnext.ads.interstitial.InterstitialActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:multiprocess="true" android:name="com.appnext.ads.fullscreen.FullscreenActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.appnext.core.ResultActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.appnext.core.result.ResultPageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="sg.bigo.ads.ad.splash.AdSplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme"/>
+        <activity android:name="sg.bigo.ads.ad.splash.LandscapeAdSplashActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.BigoAdsProvider" android:exported="false" android:name="sg.bigo.ads.controller.provider.BigoAdsProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:name="sg.bigo.ads.api.AdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="sg.bigo.ads.core.mraid.MraidVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="@bool/exported_flag" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.imp.video.VideoAdActivity2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="@bool/exported_flag" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.imp.interact.InteractAdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="@bool/exported_flag" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.imp.interstitial.InterstitialAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="@bool/exported_flag" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.imp.interstitial.InterstitialMActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="@bool/exported_flag" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.imp.splash.SplashAdActivity"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="@bool/exported_flag" android:launchMode="singleTask" android:name="com.maticoo.sdk.core.ActionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.maticoo-provider" android:exported="false" android:name="com.maticoo.sdk.core.MaticooProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.ControllerActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.InterstitialActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.OpenUrlActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.IronsourceLifecycleProvider" android:name="com.ironsource.lifecycle.IronsourceLifecycleProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:enabled="true" android:exported="false" android:name="com.yandex.metrica.MetricaService" android:process=":Metrica">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.yandex.metrica.IMetricaService"/>
+                <data android:scheme="metrica"/>
+            </intent-filter>
+            <meta-data android:name="metrica:api:level" android:value="105"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.yandex.metrica.ConfigurationService" android:process=":Metrica">
+            <meta-data android:name="metrica:configuration:api:level" android:value="3"/>
+            <intent-filter>
+                <action android:name="com.yandex.metrica.configuration.ACTION_INIT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.yandex.metrica.ConfigurationJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":Metrica"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.appmetrica.preloadinfo.retail" android:enabled="true" android:exported="true" android:name="com.yandex.metrica.PreloadInfoContentProvider" android:process=":Metrica"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <provider android:authorities="free.vpn.unblock.proxy.turbovpn.belvedere2.attachments" android:exported="false" android:grantUriPermissions="true" android:name="zendesk.belvedere.BelvedereFileProvider" android:readPermission="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/belvedere_attachment_storage_v2"/>
+        </provider>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.39.302"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=102361861"/>
+    </application>
+</manifest>

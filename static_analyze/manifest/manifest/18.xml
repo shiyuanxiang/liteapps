@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:installLocation="auto" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="com.starmakerinteractive.thevoice" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.starmakerinteractive.thevoice.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.starmakerinteractive.thevoice.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.audio.low_latency" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <queries>
+        <package android:name="com.starmakerinteractive.starmaker"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.zing.zalo"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.loan.cash.credit.easy.kilat.cepat.pinjam.uang.dana.rupiah"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.twitter.android.beta"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+        <package android:name="com.zhiliaoapp.musically.go"/>
+        <package android:name="com.smule.singandroid"/>
+        <package android:name="com.tencent.wesing"/>
+        <package android:name="com.famousbluemedia.yokee"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.kakao.talk.alpha"/>
+        <package android:name="com.kakao.talk.sandbox"/>
+        <package android:name="com.kakao.onetalk"/>
+        <package android:name="com.android.chrome"/>
+        <package android:name="com.chrome.beta"/>
+        <package android:name="com.chrome.dev"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <permission android:name="com.starmakerinteractive.thevoice.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.starmakerinteractive.thevoice.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.samsung.android.sdk.professionalaudio.permission.START_MONITOR_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-feature android:name="android.hardware.vulkan.version" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="com.starmakerinteractive.thevoice.manual.dump"/>
+    <permission android:name="com.starmakerinteractive.thevoice.matrix.permission.PROCESS_SUPERVISOR" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.starmakerinteractive.thevoice.matrix.permission.PROCESS_SUPERVISOR"/>
+    <permission android:name="com.starmakerinteractive.thevoice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.starmakerinteractive.thevoice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.ushowmedia.starmaker.StarMakerReleaseApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar" android:usesCleartextTraffic="true">
+        <provider android:authorities="com.facebook.app.FacebookContentProvider798856530553239" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.feature.login.third.kit.tiktok.TikTokLoginActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m-link.starmakerstudios.com" android:pathPattern="/tvp/auth/tiktok/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="starmaker" android:path="/auth/tiktok/" android:scheme="@string/deeplink_scheme"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAoodl4_-OoO_ZTZz_wKGhC3oBwMU7wgBs"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/st_pink"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m-link.starmakerstudios.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m-link.starmakerstudios.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerstudios.com" android:pathPattern="/d" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerstudios.com" android:pathPrefix="/d" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerstudios.com" android:pathPattern="/g" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerstudios.com" android:pathPrefix="/g" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sm"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerdesi.com" android:pathPattern="/d" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerdesi.com" android:pathPrefix="/d" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerdesi.com" android:pathPattern="/g" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m.starmakerdesi.com" android:pathPrefix="/g" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="smd"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ACTION_OPEN_FROM_NOTIFICATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.splash.ad.SplashAdActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MainAcTheme"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <activity android:name="com.ushowmedia.starmaker.playerold.notification.PlayerNotifyTransferActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.RedirectActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.activity.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.activity.FamilyKtvActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.starmaker.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.starmaker.networkdiagnosis.NetworkDiagnosisActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.starmaker.trend.subpage.billboard.country.CountryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.starmaker.activity.ClearCacheActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.starmaker.activity.duet.JustDuetAggregationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.publish.PublishFailedActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.profile.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.search.ProfileSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.connect.activity.FindFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.connect.activity.ThirdPartyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.connect.activity.ThirdPartyFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.SortArtistActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.SingerSongListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.publish.BgmDownloadTransparentActivity" android:screenOrientation="portrait" android:theme="@style/ActivityDialog" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.UserBanDialogActivity" android:screenOrientation="portrait" android:theme="@style/ActivityDialog" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.TagSongListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.PlaylistSongsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.SingSongDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListInfoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListInfoEditActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListInfoNameActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListInfoEditDescActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playlist.PlayListRecordingsManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.SingArtistActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.FreeSongListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.VIPSongListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.starlight.activity.ProfileGiftRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.language.SelectLanguageAct" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.detail.ContentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.detail.VideoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.detail.ExhibitActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.detail.PreviewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FADE"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.newdetail.ContentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.playmanager.PlayManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.playdetail.CollabListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.ushowmedia.starmaker.lofter.detail.activity.PictureDetailActivity" android:screenOrientation="portrait" android:theme="@style/PictureDetailActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.lofter.detail.activity.PictureDetailViewActivity" android:screenOrientation="portrait" android:theme="@style/PictureDetailActivityTheme"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.listen.activity.SearchListenActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.SearchUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.ContestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.discover.ContestNewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.WorkChartActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.CollabChartActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.FriendChartActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.trend.subpage.FamilySongListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.trend.subpage.TrendTopicPopularActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.trend.subpage.TrendTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.activity.FamilyDailyDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.UserChartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.discover.LocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.vip.AlreadyVipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.ClearRecordingCacheActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListOfMeManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.MeActivity" android:screenOrientation="portrait" android:theme="@style/MeActivityTheme"/>
+        <receiver android:exported="false" android:name="com.ushowmedia.starmaker.push.positionmanage.NotificationDeleteReceiver"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.ushowmedia.starmaker.publish.upload.BackgroundService"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.test.TestApiEnvActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.test.TestAudioLatencyActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.ushowmedia.starmaker.playerold.StarMakerPlayerService">
+            <intent-filter>
+                <action android:name="com.ushowmedia.starmaker.action.play"/>
+                <action android:name="com.ushowmedia.starmaker.action.pause"/>
+                <action android:name="com.ushowmedia.starmaker.action.cancel"/>
+                <action android:name="com.ushowmedia.starmaker.action.previous"/>
+                <action android:name="com.ushowmedia.starmaker.action.next"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:hardwareAccelerated="false" android:name="com.ushowmedia.starmaker.general.publish.ClipImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.NewMostSongsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.MySongActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.SingersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.SortSingersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.SongCategoriesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.SingSelectLanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.CategorySongListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.general.album.AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.ActiveShareActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.starmaker.general.album.AlbumAddActivity" android:screenOrientation="portrait" android:theme="@style/ActivityDialog"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.editprofile.activity.EditProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.chat.post.SendPostActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.chat.post.collab.SendCollabActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.discover.HotHashActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.connect.activity.ContactsFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.FollowerListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.FriendListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.FolloweeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.DevelopActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.AppInfoTestEntranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestCdnActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestMidiScoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestLyricInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.LogRecordTestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.AbTestInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestEarBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestCosSmActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.DevelopTestEntranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.chat.ChatJoinCollaborationActivity" android:theme="@style/TransparentTheme"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.recommend.SMSongsRecommendActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.pay.InviteRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.pay.NewRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.pay.VipRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.JackJumpActivity" android:theme="@style/TransparentTheme"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.RouteJumpActivity" android:theme="@style/TransparentTheme"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.live.activity.StarLightRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.live.activity.GiftRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.live.activity.LikeRankActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.ushowmedia.starmaker.language.receiver.LocalReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ushowmedia.starmaker.profile.blocklist.BlockUserListActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.ushowmedia.starmaker.publish.notification.UploadNotificationReceiver"/>
+        <service android:name="com.ushowmedia.starmaker.publish.upload.AutoUploadJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.ushowmedia.starmaker.publish.edit.location.UpdateRecordLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.activity.childrenprotect.CheckAgeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.reported.ReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ushowmedia.starmaker.reported.NewReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.WebPageMiddleActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.profile.newentrance.activity.DraftsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.newentrance.activity.DraftsEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.profiletab.activity.ProfileTabAlbumActivity"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.childrenprotect.ParentalConsentActivity"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.childrenprotect.ParentalPurchaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.rank.UserRankDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.rank.user.MvvmUserRankDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.rank.RecordingRankDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.FriendsRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.discover.DiscoverActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.lofter.post.activity.PostEntranceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.Translucent"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/post" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.lofter.post.activity.PicassoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.lofter.post.activity.PostPreviewImageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.starmaker.lofter.post.activity.PostPreviewVideoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.detail.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.rank.TopicRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.search.ui.TopicSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.atuser.ui.AtUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.feature.friendship.relationship.SpecialRelationShipActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.ushowmedia.starmaker.lofter.post.service.PicassoPostService"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.newentrance.activity.ProfileEntryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.discover.PictureChartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.editprofile.activity.AddProfileInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.editprofile.activity.EditTagActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.HandleSpecialRouterAc" android:screenOrientation="portrait" android:theme="@style/ActivityDialog"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageSystemActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.FamilyApplyMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageGiftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageCollabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageMentionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.medaledit.activity.ProfileMedalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.medaledit.activity.MedalIntroductionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.trend.tabchannel.DiyTabCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.TestWebPageFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.AutoPlayControlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.mixrecord.ui.MixRecordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.SubSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.SubLibraryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MessageVisitorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.trend.subpage.billboard.SelectAreaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.pay.VipTrialRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.trend.subpage.billboard.BillBoardCountryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ushowmedia.starmaker.flutter.FlutterMainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.pay.ParticularSkuPurchaseAct" android:screenOrientation="portrait" android:theme="@style/ActivityDialog"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.BgmRecordingVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.PropRecordingVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.detail.OfficialTopicDescActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.VideoGroupRecordingVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.hastagvideo.HashtagSummaryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.BaseRecordPreDraftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.LibraryRecommendSongAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.newsing.CelebrityDuetAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.newsing.CelebrityReviewsAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.SongPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListSquareAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListCategoryDetailAc" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListOfMeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListOfMyCollectionManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListAddSongActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.playlist.PlayListAddSongFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.party.activity.PartyRankHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.trend.subpage.billboard.TrendBillboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.SingRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.newsing.HomeTalentStarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.guide.sing.SingGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.usertags.UserTagsActivity" android:screenOrientation="portrait" android:theme="@style/DialogActivityTheme"/>
+        <activity android:name="com.ushowmedia.starmaker.usertags.edit.EditUserTagsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.usertags.create.CreateUserTagsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.ktv.GrabMicLibraryCountryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.SquareMessageListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.trend.subpage.TopicMembersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.game.FindPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.ushowmedia.starmaker.contentclassify.topic.game.FindPlayerCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.game.FindTeamPlayersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.contentclassify.topic.game.ImagePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.friendship.decoration.FriendshipDecorationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.friendship.FriendShipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.friendship.lovespace.LoveSpaceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.sing.activity.PoetryListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.message.activity.MainMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.newsing.NewHomeContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.guide.language.LanguageBottomActivity" android:screenOrientation="portrait" android:theme="@style/ActivityDialogTheme"/>
+        <activity android:name="com.ushowmedia.starmaker.test.develop.DevelopTestGameInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.daily.task.chorus.search.ChorusSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.daily.task.chorus.task.ChorusTaskActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.vip.launch.LaunchVipSubscribeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.editprofile.activity.InputProfileAct" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.profile.ChorusListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.AddSensitiveWordsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.activity.SensitiveContentManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.guide.challenge.ui.NewUserGuideChallengeAc" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.ushowmedia.starmaker.strategy.AlarmTimerReceiver"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.preview.ui.SongEditActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.preview.ui.SongEditCoverActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.SMDistortionToolActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.picksong.ui.RecordSongSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.sounddebugtool.SoundDebugToolActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.ushowmedia.recorder.recorderlib.SMDistortionService"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.preview.template.TemplateAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.preview.shareandpublish.ShareAndPublishAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.friendlist.ShareFriendListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.preview.ui.SongEditPublishCutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.recorder.recorderlib.voice.VoiceRangeCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.capture.ui.CaptureActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.previewandedit.ui.CapturePreviewActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.previewandedit.ui.VideoCoverActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.previewandedit.ui.CaptureEditActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.SMMediaBridgeActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.Translucent"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.trimmer.TrimmerActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.recordingtrimmer.TrimmerRecordingActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.pickbgm.PickBgmActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/BaseRecordSlideUpActivityTheme"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.capture.ui.PermissionsActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.pickbgm.ui.BgmSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.starmaker.ushowmedia.capturelib.trimmer.CropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.user.checkin.CheckInActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.user.profile.UserProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.chatlib.inbox.InboxActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.chat.GroupChatRuleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.chatlib.invite.FamilyInviteDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.chatlib.invite.FamilyInviteListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.chatlib.chat.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.ushowmedia.chatlib.chat.ChatFunctionMiddleActivity" android:screenOrientation="portrait" android:theme="@style/TransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ushowmedia.chatlib.chat.FamilyGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ushowmedia.chatlib.chat.FamilyGroupMembersAggregateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.chat.ChatMessageSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.profile.ChatUserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.group.detail.ChatGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.group.detail.FamilyChatGroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.create.CreateConversationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ushowmedia.chatlib.group.edit.ChatRemoveMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.group.edit.GroupMembersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.group.edit.ChatEditTextActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.chat.SelectGroupMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.inbox.stranger.InboxStrangerMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.setting.PromotionMessageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.inbox.stranger.InboxStrangerSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.inbox.recall.InboxRecallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.chatlib.inbox.recall.InboxRecallSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.ushowmedia.chatlib.chat.ChatPaperPlanesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.ushowmedia.ktvlib.LobbyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.SearchRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.RoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.BuildActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyPermissionManageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyControlCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.MultiIntimacyActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.PartyHeartbeatMatchActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.PartyHeartbeatChorusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.PartyActivity" android:screenOrientation="portrait" android:theme="@style/PartyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.PartyChorusJoinDialogActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.DialogActivity"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyStarActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.JukeboxActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.EdittextActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.ktvlib.GiftChallengeManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyChatHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.KtvBgImgListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.KtvStageModeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.MultiPlayerListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyStarRoomRankActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyExclusiveBenefitsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyNewUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyRichUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.ushowmedia.ktvlib.KtvRoomPrivilegeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ushowmedia.ktvlib.PartyMagicGrabMicHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.feature.guide.activity.KtvGuideActivity" android:screenOrientation="portrait" android:theme="@style/PartyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ushowmedia.ktvlib.test.TestGatewayActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.ushowmedia.ktvlib.test.TestViewPager2Activity" android:screenOrientation="portrait" android:theme="@style/PartyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.familylib.home.FamilyHomeNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.home.FamilyHomeRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.home.FamilyHomeAlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyIntimacyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.ui.modifyslogan.FamilySloganModifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyControlCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.familylib.FamilyTaskActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyBuildActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyTagActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyAlbumBuildAndEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.EdittextActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyModifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyMembersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyRedirectActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilySearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilySquareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyTitleActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyAlbumDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyAlbumPhotoPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyAnnoucementActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyTaskReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyWelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.OperationRecordsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.ui.FamilyTaskMembersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilySelectTraitLabelActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.FamilyVisitorTaskActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.ui.prize_wheel.PrizeWheelActivity" android:screenOrientation="portrait" android:theme="@style/user_login_heme"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.recommend.ProfileFamilyRecommendListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.recommend.ProfileFamilyRecommendInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.ui.FamilyNewcomerEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="com.ushowmedia.starmaker.familylib.ui.FamilyNewcomerEditNextActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.shoplib.ui.SMShopActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.shoplib.ui.FreeClothingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.party.HomePartySquareContactActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.ushowmedia.starmaker.feature.web.WebPage" android:screenOrientation="portrait" android:theme="@style/web_page_translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.DevelopNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.ApmTestEntranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.KTVLiveTestEntranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.TestFFmpegCmdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.StarLoggerTestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.DevelopStreamProtocolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.DevelopKaxStreamerProtocolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.Develop3AEngineTypeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.DevelopAudioNSModeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.DevelopDumpAudioDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.TestVersionCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.TestAmsConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.avatar.TestAvatarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.TestDeepLinkActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.develop.TestBuyNewUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.TestPlayGiftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.develop.test.TestLottieAnimActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.TestBadgeActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.TestUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.TestPublishActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.develop.TestActivitySpeed" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.TestBgmActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.TestCaptureRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:enabled="true" android:exported="false" android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.develop.test.develop.TestUmpActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.livelib.room.LiveContributeRankActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.livelib.rank.LiveRankingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.livelib.newroom.LiveRoomActivity" android:screenOrientation="portrait" android:theme="@style/LiveTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.livelib.level.BroadcasterLevelTaskActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.ushowmedia.livelib.level.BroadcasterLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.livelib.room.LiveAdminListActivity"/>
+        <activity android:name="com.ushowmedia.livelib.rank.singlelive.LiveEndContributeRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ushowmedia.livelib.hall.LiveCountryFeedActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.livelib.hall.LiveCountryListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.livelib.room.LiveBlockUserListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.livelib.hall.LiveHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.livelib.room.LiveFeedRecommendActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.livelib.videofileplay.ui.LiveVideoFilePathListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <service android:enabled="true" android:foregroundServiceType="mediaProjection" android:name="com.ushowmedia.livelib.service.ScreenCaptureService"/>
+        <activity android:name="com.ushowmedia.livelib.commentreport.LiveChatHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.share.ShareRecordActivity841" android:screenOrientation="portrait" android:theme="@style/ShareRecordResultStyle"/>
+        <activity android:name="com.ushowmedia.starmaker.share.SuperStarSongActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.FullScreen"/>
+        <activity android:name="com.ushowmedia.starmaker.share.friend.ShareToFriendsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar.SLIDE_UP"/>
+        <activity android:name="com.ushowmedia.starmaker.share.ui.SongEditModifyActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.ushowmedia.starmaker.share.ShareTweetResultReceiver">
+            <intent-filter>
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_SUCCESS"/>
+                <action android:name="com.twitter.sdk.android.tweetcomposer.UPLOAD_FAILURE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ushowmedia.starmaker.feature.publish.PublishMainActivity" android:screenOrientation="portrait" android:theme="@style/Publish.Activity.Main" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.publish.qanda.PublishQandaActivity" android:screenOrientation="portrait" android:theme="@style/Publish.Activity.QandA"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.publish.edit.PublishEditImageActivity" android:screenOrientation="portrait" android:theme="@style/Publish.Activity.Edit"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.publish.album.AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.ushowmeida.unitylib.ui.TestUnityGameRoomActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:foregroundServiceType="mediaProjection" android:name="com.ushowmedia.baserecord.recordscreen.ScreenRecordService"/>
+        <service android:exported="false" android:name="com.ushowmedia.starmaker.push.fcmpush.SMFcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <service android:exported="false" android:name="com.ushowmedia.starmaker.push.miuipush.MiMessageService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ushowmedia.starmaker.push.miuipush.MiMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="" android:name="com.ushowmedia.starmaker.push.miuipush.PermissionActivity" android:theme="@style/PermissionDialog"/>
+        <service android:exported="false" android:name="com.ushowmedia.starmaker.push.recommend.RecommendNotificationService"/>
+        <receiver android:exported="true" android:name="com.ushowmedia.starmaker.push.receiver.USBBroadcastReceiver">
+            <intent-filter android:priority="800">
+                <action android:name="android.hardware.usb.action.USB_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ushowmedia.starmaker.push.recommend.RecommendNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.ushowmedia.starmaker.action.recommend.open"/>
+                <action android:name="com.ushowmedia.starmaker.action.recommend.refresh"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ushowmedia.starmaker.push.RemindOpenNotificationDialog" android:screenOrientation="portrait" android:theme="@style/user_login_heme"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.hippy.STHippyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.ushowmedia.starmaker.purchase.activity.google.GooglePurchaseActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="google"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ushowmedia.photoalbum.MatisseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.photoalbum.internal.ui.AlbumPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.feature.login.entrance.LoginPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.feature.login.entrance.LoginDialogActivity" android:screenOrientation="portrait" android:theme="@style/user_login_heme"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.secure.AccountSecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.secure.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.secure.email.ui.EmailLinkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.ushowmedia.starmaker.feature.login.email.ForgetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.email.EmailHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.email.EmailInputActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.email.EmailLoginActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.email.EmailVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.InputPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.LoginSelectCountryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.InputPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.BindPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.phone.ui.InputVerifyCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.secure.IdentityValidationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ushowmedia.starmaker.feature.login.third.AuthShadowActivity" android:screenOrientation="portrait" android:theme="@style/TransparentTheme"/>
+        <service android:name="com.ushowmedia.starmaker.general.publish.SendService"/>
+        <activity android:name="com.ushowmedia.live.GiftWebPage" android:theme="@style/gift_web_page"/>
+        <activity android:name="com.ushowmedia.live.ConnoisseurWebPage" android:theme="@style/gift_web_page"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="@string/google_gms_ads_application_id"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="applovin.sdk.key" android:value="v9w7Lpt0i1QrHSmE0gFeJtt1IZg5iAdKzvn5ZqCk9HvXGQT9kdOh7iVSrpQ1Tf7S4g7M3clCgLEzVfO0_SERit"/>
+        <activity android:launchMode="singleTop" android:name="com.ushowmedia.starmaker.shared.ad.splash.activity.ATSplashAdActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/TransparentTheme"/>
+        <activity android:name="com.ushowmedia.starmaker.user.interest.InterestActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="true"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity" android:theme="@style/TransparentCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="oauth" android:scheme="kakao9259b4bee87d189a991d5ef4fff4b763"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.ushowmedia.starmaker.user.level.UserLevelActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxGuideContactsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxGuideFriendsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxLanguageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxPreferCountryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.NuxSelectEthnicityActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.guide.SelectEthnicityActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ushowmedia.starmaker.user.level.reward.LevelRewardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.ushowmedia.starmaker.user.tiktok.TikTokEntryActivity" android:screenOrientation="portrait" android:taskAffinity="com.starmakerinteractive.thevoice"/>
+        <service android:enabled="true" android:name="com.ushowmedia.starmaker.ffmpeg.service.FFmpegService" android:process=":ffmpeg"/>
+        <service android:name="com.ushowmedia.starmaker.shared.analytics.service.StarLoggerMessengerService"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="true"/>
+        <service android:name="com.ushowmedia.starmaker.ashes.AshesService" android:process=":ashes"/>
+        <service android:name="com.ushowmedia.starmaker.ashes.FakeService"/>
+        <service android:name="com.ushowmedia.starmaker.ashes.AshesJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":ashes"/>
+        <service android:exported="true" android:name="com.ushowmedia.starmaker.ashes.account.AccountService" android:process=":ashes">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="true" android:name="com.ushowmedia.starmaker.ashes.account.AccountSyncService" android:process=":ashes">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_adapter"/>
+        </service>
+        <provider android:authorities="@string/account_authenticator_contentAuthority" android:exported="false" android:name="com.ushowmedia.starmaker.ashes.account.AccountProvider" android:syncable="true"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.therouter.TheRouteContentProvider" android:exported="false" android:name="com.therouter.InnerTheRouterContentProvider"/>
+        <service android:name="com.ushowmedia.smsc.jni.EmuService" android:process=":EmuService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.kakao.sdk.auth.TalkAuthCodeActivity" android:theme="@style/TransparentCompat"/>
+        <service android:name="com.ushowmedia.starmaker.core.ipc.IpcService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity" android:theme="@style/LineSdk_AuthenticationActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lineauth"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="unity.splash-mode" android:value="0"/>
+        <meta-data android:name="unity.splash-enable" android:value="true"/>
+        <meta-data android:name="unity.allow-resizable-window" android:value="false"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="unity.build-id" android:value="7911e5de-d24c-4a48-a46c-495af34deaf3"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.starmakerinteractive.thevoice" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenThemedActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerWaterfallKeywordsActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <service android:exported="false" android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:stopWithTask="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.starmakerinteractive.thevoice.com.liulishuo.okdownload" android:exported="false" android:name="com.liulishuo.okdownload.OkDownloadProvider"/>
+        <activity android:name="com.vk.api.sdk.ui.VKWebViewAuthActivity" android:theme="@style/VK.Transparent"/>
+        <activity android:name="com.vk.api.sdk.ui.VKCaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.vk.api.sdk.ui.VKConfirmationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.2.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50011"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_1_1-G"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <provider android:authorities="com.starmakerinteractive.thevoice.mipush.sdk.data" android:exported="false" android:name="com.xiaomi.channel.commonutils.android.MIPushProvider" android:permission="com.starmakerinteractive.thevoice.permission.MIPUSH_RECEIVE"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <service android:name="com.ushowmedia.imsdk.IMService"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.39.302"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.anythink.core.activity.AnyThinkGdprAuthActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.anythink.basead.ui.ATLandscapeActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.anythink.basead.ui.ATPortraitActivity" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.anythink.basead.ui.ATLandscapeTranslucentActivity" android:screenOrientation="sensorLandscape" android:theme="@style/anythink_myoffer_half_screen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.anythink.basead.ui.ATPortraitTranslucentActivity" android:screenOrientation="sensorPortrait" android:theme="@style/anythink_myoffer_half_screen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.anythink.core.basead.ui.web.WebLandPageActivity" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.anythink.basead.ui.RewardExitConfirmDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.anythink.basead.ui.activity.ATMixSplashActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="standard" android:name="com.anythink.expressad.reward.player.ATRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity" android:theme="@style/tt_landing_page"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageLink2Activity" android:theme="@style/tt_landing_page"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTWebsiteActivity" android:screenOrientation="portrait" android:theme="@style/tt_privacy_landing_page"/>
+        <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTAppOpenAdActivity" android:theme="@style/tt_app_open_ad_no_animation"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity" android:theme="@style/tt_full_screen_new"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTInterstitialExpressActivity" android:theme="@style/tt_full_screen_interaction"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.starmakerinteractive.thevoice.initprovider" android:exported="false" android:initOrder="100" android:name="com.tramini.plugin.api.TraminiContentProvider"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:configChanges="keyboard|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:theme="@style/mbridge_transparent_common_activity_style"/>
+        <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

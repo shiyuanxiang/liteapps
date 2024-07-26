@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="com.voicemaker.android" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.zing.zalo"/>
+        <package android:name="com.gojek.app"/>
+        <package android:name="com.kakao.talk"/>
+        <package android:name="com.phonepe.app"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.lite"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.zing.zalo.permission.ACCESS_THIRD_PARTY_APP_AUTHORIZATION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.voicemaker.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.voicemaker.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.sonyericsson.home.action.UPDATE_BADGE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <permission android:name="com.voicemaker.android.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.voicemaker.android.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.voicemaker.android.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.voicemaker.android.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.voicemaker.android.permission.PUSH_PROVIDER"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.voicemaker.MimiApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Voicemakerandroid" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.zing.zalo.zalosdk.appID" android:value="@string/zalo_app_id"/>
+        <activity android:name="com.biz.setting.GeneralActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.BeautySettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent.Fullscreen"/>
+        <activity android:name="com.biz.userglory.car.UserCarDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.setroominfo.ui.SettingRoomActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.music.LiveLocalMusicActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.chat.group.GroupMemberActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.chat.group.GroupMemberSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.music.LiveMusicActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.partyevents.postEvent.CreateEventActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.partyevents.eventsdetail.AudioEventDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.GiftWallRankActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.chat.video.ui.VideoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.chat.video.ui.AudioActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.music.LiveMusicPermissionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.AudioEventCoverSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.audio.setroominfo.ui.BlackoutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ImageFilterEventCoverActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.main.dialog.CharmLevelUpActivity" android:screenOrientation="portrait" android:theme="@style/AwardAlertStyle"/>
+        <activity android:name="com.biz.user.profile.PresentWallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.LitGiftWallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.GiftCollectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.GiftCollectDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.family.square.FamilySquareActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.chat.WebDialogActivity" android:screenOrientation="portrait" android:theme="@style/AwardAlertStyle"/>
+        <activity android:exported="true" android:name="com.voicemaker.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <provider android:authorities="com.voicemaker.android.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_file_path"/>
+        </provider>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback|microphone" android:name="com.biz.audio.core.stream.PTStreamService"/>
+        <activity android:name="com.voicemaker.main.equipment.EquipmentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.PhotoAuthVerifyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.biz.image.browser.ui.SecretAlbumBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.photoauth.PhotoAuthIntroActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.NewPhotoAuthIntroActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.fragment.relationship.RelationshipActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.guard.GuardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.PhotoAuthPoseIntroActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.PhotoAuthUpdateAvatarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.NewPhotoAuthUpdateAvatarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.GenderAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.photoauth.AuthCenterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.ranking.RankingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.SecretAlbumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.main.notifi.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.CountrySelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:exported="true" android:name="com.biz.auth.ui.VoicemakerLoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zalo-4194729839227571587"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.biz.audio.roomlist.AudioRoomListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ui.ImageFilterAlbumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ImageSecretAlbumSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.medal.wall.MedalWallActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.medal.wall.MedalGalleryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.feed.FeedTopicActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ui.ImageScanSecretAlbumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.avatar.VmUserAvatarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ui.ImageAvatarSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.select.ui.ImageSingleSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.dialog.extend.AlertDialogAvatarNotSafeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.coin.ui.RechargeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingNotifyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingLanguageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingBlackListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingAboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.chat.ui.ChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.chat.group.GroupChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.biz.audio.roomlist.RegionSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.auth.mobile.PhoneAuthAreaSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.biz.auth.mobile.PhoneAuthPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:launchMode="singleTop" android:name="com.biz.auth.mobile.PhoneAuthVcodeVerifyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:name="com.biz.auth.mobile.PhoneAuthNumCheckActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:hardwareAccelerated="false" android:name="com.biz.auth.ui.VmSignUpCompleteActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.AppTestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestApiChangeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestABFuncActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestOOMActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.javaleak.ActivityLeakMaker$LeakedActivity"/>
+        <activity android:name="com.biz.test.TestAppInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestNativePageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestSwitchFuncActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestWebviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.web.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ui.ImageFilterChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.select.ui.ImageScanChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.auth.ui.ImageSelectAvatarSignActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.biz.dialog.extend.AlertDialogSsoActivity" android:screenOrientation="portrait" android:theme="@style/ActivityWithAlertStyle"/>
+        <activity android:name="com.select.ui.BaseImageSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.avatar.ImageFilterAvatarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.UserInfoEditActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.UserInfoEditV2Activity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.profile.UserAudioActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.biz.user.avatar.ImageBrowserAvatarActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.biz.image.browser.ui.ImageBrowserPTRoomActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.voicemaker.main.award.AwardAnimActivity" android:screenOrientation="portrait" android:theme="@style/AwardAlertStyle"/>
+        <activity android:name="com.voicemaker.main.award.MultiAwardActivity" android:screenOrientation="portrait" android:theme="@style/AwardAlertStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.biz.image.browser.ui.FeedBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.feed.FeedMenuActivity" android:screenOrientation="portrait" android:theme="@style/Theme_Dialog_Act_FullWidth"/>
+        <activity android:exported="true" android:name="com.voicemaker.sys.outpage.OutPageDynamicLinkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.voicemaker.android" android:scheme="vmweb"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.voicemaker.relations.RelationUsersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.chat.images.ImageSelectChattingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.voicemaker.chat.images.ImageBrowserChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.feed.photo.ImageSelectFeedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.feed.photo.ImageCropFeedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.photo.ImageScanFeedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.biz.feed.publish.FeedCreateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.photo.ImageEditFeedPreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.photo.ImageEditFeedCreateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.photo.ImageEditFeedCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.visitor.VisitorListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.detail.FeedDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.share.lib.ShareMidFBActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.audio.core.ui.PTRoomHostActivity" android:screenOrientation="portrait" android:theme="@style/LiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.audio.core.ui.PTRoomViewerActivity" android:screenOrientation="portrait" android:theme="@style/LiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.audio.core.ui.PTEmptyRouterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.biz.user.complaint.ComplaintReasonActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.user.complaint.ComplaintDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/> &gt; <activity android:name="com.biz.audio.share.ui.ShareToMsgActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.main.noble.NobleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.main.search.SearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.main.search.ContactSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.fake.FakeAvatarAlertActivity" android:screenOrientation="portrait" android:theme="@style/Theme_Dialog_Act_FullWidth"/>
+        <activity android:name="com.biz.setting.ui.AccountSecurityActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.BindPhoneNumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustPan"/>
+        <activity android:name="com.biz.setting.ui.ChangePwdActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:name="com.biz.setting.ui.LogoffActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:name="com.biz.audio.setroominfo.ui.UploadBgActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.setroominfo.ui.ImagePreviewRoomBgActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.chat.ui.ChatBoxActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.family.FamilyCreateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.family.home.FamilyHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.family.home.FamilySettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingPrivacyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.family.home.FamilyMemberListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.setting.ui.SettingNoticeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.audio.setroominfo.ui.mictemplate.PTSeatTemplateSelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.accountswitch.SettingAccountSwitchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.biz.newusertask.dailytask.DailySignInTaskActivity" android:screenOrientation="portrait" android:theme="@style/AwardAlertStyle"/>
+        <activity android:name="com.biz.audio.superwinner.SuperWinnerTurntableTestActivity"/>
+        <activity android:name="com.biz.changephone.ChangeBindPhoneCodeVerifyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:name="com.biz.changephone.ChangeBindPhoneActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustUnspecified"/>
+        <activity android:name="com.voicemaker.chat.ui.ChatSettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustPan"/>
+        <activity android:exported="false" android:name="com.voicemaker.liveness.ui.LivenessResultActivity" android:screenOrientation="portrait" android:theme="@style/liveness_theme"/>
+        <activity android:exported="false" android:name="com.biz.userglory.honortitle.UserHonorTitleDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.test.TestWaveViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.voicemaker.chat.images.ImageSelectChatBgActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <activity android:name="com.select.ui.ImageScanChatBGActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="com.biz.feed.photo.ImageEditChatBgCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.voicemaker.main.conv.ConvListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Window.Transparent"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Google Play"/>
+        <meta-data android:name="CHANNLE_NUM" android:value="1"/>
+        <meta-data android:name="AF_STORE" android:value="GP"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCPbqszKXc1V0m8cidjslLK00cr2leesMU"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9847278625369531~5055592075"/>
+        <meta-data android:name="applovin.sdk.key" android:value="CsbohIgU3WtFPkkt7Xp46AhJpDOT7JxgAfar0TtKtilJghZ3LKmCQuclyNJGNqM3IEeooGtuoVBH0SS9abNUsP"/>
+        <meta-data android:name="applovin.sdk.verbose_logging" android:value="true"/>
+        <meta-data android:name="com.alibaba.pdns.ACCESS_KEY_ID" android:value="148791_27135993914086400"/>
+        <meta-data android:name="com.alibaba.pdns.ACCESS_KEY_SECRET" android:value="fbdc64f2eaeb4281913a1985430ba189"/>
+        <provider android:authorities="com.voicemaker.android.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:launchMode="singleTask" android:name="com.biz.ludo.home.LudoHomeActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.ludo.lobby.LudoLobbyActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.ludo.bag.LudoBagActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.ludo.game.LudoGameActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.ludo.game.LudoMatchActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.biz.ludo.shop.LudoShopActivity" android:theme="@style/LibxLudoLiveActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <service android:enabled="true" android:name="com.biz.ludo.game.stream.GameStreamService"/>
+        <activity android:launchMode="singleTop" android:name="ludo.basement.com.live.music.LiveMusicPermissionActivity" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="basement.com.biz.account.ui.AccountSocialBindActivity" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="basement.com.biz.account.ui.AccountEmailUnbindActivity" android:theme="@style/Theme.Window.JustInputActive"/>
+        <activity android:name="basement.com.biz.account.ui.SecurityPswSetupActivity" android:theme="@style/Theme.Window.JustInputActive"/>
+        <activity android:name="basement.com.biz.account.ui.AccountLoginProtectActivity" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="basement.com.biz.auth.library.mobile.PhoneAuthAreaSelectActivity" android:theme="@style/Theme.Window.AdjustResize"/>
+        <activity android:name="basement.com.biz.auth.library.mobile.PhoneAuthPasswordActivity" android:theme="@style/Theme.Window.AdjustResize.InputActive"/>
+        <activity android:name="basement.com.biz.auth.library.mobile.PhoneAuthVcodeVerifyActivity" android:theme="@style/Theme.Window.AdjustResize.InputActive"/>
+        <activity android:name="basement.com.biz.auth.library.email.EmailPwdAuthResetActivity" android:theme="@style/Theme.Window.AdjustResize.InputActive"/>
+        <activity android:name="basement.com.biz.auth.library.email.EmailPwdSetActivity" android:theme="@style/Theme.Window.AdjustResize.InputActive"/>
+        <activity android:launchMode="singleTop" android:name="ludo.baseapp.base.sso.SsoAlertActivity" android:theme="@style/Theme_DialogStyle.DimDisabled"/>
+        <provider android:authorities="com.voicemaker.android.debugfileprovider" android:exported="false" android:grantUriPermissions="true" android:name="libx.file.browser.DebugFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/dokit_debug_provider_paths"/>
+        </provider>
+        <activity android:name="libx.file.browser.ui.DebugActivity" android:theme="@style/FileBrowser.Theme"/>
+        <activity android:exported="false" android:name="libx.liveness.LivenessActivity" android:screenOrientation="portrait" android:theme="@style/liveness_theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskHelperActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskHelperArticleActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskFormActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.WorkOrderWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskChatActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskZoomImageActivty" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskOptionsAgentGroupActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.activity.UdeskWebViewUrlAcivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.photoselect.PhotoSelectorActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.photoselect.PreviewActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="cn.udesk.photoselect.PictureVideoPlayActivity" android:screenOrientation="user" android:theme="@style/Udesk_Theme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.udesk.camera.UdeskCameraActivity" android:screenOrientation="portrait" android:theme="@style/Udesk_Theme"/>
+        <provider android:authorities="com.voicemaker.android.udesk_provider" android:exported="false" android:grantUriPermissions="true" android:name="cn.udesk.provider.UdeskProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/udesk_provider_paths"/>
+        </provider>
+        <activity android:name="com.linecorp.linesdk.openchat.ui.CreateOpenChatActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationActivity" android:theme="@style/LineSdk_AuthenticationActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.linecorp.linesdk.auth.internal.LineAuthenticationCallbackActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lineauth"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.voicemaker.android.libxCaptureFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="libx.android.media.capture.LibxCaptureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/libx_capture_file_provider"/>
+        </provider>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationName" android:value="@string/facebook_app_name"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/facebook_app_name" android:launchMode="singleTask" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider852494738637078" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:exported="true" android:name="libx.auth.tiktok.TikTokEntryActivity"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.sobot.chat.conversation.SobotChatActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="false" android:name="com.sobot.chat.activity.SobotPhotoActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.WebViewActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotSkillGroupActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostMsgActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotMuItiPostMsgActivty" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotConsultationListActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotCusFieldActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostCategoryActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotQueryFromActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotChooseCityActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotChooseFileActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotFileDetailActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotCameraActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotVideoActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotTicketDetailActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotHelpCenterActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotProblemCategoryActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotProblemDetailActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostLeaveMsgActivity" android:screenOrientation="behind" android:theme="@style/sobot_activity_def_theme"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotRobotListActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotReplyActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotTicketEvaluateActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotEvaluateActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.widget.dialog.SobotPostMsgTmpListActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.sobot.chat.activity.SobotPostCascadeActivity" android:theme="@style/sobot_AppThemeDialogIsTranslucent"/>
+        <activity android:configChanges="fontScale|keyboardHidden|locale|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="com.sobot.chat.activity.SobotSelectPicAndVideoActivity" android:theme="@style/sobot_activity_def_theme"/>
+        <service android:exported="false" android:label="SobotChatTCPServer" android:name="com.sobot.chat.core.channel.SobotTCPServer"/>
+        <service android:name="com.sobot.chat.server.SobotSessionServer"/>
+        <provider android:authorities="com.voicemaker.android.sobot_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sobot.chat.provider.SobotFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sobot_provider_paths"/>
+        </provider>
+        <service android:name="com.kwai.koom.javaoom.monitor.analysis.HeapAnalysisService" android:process=":heap_analysis"/>
+        <activity android:name="libx.apm.netdiagnosis.ui.NetDiagnosisActivity" android:theme="@style/NetDiagnosisTheme"/>
+        <activity android:name="libx.apm.netdiagnosis.ui.NetDiagnosisRouteActivity" android:theme="@style/NetDiagnosisTheme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.voicemaker.android" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.voicemaker.android.applovininitprovider" android:exported="false" android:initOrder="101" android:name="com.applovin.sdk.AppLovinInitProvider"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.applovin.adview.AppLovinFullscreenThemedActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.sdk.AppLovinWebViewActivity"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridMRecAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.hybridAds.MaxHybridNativeAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitWaterfallsListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerCmpNetworksListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfConsentStatusesListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfInfoListActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTcfStringActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerTestModeNetworkActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerUnifiedFlowActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.mediation.MaxDebuggerWaterfallKeywordsActivity" android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.applovin.creative.MaxCreativeDebuggerDisplayedAdActivity" android:theme="@style/com.applovin.creative.CreativeDebuggerActivity.Theme"/>
+        <service android:exported="false" android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:stopWithTask="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="libx.stat.firebase.fcm.LibxFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.google.firebase.messaging.directboot.FirebaseMessagingDirectBootReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.messaging.RECEIVE_DIRECT_BOOT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.voicemaker.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unity3d.services.core.configuration.AdsSdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="libx.android.kvdb.KvdbInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="libx.android.common.AppInfoInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.voicemaker.android.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.zing.zalo.zalosdk.oauth.OpenAPIActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.zing.zalo.zalosdk.oauth.WebLoginActivity" android:screenOrientation="sensor" android:theme="@style/FixThemeForLoginWebview" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.voicemaker.android.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.voicemaker.android.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.voicemaker.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="libx.stat.hwpush.HcmMessageService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.voicemaker.android.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="syncbox.service.service.NetworkReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="syncbox.service.service.CoreService"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.voicemaker.android.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:exported="false" android:label="NetworkConnection" android:name="com.alibaba.pdns.net.networktype.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:name="com.bytedance.sdk.open.tiktok.ui.TikTokWebAuthorizeActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:hwid" android:value="hwid:6.4.0.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:hwid" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:account" android:value="13"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.56.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:pps-phone:adsbrainkit" android:value="1"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.voicemaker.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.voicemaker.android.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.voicemaker.android.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.voicemaker.android.permission.PUSH_PROVIDER" android:writePermission="com.voicemaker.android.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.11.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.interstitial.view.MBInterstitialActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:theme="@style/mbridge_transparent_common_activity_style"/>
+        <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <provider android:authorities="com.voicemaker.android.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.11.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.9.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.voicemaker.android.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

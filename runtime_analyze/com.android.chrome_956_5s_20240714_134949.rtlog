@@ -1,0 +1,98 @@
+CPU Info:
+ +0% 14902/com.android.chrome: 0% user + 0% kernel
+ +0% 15004/com.android.chrome_zygote: 0% user + 0% kernel
+ +0% 15020/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0: 0% user + 0% kernel
+ +0% 15342/com.android.chrome:privileged_process1: 0% user + 0% kernel
+
+Memory Info:
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    14536                          30760
+         Native Heap:    50016                          51092
+                Code:    36012                         169428
+               Stack:     1156                           1164
+            Graphics:        0                              0
+       Private Other:    25060
+              System:    33747
+             Unknown:                                   31364
+ 
+           TOTAL PSS:   160527            TOTAL RSS:   283808       TOTAL SWAP PSS:      579
+ 
+ Objects
+
+Process Info:
+u0_a135      15004   315   14349088  56672 do_sys_poll         0 S com.android.chrome_zygote
+u0_a135      15430   315   32598964 273396 do_epoll_wait       0 S com.android.chrome
+u0_i2        15482 15004  242104428 162308 do_epoll_wait       0 S com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+u0_a135      15872   315   32100704 133248 do_epoll_wait       0 S com.android.chrome:privileged_process1
+
+Top Info:
+15004 u0_a135      20   0  14G  55M  37M S  0.0   2.7   0:00.14 com.android.chr+
+
+Logcat Info:
+
+Kill Result:
+
+==================================================
+CPU Info:
+ +0% 14902/com.android.chrome: 0% user + 0% kernel
+ +0% 15004/com.android.chrome_zygote: 0% user + 0% kernel
+ +0% 15020/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0: 0% user + 0% kernel
+ +0% 15342/com.android.chrome:privileged_process1: 0% user + 0% kernel
+
+Memory Info:
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:    17568                          39420
+         Native Heap:    33644                          34720
+                Code:    32888                         170852
+               Stack:     1184                           1192
+            Graphics:        0                              0
+       Private Other:    33164
+              System:    35199
+             Unknown:                                   35472
+ 
+           TOTAL PSS:   153647            TOTAL RSS:   281656       TOTAL SWAP PSS:      360
+ 
+ Objects
+
+Process Info:
+u0_a135      15004   315   14349088  56664 do_sys_poll         0 S com.android.chrome_zygote
+u0_a135      15430   315   32660204 270640 0                   0 R com.android.chrome
+u0_i2        15482 15004  242152784 170156 do_epoll_wait       0 S com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+u0_a135      15872   315   32135580 137564 do_epoll_wait       0 S com.android.chrome:privileged_process1
+
+Top Info:
+15004 u0_a135      20   0  14G  55M  37M S  0.0   2.7   0:00.14 com.android.chr+
+
+Logcat Info:
+
+Kill Result:
+
+==================================================
+CPU Info:
+ +0% 14902/com.android.chrome: 0% user + 0% kernel
+ +0% 15004/com.android.chrome_zygote: 0% user + 0% kernel
+ +0% 15020/com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0: 0% user + 0% kernel
+ +0% 15342/com.android.chrome:privileged_process1: 0% user + 0% kernel
+
+Memory Info:
+
+Process Info:
+u0_a135      15004   315   14349088  56664 do_sys_poll         0 S com.android.chrome_zygote
+u0_a135      15430   315   32643948 296980 0                   0 R com.android.chrome
+u0_i2        15482 15004  242149108 173672 do_epoll_wait       0 S com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+u0_a135      15872   315   32170452 142704 do_epoll_wait       0 S com.android.chrome:privileged_process1
+u0_i5        16191 15004   39323964  91628 do_epoll_wait       0 S com.android.chrome:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:3
+
+Top Info:
+[1m15004 u0_a135      20   0  14G  55M  37M R  3.2   2.7   0:00.23 com.android.chr+
+[m
+
+Logcat Info:
+
+Kill Result:
+
+==================================================

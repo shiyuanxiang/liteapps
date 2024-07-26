@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.yandex.browser.lite" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <permission android:name="com.yandex.browser.lite.permission.CHANGE_CLID_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <meta-data android:name="android.webkit.WebView.MetricsOptOut" android:value="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <provider android:authorities="com.yandex.preinstallsatellite.appmetrica.provider" android:name="com.yandex.preinstallsatellite.appmetrica.AppMetricaContentProvider"/>
+        <package android:name="com.huawei.appmarket"/>
+        <intent>
+            <action android:name="com.yandex.android.advid.IDENTIFIER_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="com.uodis.opendevice.OPENIDS_SERVICE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:manageSpaceActivity="com.yandex.browser.lite.settings.SettingsActivity" android:name="com.yandex.browser.lite.application.BrowserLiteApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/Theme.LBroApp">
+        <provider android:authorities="com.yandex.browser.lite.FileProvider" android:exported="false" android:grantUriPermissions="true" android:initOrder="1" android:name="com.yandex.browser.lite.FileProvider" android:process=":providersProcess">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.yandex.clid.ClidsInstaller" android:permission="com.yandex.browser.lite.permission.CHANGE_CLID_PERMISSION">
+            <intent-filter>
+                <action android:name="com.yandex.browser.CHANGE_CLID"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.max_aspect" android:value="3.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.yandex.browser.lite.mainactivity.MainActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity-alias android:exported="true" android:name="com.yandex.browser.lite.mainactivity.MainActivity" android:targetActivity="com.yandex.browser.lite.mainactivity.MainActivity">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+                <data android:mimeType="multipart/related"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.ASSIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.yandex.browser.lite.settings.SettingsActivity" android:theme="@style/Theme.Settings"/>
+        <activity android:launchMode="singleTask" android:name="com.yandex.browser.lite.license.LicenseAgreementActivity"/>
+        <receiver android:enabled="true" android:exported="true" android:label="@string/widget_search_name" android:name="com.yandex.browser.lite.appwidget.SearchWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_search"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.yandex.browser.lite.appwidget.WidgetPinningReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.yandex.metrica.MetricaService" android:process=":Metrica">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.yandex.metrica.IMetricaService"/>
+                <data android:scheme="metrica"/>
+            </intent-filter>
+            <meta-data android:name="metrica:api:level" android:value="106"/>
+        </service>
+        <provider android:authorities="com.yandex.browser.lite.appmetrica.preloadinfo.retail" android:enabled="true" android:exported="true" android:name="com.yandex.metrica.PreloadInfoContentProvider" android:process=":Metrica"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.yandex.browser.lite.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

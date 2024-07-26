@@ -1,0 +1,533 @@
+[apk_id] 2
+-- [activity]: 17
+-- [service]: 37
+-- [receiver]: 33
+-- [provider]: 11
+
+[apk_id] 3
+-- [activity]: 284
+-- [service]: 51
+-- [receiver]: 31
+-- [provider]: 31
+
+[apk_id] 4
+-- [activity]: 267
+-- [service]: 47
+-- [receiver]: 31
+-- [provider]: 24
+
+[apk_id] 5
+-- [activity]: 141
+-- [service]: 18
+-- [receiver]: 16
+-- [provider]: 10
+
+[apk_id] 6
+-- [activity]: 75
+-- [service]: 3
+-- [receiver]: 5
+-- [provider]: 6
+
+[apk_id] 7
+-- [activity]: 199
+-- [service]: 19
+-- [receiver]: 16
+-- [provider]: 13
+
+[apk_id] 8
+-- [activity]: 197
+-- [service]: 19
+-- [receiver]: 16
+-- [provider]: 12
+
+[apk_id] 9
+-- [activity]: 25
+-- [service]: 22
+-- [receiver]: 16
+-- [provider]: 4
+
+[apk_id] 10
+-- [activity]: 10
+-- [service]: 13
+-- [receiver]: 10
+-- [provider]: 2
+
+[apk_id] 11
+-- [activity]: 219
+-- [service]: 37
+-- [receiver]: 35
+-- [provider]: 11
+
+[apk_id] 12
+-- [activity]: 14
+-- [service]: 15
+-- [receiver]: 26
+-- [provider]: 2
+
+[apk_id] 13
+-- [activity]: 300
+-- [service]: 61
+-- [receiver]: 36
+-- [provider]: 39
+
+[apk_id] 14
+-- [activity]: 83
+-- [service]: 32
+-- [receiver]: 24
+-- [provider]: 21
+
+[apk_id] 15
+-- [activity]: 80
+-- [service]: 19
+-- [receiver]: 15
+-- [provider]: 12
+
+[apk_id] 16
+-- [activity]: 55
+-- [service]: 17
+-- [receiver]: 13
+-- [provider]: 10
+
+[apk_id] 17
+-- [activity]: 471
+-- [service]: 41
+-- [receiver]: 25
+-- [provider]: 12
+
+[apk_id] 18
+-- [activity]: 471
+-- [service]: 41
+-- [receiver]: 25
+-- [provider]: 11
+
+[apk_id] 19
+-- [activity]: 258
+-- [service]: 26
+-- [receiver]: 20
+-- [provider]: 18
+
+[apk_id] 20
+-- [activity]: 254
+-- [service]: 24
+-- [receiver]: 20
+-- [provider]: 17
+
+[apk_id] 21
+-- [activity]: 8
+-- [service]: 9
+-- [receiver]: 5
+-- [provider]: 3
+
+[apk_id] 22
+-- [activity]: 14
+-- [service]: 15
+-- [receiver]: 18
+-- [provider]: 5
+
+[apk_id] 25
+-- [activity]: 9
+-- [service]: 11
+-- [receiver]: 11
+-- [provider]: 9
+
+[apk_id] 26
+-- [activity]: 9
+-- [service]: 11
+-- [receiver]: 11
+-- [provider]: 9
+
+[apk_id] 27
+-- [activity]: 48
+-- [service]: 18
+-- [receiver]: 19
+-- [provider]: 8
+
+[apk_id] 28
+-- [activity]: 81
+-- [service]: 35
+-- [receiver]: 35
+-- [provider]: 9
+
+[apk_id] 29
+-- [activity]: 55
+-- [service]: 17
+-- [receiver]: 14
+-- [provider]: 6
+
+[apk_id] 30
+-- [activity]: 55
+-- [service]: 17
+-- [receiver]: 14
+-- [provider]: 6
+
+[apk_id] 31
+-- [activity]: 11
+-- [service]: 14
+-- [receiver]: 9
+-- [provider]: 8
+
+[apk_id] 32
+-- [activity]: 11
+-- [service]: 14
+-- [receiver]: 9
+-- [provider]: 8
+
+[apk_id] 33
+-- [activity]: 7
+-- [service]: 9
+-- [receiver]: 11
+-- [provider]: 4
+
+[apk_id] 34
+-- [activity]: 7
+-- [service]: 9
+-- [receiver]: 11
+-- [provider]: 4
+
+[apk_id] 35
+-- [activity]: 707
+-- [service]: 180
+-- [receiver]: 20
+-- [provider]: 21
+
+[apk_id] 36
+-- [activity]: 712
+-- [service]: 181
+-- [receiver]: 20
+-- [provider]: 23
+
+[apk_id] 37
+-- [activity]: 46
+-- [service]: 11
+-- [receiver]: 6
+-- [provider]: 11
+
+[apk_id] 38
+-- [activity]: 46
+-- [service]: 11
+-- [receiver]: 6
+-- [provider]: 11
+
+[apk_id] 39
+-- [activity]: 220
+-- [service]: 25
+-- [receiver]: 16
+-- [provider]: 9
+
+[apk_id] 40
+-- [activity]: 6
+-- [service]: 15
+-- [receiver]: 11
+-- [provider]: 5
+
+[apk_id] 41
+-- [activity]: 100
+-- [service]: 16
+-- [receiver]: 12
+-- [provider]: 10
+
+[apk_id] 42
+-- [activity]: 100
+-- [service]: 16
+-- [receiver]: 12
+-- [provider]: 10
+
+[apk_id] 43
+-- [activity]: 51
+-- [service]: 6
+-- [receiver]: 9
+-- [provider]: 8
+
+[apk_id] 44
+-- [activity]: 51
+-- [service]: 6
+-- [receiver]: 9
+-- [provider]: 8
+
+[apk_id] 45
+-- [activity]: 357
+-- [service]: 80
+-- [receiver]: 41
+-- [provider]: 25
+
+[apk_id] 47
+-- [activity]: 101
+-- [service]: 46
+-- [receiver]: 37
+-- [provider]: 8
+
+[apk_id] 48
+-- [activity]: 38
+-- [service]: 13
+-- [receiver]: 16
+-- [provider]: 4
+
+[apk_id] 49
+-- [activity]: 27
+-- [service]: 31
+-- [receiver]: 10
+-- [provider]: 15
+
+[apk_id] 50
+-- [activity]: 54
+-- [service]: 14
+-- [receiver]: 16
+-- [provider]: 4
+
+[apk_id] 51
+-- [activity]: 21
+-- [service]: 21
+-- [receiver]: 13
+-- [provider]: 3
+
+[apk_id] 52
+-- [activity]: 17
+-- [service]: 19
+-- [receiver]: 13
+-- [provider]: 3
+
+[apk_id] 53
+-- [activity]: 17
+-- [service]: 11
+-- [receiver]: 9
+-- [provider]: 3
+
+[apk_id] 54
+-- [activity]: 13
+-- [service]: 8
+-- [receiver]: 9
+-- [provider]: 3
+
+[apk_id] 55
+-- [activity]: 71
+-- [service]: 16
+-- [receiver]: 14
+-- [provider]: 16
+
+[apk_id] 56
+-- [activity]: 66
+-- [service]: 14
+-- [receiver]: 13
+-- [provider]: 15
+
+[apk_id] 57
+-- [activity]: 71
+-- [service]: 24
+-- [receiver]: 23
+-- [provider]: 13
+
+[apk_id] 58
+-- [activity]: 74
+-- [service]: 10
+-- [receiver]: 14
+-- [provider]: 9
+
+[apk_id] 59
+-- [activity]: 325
+-- [service]: 128
+-- [receiver]: 17
+-- [provider]: 118
+
+[apk_id] 60
+-- [activity]: 325
+-- [service]: 128
+-- [receiver]: 17
+-- [provider]: 118
+
+[apk_id] 61
+-- [activity]: 246
+-- [service]: 38
+-- [receiver]: 34
+-- [provider]: 29
+
+[apk_id] 63
+-- [activity]: 65
+-- [service]: 19
+-- [receiver]: 16
+-- [provider]: 7
+
+[apk_id] 64
+-- [activity]: 65
+-- [service]: 19
+-- [receiver]: 15
+-- [provider]: 7
+
+[apk_id] 65
+-- [activity]: 114
+-- [service]: 21
+-- [receiver]: 13
+-- [provider]: 13
+
+[apk_id] 66
+-- [activity]: 75
+-- [service]: 20
+-- [receiver]: 11
+-- [provider]: 15
+
+[apk_id] 67
+-- [activity]: 69
+-- [service]: 15
+-- [receiver]: 13
+-- [provider]: 8
+
+[apk_id] 68
+-- [activity]: 71
+-- [service]: 13
+-- [receiver]: 14
+-- [provider]: 6
+
+[apk_id] 69
+-- [activity]: 374
+-- [service]: 117
+-- [receiver]: 15
+-- [provider]: 111
+
+[apk_id] 70
+-- [activity]: 375
+-- [service]: 117
+-- [receiver]: 17
+-- [provider]: 111
+
+[apk_id] 71
+-- [activity]: 40
+-- [service]: 5
+-- [receiver]: 1
+-- [provider]: 3
+
+[apk_id] 72
+-- [activity]: 39
+-- [service]: 5
+-- [receiver]: 1
+-- [provider]: 3
+
+[apk_id] 73
+-- [activity]: 54
+-- [service]: 14
+-- [receiver]: 16
+-- [provider]: 4
+
+[apk_id] 74
+-- [activity]: 4
+-- [service]: 1
+-- [receiver]: 3
+-- [provider]: 4
+
+[apk_id] 75
+-- [activity]: 50
+-- [service]: 14
+-- [receiver]: 12
+-- [provider]: 9
+
+[apk_id] 76
+-- [activity]: 6
+-- [service]: 5
+-- [receiver]: 9
+-- [provider]: 3
+
+[apk_id] 77
+-- [activity]: 2
+-- [service]: 51
+-- [receiver]: 3
+-- [provider]: 5
+
+[apk_id] 78
+-- [activity]: 2
+-- [service]: 51
+-- [receiver]: 3
+-- [provider]: 5
+
+[apk_id] 79
+-- [activity]: 68
+-- [service]: 17
+-- [receiver]: 18
+-- [provider]: 12
+
+[apk_id] 80
+-- [activity]: 25
+-- [service]: 10
+-- [receiver]: 13
+-- [provider]: 9
+
+[apk_id] 82
+-- [activity]: 78
+-- [service]: 19
+-- [receiver]: 24
+-- [provider]: 9
+
+[apk_id] 84
+-- [activity]: 137
+-- [service]: 20
+-- [receiver]: 16
+-- [provider]: 12
+
+[apk_id] 86
+-- [activity]: 10
+-- [service]: 7
+-- [receiver]: 13
+-- [provider]: 5
+
+[apk_id] 88
+-- [activity]: 7
+-- [service]: 11
+-- [receiver]: 12
+-- [provider]: 4
+
+[apk_id] 89
+-- [activity]: 181
+-- [service]: 16
+-- [receiver]: 14
+-- [provider]: 18
+
+[apk_id] 91
+-- [activity]: 12
+-- [service]: 15
+-- [receiver]: 14
+-- [provider]: 7
+
+[apk_id] 96
+-- [activity]: 12
+-- [service]: 1
+-- [receiver]: 3
+-- [provider]: 0
+
+[apk_id] 99
+-- [activity]: 33
+-- [service]: 18
+-- [receiver]: 13
+-- [provider]: 7
+
+[apk_id] 100
+-- [activity]: 64
+-- [service]: 21
+-- [receiver]: 13
+-- [provider]: 11
+
+[abnormal lite full]
+21-22 activity: 8 14
+21-22 service: 9 15
+21-22 receiver: 5 18
+21-22 provider: 3 5
+27-28 activity: 48 81
+27-28 service: 18 35
+27-28 receiver: 19 35
+27-28 provider: 8 9
+35-36 activity: 707 712
+35-36 service: 180 181
+35-36 provider: 21 23
+49-50 activity: 27 54
+49-50 receiver: 10 16
+57-58 activity: 71 74
+65-66 provider: 13 15
+67-68 activity: 69 71
+67-68 receiver: 13 14
+69-70 activity: 374 375
+69-70 receiver: 15 17
+99-100 activity: 33 64
+99-100 service: 18 21
+99-100 provider: 7 11
+
+[abnormal apks] 9
+-- activity: 8 times
+-- service: 4 times
+-- receiver: 5 times
+-- provider: 5 times

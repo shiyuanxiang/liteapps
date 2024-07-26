@@ -1,0 +1,14 @@
+package: com.outfit7.mytalkingtom2
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+uses-permission: name='android.permission.RECORD_AUDIO'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='com.android.vending.BILLING'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'
+permission: com.outfit7.mytalkingtom2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.outfit7.mytalkingtom2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

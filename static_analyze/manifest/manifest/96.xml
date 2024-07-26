@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skyarmy.orientation.locker.fresh">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application android:allowBackup="true" android:icon="@drawable/main_icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.skyarmy.orientation.locker.fresh.PopupRotation" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="startLockerActivity" android:scheme="lockerHeartExe"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.InitIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.KindIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.BasicIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.WidgetIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.SpecialIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.NotificationIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.MoreIntent" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.skyarmy.orientation.locker.fresh.RotationDescipIntent" android:theme="@style/AppTheme"/>
+        <activity android:name="com.skyarmy.orientation.locker.fresh.WhiteList" android:noHistory="true" android:theme="@style/AppTheme"/>
+        <activity android:excludeFromRecents="true" android:name="com.skyarmy.orientation.locker.fresh.AdsPopIntent" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:name="com.skyarmy.orientation.locker.fresh.OrientLockerService"/>
+        <receiver android:enabled="true" android:label="Broadcast Receiver" android:name="com.skyarmy.orientation.locker.fresh.BroadCastRcvrCover">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.fresh.PORTRAIT"/>
+                <action android:name="android.intent.action.fresh.LANDSCAPE"/>
+                <action android:name="android.intent.action.fresh.REV_PORTRAIT"/>
+                <action android:name="android.intent.action.fresh.REV_LANDSCAPE"/>
+                <action android:name="android.intent.action.fresh.AUTO_ROTATION"/>
+                <action android:name="android.intent.action.fresh.AUTO_ROTATION_CANCEL"/>
+                <action android:name="android.intent.action.fresh.FORCE_PORTRAIT"/>
+                <action android:name="android.intent.action.fresh.FORCE_LANDSCAPE"/>
+                <action android:name="android.intent.action.fresh.FORCE_REV_PORTRAIT"/>
+                <action android:name="android.intent.action.fresh.FORCE_REV_LANDSCAPE"/>
+                <action android:name="android.intent.action.fresh.FORCE_AUTO_ROTATION"/>
+                <action android:name="android.intent.action.fresh.FORCE_AUTO_PORT_ROTATION"/>
+                <action android:name="android.intent.action.fresh.FORCE_AUTO_LAND_ROTATION"/>
+                <action android:name="android.intent.action.fresh.CLEAR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.skyarmy.orientation.locker.fresh.widget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.record.widget.fresh.POPUP"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"/>
+        </receiver>
+        <receiver android:name="com.skyarmy.orientation.locker.fresh.widget.WidgetProviderThree">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_three"/>
+        </receiver>
+    </application>
+</manifest>

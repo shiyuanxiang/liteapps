@@ -1,0 +1,260 @@
+  bash arg: -p
+  bash arg: com.android.chrome
+  bash arg: -v
+  bash arg: 1000
+args: [-p, com.android.chrome, -v, 1000]
+ arg: "-p"
+ arg: "com.android.chrome"
+ arg: "-v"
+ arg: "1000"
+data="com.android.chrome"
+:Monkey: seed=1721062136701 count=1000
+:AllowPackage: com.android.chrome
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 2.0%
+//   3: 15.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.0%
+//   7: 15.0%
+//   8: 2.0%
+//   9: 2.0%
+//   10: 1.0%
+//   11: 13.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.chrome/com.google.android.apps.chrome.Main;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.chrome/com.google.android.apps.chrome.Main } in package com.android.chrome
+:Sending Touch (ACTION_DOWN): 0:(186.0,271.0)
+:Sending Touch (ACTION_UP): 0:(196.14844,270.9922)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.chrome/com.google.android.apps.chrome.Main;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.chrome/com.google.android.apps.chrome.Main } in package com.android.chrome
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(206.0,1498.0)
+:Sending Touch (ACTION_UP): 0:(212.80176,1498.5127)
+:Sending Touch (ACTION_DOWN): 0:(848.0,1263.0)
+:Sending Touch (ACTION_UP): 0:(840.74316,1252.8135)
+:Sending Touch (ACTION_DOWN): 0:(1057.0,144.0)
+:Sending Touch (ACTION_UP): 0:(1047.8447,93.08008)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+    //[calendar_time:2024-07-14 13:49:54.516  system_uptime:9575500]
+    // Sending event #100
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(84.0,574.0)
+:Sending Touch (ACTION_UP): 0:(88.228516,579.06934)
+    // Allowing start of Intent { cmp=com.android.chrome/org.chromium.chrome.browser.app.bookmarks.BookmarkEditActivity } in package com.android.chrome
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(41.0,1886.0)
+:Sending Touch (ACTION_UP): 0:(52.20508,1902.2979)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(113.0,1189.0)
+:Sending Touch (ACTION_UP): 0:(154.84082,1286.6367)
+:Sending Touch (ACTION_DOWN): 0:(72.0,1582.0)
+:Sending Touch (ACTION_UP): 0:(73.87988,1580.9619)
+    //[calendar_time:2024-07-14 13:49:55.692  system_uptime:9576660]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(590.0,628.0)
+:Sending Touch (ACTION_UP): 0:(505.3584,600.26855)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(576.0,471.0)
+:Sending Touch (ACTION_UP): 0:(574.56836,539.98926)
+:Sending Touch (ACTION_DOWN): 0:(188.0,386.0)
+:Sending Touch (ACTION_UP): 0:(194.88184,390.90137)
+:Sending Touch (ACTION_DOWN): 0:(654.0,796.0)
+:Sending Touch (ACTION_UP): 0:(698.98047,778.94434)
+    // Allowing start of Intent { cmp=com.android.chrome/org.chromium.chrome.browser.app.bookmarks.BookmarkFolderSelectActivity } in package com.android.chrome
+:Sending Touch (ACTION_DOWN): 0:(1065.0,771.0)
+:Sending Touch (ACTION_UP): 0:(1025.6123,874.99805)
+:Sending Touch (ACTION_DOWN): 0:(93.0,1936.0)
+:Sending Touch (ACTION_UP): 0:(92.1084,1941.2197)
+    // Allowing start of Intent { cmp=com.android.chrome/org.chromium.chrome.browser.app.bookmarks.BookmarkAddEditFolderActivity } in package com.android.chrome
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.android.chrome/com.google.android.apps.chrome.Main;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.android.chrome/com.google.android.apps.chrome.Main } in package com.android.chrome
+:Sending Touch (ACTION_DOWN): 0:(754.0,906.0)
+:Sending Touch (ACTION_UP): 0:(752.0156,909.58984)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+    //[calendar_time:2024-07-14 13:49:57.121  system_uptime:9578090]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(949.0,674.0)
+:Sending Touch (ACTION_UP): 0:(935.0586,707.3408)
+:Sending Touch (ACTION_DOWN): 0:(1071.0,528.0)
+:Sending Touch (ACTION_UP): 0:(1075.4834,527.7002)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+    // Allowing start of Intent { cmp=com.android.chrome/org.chromium.chrome.browser.app.bookmarks.BookmarkEditActivity } in package com.android.chrome
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(718.0,1766.0)
+:Sending Touch (ACTION_UP): 0:(727.1035,1751.4453)
+    // activityResuming(com.android.chrome)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(415.0,839.0)
+:Sending Touch (ACTION_UP): 0:(458.0205,819.8418)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(69.0,966.0)
+:Sending Touch (ACTION_UP): 0:(6.2421875,859.24023)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+    //[calendar_time:2024-07-14 13:49:59.405  system_uptime:9580374]
+    // Sending event #400
+:Sending Touch (ACTION_DOWN): 0:(963.0,1026.0)
+:Sending Touch (ACTION_UP): 0:(987.49414,1106.9307)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(659.0,1490.0)
+:Sending Touch (ACTION_UP): 0:(681.0166,1513.4502)
+:Sending Touch (ACTION_DOWN): 0:(920.0,1778.0)
+:Sending Touch (ACTION_UP): 0:(922.4385,1772.6025)
+:Sending Touch (ACTION_DOWN): 0:(423.0,216.0)
+:Sending Touch (ACTION_UP): 0:(418.38965,216.26172)
+:Sending Touch (ACTION_DOWN): 0:(346.0,1591.0)
+:Sending Touch (ACTION_UP): 0:(337.64062,1582.7568)
+:Sending Touch (ACTION_DOWN): 0:(214.0,1729.0)
+:Sending Touch (ACTION_UP): 0:(205.68066,1725.0469)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(377.0,1629.0)
+:Sending Touch (ACTION_UP): 0:(378.4297,1615.0557)
+:Sending Touch (ACTION_DOWN): 0:(948.0,518.0)
+:Sending Touch (ACTION_UP): 0:(946.41797,496.45898)
+:Sending Touch (ACTION_DOWN): 0:(886.0,1210.0)
+:Sending Touch (ACTION_UP): 0:(895.01855,1212.3369)
+    //[calendar_time:2024-07-14 13:50:04.551  system_uptime:9585526]
+    // Sending event #500
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(698.0,1549.0)
+:Sending Touch (ACTION_UP): 0:(742.70996,1474.7188)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(416.0,485.0)
+:Sending Touch (ACTION_UP): 0:(412.9756,488.78418)
+:Sending Touch (ACTION_DOWN): 0:(408.0,1409.0)
+:Sending Touch (ACTION_UP): 0:(386.2256,1407.002)
+:Sending Touch (ACTION_DOWN): 0:(132.0,254.0)
+:Sending Touch (ACTION_UP): 0:(142.28027,251.41113)
+:Sending Touch (ACTION_DOWN): 0:(125.0,1707.0)
+:Sending Touch (ACTION_UP): 0:(179.42773,1796.4961)
+:Sending Touch (ACTION_DOWN): 0:(1072.0,240.0)
+:Sending Touch (ACTION_UP): 0:(973.52637,339.5293)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+    //[calendar_time:2024-07-14 13:50:06.276  system_uptime:9587245]
+    // Sending event #600
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(648.0,1740.0)
+:Sending Touch (ACTION_UP): 0:(656.39453,1757.0596)
+:Sending Touch (ACTION_DOWN): 0:(489.0,536.0)
+:Sending Touch (ACTION_UP): 0:(504.62402,579.9248)
+:Sending Touch (ACTION_DOWN): 0:(57.0,1178.0)
+:Sending Touch (ACTION_UP): 0:(56.674805,1168.0713)
+:Sending Touch (ACTION_DOWN): 0:(592.0,2038.0)
+:Sending Touch (ACTION_UP): 0:(600.08887,2016.8291)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(543.0,443.0)
+:Sending Touch (ACTION_UP): 0:(506.6631,452.16406)
+:Sending Touch (ACTION_DOWN): 0:(770.0,1749.0)
+:Sending Touch (ACTION_UP): 0:(784.50977,1753.4121)
+:Sending Touch (ACTION_DOWN): 0:(1065.0,1670.0)
+:Sending Touch (ACTION_UP): 0:(1056.8066,1670.8252)
+:Sending Touch (ACTION_DOWN): 0:(754.0,151.0)
+:Sending Touch (ACTION_UP): 0:(754.8262,146.33691)
+:Sending Touch (ACTION_DOWN): 0:(381.0,398.0)
+:Sending Touch (ACTION_UP): 0:(316.65234,518.0176)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+    //[calendar_time:2024-07-14 13:50:08.028  system_uptime:9588997]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(562.0,2140.0)
+:Sending Touch (ACTION_UP): 0:(603.1709,2029.542)
+:Sending Touch (ACTION_DOWN): 0:(12.0,1919.0)
+:Sending Touch (ACTION_UP): 0:(23.105469,1923.6836)
+:Sending Touch (ACTION_DOWN): 0:(306.0,1672.0)
+:Sending Touch (ACTION_UP): 0:(291.79297,1752.1318)
+:Sending Touch (ACTION_DOWN): 0:(628.0,1212.0)
+:Sending Touch (ACTION_UP): 0:(634.1406,1213.9863)
+:Sending Touch (ACTION_DOWN): 0:(370.0,378.0)
+:Sending Touch (ACTION_UP): 0:(368.54004,369.98242)
+:Sending Touch (ACTION_DOWN): 0:(387.0,994.0)
+:Sending Touch (ACTION_UP): 0:(311.9453,933.00684)
+:Sending Touch (ACTION_DOWN): 0:(517.0,696.0)
+:Sending Touch (ACTION_UP): 0:(520.65234,649.45703)
+:Sending Touch (ACTION_DOWN): 0:(564.0,923.0)
+:Sending Touch (ACTION_UP): 0:(565.9053,906.958)
+:Sending Touch (ACTION_DOWN): 0:(133.0,1920.0)
+:Sending Touch (ACTION_UP): 0:(26.59082,1987.9111)
+:Sending Touch (ACTION_DOWN): 0:(288.0,1533.0)
+:Sending Touch (ACTION_UP): 0:(293.85645,1554.4141)
+:Sending Touch (ACTION_DOWN): 0:(869.0,2032.0)
+:Sending Touch (ACTION_UP): 0:(865.1904,2033.0557)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(88.0,820.0)
+:Sending Touch (ACTION_UP): 0:(85.43359,837.0322)
+:Sending Touch (ACTION_DOWN): 0:(536.0,241.0)
+:Sending Touch (ACTION_UP): 0:(554.50684,243.76562)
+    //[calendar_time:2024-07-14 13:50:12.019  system_uptime:9592988]
+    // Sending event #800
+    //[calendar_time:2024-07-14 13:50:12.020  system_uptime:9592989]
+    // Sending event #800
+:Sending Touch (ACTION_DOWN): 0:(321.0,99.0)
+:Sending Touch (ACTION_UP): 0:(321.47363,91.646484)
+:Sending Touch (ACTION_DOWN): 0:(278.0,1133.0)
+:Sending Touch (ACTION_UP): 0:(242.33301,1131.8926)
+:Sending Touch (ACTION_DOWN): 0:(663.0,166.0)
+:Sending Touch (ACTION_UP): 0:(670.96484,168.18945)
+:Sending Touch (ACTION_DOWN): 0:(371.0,1904.0)
+:Sending Touch (ACTION_UP): 0:(381.71875,1905.6318)
+:Sending Touch (ACTION_DOWN): 0:(956.0,1899.0)
+:Sending Touch (ACTION_UP): 0:(832.91406,1954.4229)
+:Sending Touch (ACTION_DOWN): 0:(562.0,289.0)
+:Sending Touch (ACTION_UP): 0:(578.55176,285.46387)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(288.0,1776.0)
+:Sending Touch (ACTION_UP): 0:(291.7744,1764.8184)
+:Sending Touch (ACTION_DOWN): 0:(720.0,997.0)
+:Sending Touch (ACTION_UP): 0:(739.75684,990.13477)
+:Sending Touch (ACTION_DOWN): 0:(757.0,1020.0)
+:Sending Touch (ACTION_UP): 0:(724.30176,1049.5703)
+:Sending Touch (ACTION_DOWN): 0:(626.0,538.0)
+:Sending Touch (ACTION_UP): 0:(607.6846,487.85645)
+:Sending Touch (ACTION_DOWN): 0:(513.0,2144.0)
+:Sending Touch (ACTION_UP): 0:(491.8994,2121.749)
+:Sending Touch (ACTION_DOWN): 0:(917.0,473.0)
+:Sending Touch (ACTION_UP): 0:(919.749,489.90625)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(899.0,1045.0)
+:Sending Touch (ACTION_UP): 0:(975.3076,1126.0498)
+    //[calendar_time:2024-07-14 13:50:15.089  system_uptime:9596058]
+    // Sending event #900
+:Sending Touch (ACTION_DOWN): 0:(532.0,1670.0)
+:Sending Touch (ACTION_UP): 0:(558.8242,1673.6631)
+:Sending Touch (ACTION_DOWN): 0:(781.0,1622.0)
+:Sending Touch (ACTION_UP): 0:(796.1533,1639.2676)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(1044.0,36.0)
+:Sending Touch (ACTION_UP): 0:(1051.7129,22.417969)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(929.0,1260.0)
+:Sending Touch (ACTION_UP): 0:(929.6631,1267.542)
+:Sending Touch (ACTION_DOWN): 0:(993.0,286.0)
+:Sending Touch (ACTION_UP): 0:(1016.72754,289.48145)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+Events injected: 1000
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=2 rotations=0
+## Network stats: elapsed time=24916ms (0ms mobile, 0ms wifi, 24916ms not connected)
+// Monkey finished

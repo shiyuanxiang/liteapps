@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:installLocation="auto" n1:requiredSplitTypes="bigonet__module,mediasupport__module,space__module" n1:splitTypes="" package="video.like.lite" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.imo.android.imoim.permission.Bepulled"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.vkontakte.android"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.imo.android.imoim"/>
+        <package android:name="com.bsb.hike"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.imo.android.imoimbeta"/>
+        <package android:name="video.like"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.camera.action.CROP"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="video.like.lite.permission.PERMISSION_SAFE_BROADCAST"/>
+    <permission android:name="video.like.lite.permission.PERMISSION_SAFE_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE "/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <permission android:name="video.like.lite.permission.Bepulled"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <application android:allowBackup="false" android:allowClearUserData="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enabled="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:hasCode="true" android:hasFragileUserData="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="video.like.lite.application.LikeApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/DefaultWhite" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="video.like.lite.lottery.ui.LotteryWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.SignupPwActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/adolescent_mode_title" android:name="video.like.lite.ui.user.adolescent.AdolescentModeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4400036741451464~1127684610"/>
+        <activity android:configChanges="keyboardHidden" android:exported="true" android:name="video.like.lite.ui.home.HomeActivity" android:screenOrientation="portrait" android:theme="@style/HomeActivitySplashTheme" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="video.like.lite.EXTRA_APP_OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="video.like.lite.ui.user.profile.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/str_fans" android:name="video.like.lite.ui.user.profile.fans.FansActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/following" android:name="video.like.lite.ui.user.profile.follow.FollowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.profile.picture.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/str_edit_profile" android:name="video.like.lite.ui.user.profile.setting.BigoProfileSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/push_manager" android:name="video.like.lite.ui.settings.push.PushSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.LoginByAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.FillPhoneNumberActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.ForgetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.PWSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.SignupProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.detail.view.VideoDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="video.like.lite.ui.user.profile.personal.UserVideosActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:icon="@mipmap/ic_launcher" android:launchMode="singleTask" android:name="video.like.lite.deeplink.DeepLinkActivity" android:theme="@style/TranslucentActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="likevideo"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.likeevideo.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="golink.like.video" android:pathPrefix="/live/deeplink/app" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile.like-video.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link.like-video.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="lite.likeevideo.com" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.DIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="lite.likee.tv" android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="video.like.lite.DEEP_LINK_FCM_OPEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="video.like.lite.ui.settings.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.web.WebPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.share.VideoShareActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.PinCodeVerifyActivityV2" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="video.like.lite.ui.detail.mention.atlist.view.UserAtSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="video.like.lite.ui.user.loginregister.ClipImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.language.ChooseLanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.location.CountrySelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="video.like.lite.ui.recommend.RecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.friends.FindFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.ContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="video.like.lite.push.lockscreen.ScreenLockNotificationActivity" android:noHistory="true" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/LockScreenActivityTheme"/>
+        <activity android:label="@string/blacklist_manager_title" android:name="video.like.lite.ui.settings.BlacklistManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="video.like.live.LiveVideoViewerActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="true" android:name="video.like.lite.proto.collection.job.CollocationJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:label="VideoLiteService" android:name="video.like.lite.service.YYService" android:process=":service" android:stopWithTask="true"/>
+        <service android:exported="true" android:name="video.like.lite.service.CheckJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <provider android:authorities="video.like.lite.provider.MultiprocessSharedPreferences" android:exported="false" android:name="video.like.lite.utils.prefs.MultiprocessSharedPreferences"/>
+        <provider android:authorities="video.like.lite.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="video.like.lite.fitandroid.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="video.like.lite.provider.environment" android:exported="false" android:name="video.like.lite.utils.storage.EnvProvider"/>
+        <provider android:authorities="video.like.lite.provider.follow" android:exported="false" android:name="video.like.lite.storage.FollowProvider"/>
+        <provider android:authorities="video.like.lite.provider.user_basic_info" android:exported="false" android:name="video.like.lite.ui.user.profile.db.UserBasicInfoProvider"/>
+        <provider android:authorities="video.like.lite.provider.kkcommunity" android:exported="false" android:name="video.like.lite.storage.KKProvider"/>
+        <provider android:authorities="video.like.lite.provider.video_effect_cache_pub" android:exported="false" android:name="video.like.lite.database.content.VideoEffectCacheProviderV2"/>
+        <provider android:authorities="video.like.lite.provider.musicsearchhistory" android:exported="false" android:name="video.like.lite.database.content.MusicSearchHistoryProvider"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="video.like.lite.push.DeleteNotifyRemoveBroadcast">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="video.like.lite.push.PushReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_DATA"/>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_EMPTY_DATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="video.like.lite.installapp.InstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="video.like.lite.service.YYReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="video.like.lite.service.CHECK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVA"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="video.like.lite.provider.user_info" android:exported="false" android:name="video.like.lite.ui.user.profile.db.UserInfoProvider"/>
+        <provider android:authorities="video.like.lite.provider.user_basic_info" android:exported="false" android:name="video.like.lite.ui.user.profile.db.UserBasicInfoProvider"/>
+        <provider android:authorities="video.like.lite.provider.follow_chat_entry" android:exported="false" android:name="video.like.lite.ui.user.profile.db.FollowChatEntryProvider"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider355677601673935" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.video.like.lite" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="ServiceActivity" android:name="com.vk.sdk.VKServiceActivity" android:theme="@style/VK.Transparent"/>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTop" android:name="video.like.lite.ring.RingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTop" android:name="video.like.lite.ui.user.profile.chat.ChatHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="video.like.lite.ui.user.me.PersonalActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="video.like.lite.application.apkcheck.AbnormalApkActivity" android:process=":fix" android:screenOrientation="portrait" android:theme="@style/AbnormalApkDialog"/>
+        <activity android:name="video.like.lite.search.SearchActivity" android:screenOrientation="portrait" android:theme="@style/SearchActivityTheme" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:name="video.like.lite.produce.notification.NotificationKeepAliveService" android:stopWithTask="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="video.like.lite.produce.albumshare.AlbumShareHandleActivity" android:theme="@style/TranslucentActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/quicktime"/>
+                <data android:mimeType="video/mp4"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/mp4"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/quicktime"/>
+            </intent-filter>
+        </activity>
+        <service android:name="video.like.lite.produce.notification.NotificationKeepAliveService" android:stopWithTask="true"/>
+        <activity android:excludeFromRecents="false" android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeActivity" android:permission="video.like.lite.permission.Bepulled" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeService" android:permission="video.like.lite.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeBroadCast" android:permission="video.like.lite.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:label="@string/service_label" android:name="sg.bigo.alive.service.DaemonService" android:process=":service" android:stopWithTask="false"/>
+        <service android:enabled="true" android:name="sg.bigo.alive.service.InnerService" android:process=":service"/>
+        <service android:name="sg.bigo.alive.service.AliveJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":service"/>
+        <receiver android:exported="true" android:name="sg.bigo.alive.receiver.KeepAliveReceiver" android:process=":service">
+            <intent-filter>
+                <action android:name="video.like.lite.service.CHECK"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVA"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="sg.bigo.config.debug.DebugActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="sg.bigo.mobile.android.srouter.api.interceptor.InterceptorProcessorActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="video.like.lite.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:enabled="true" android:label="YYMediaService" android:name="com.yysdk.mobile.mediasdk.YYMediaService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="false" android:exported="false" android:launchMode="singleInstance" android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity" android:process=":playcore_missing_splits_activity" android:stateNotNeeded="true"/>
+        <activity android:enabled="false" android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="10901"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <service android:enabled="false" android:exported="false" android:name="sg.bigo.sdk.push.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="sg.bigo.sdk.push.token.TokenReceiver"/>
+        <provider android:authorities="video.like.lite.content.provider.pushmsg" android:exported="false" android:name="sg.bigo.sdk.push.database.content.PushMessageProvider"/>
+        <receiver android:name="sg.bigo.sdk.push.token.AccountChangeReceiver"/>
+        <service android:exported="false" android:name="sg.bigo.sdk.push.ipc.PushMainService"/>
+        <receiver android:exported="false" android:name="sg.bigo.sdk.push.ipc.PushMessageReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_SDK_DATA"/>
+                <action android:name="sg.bigo.sdk.push.PushUtil.ACTION_PUSH_SDK_EMPTY_DATA"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="sg.bigo.sdk.libnotification.strategies.notify.NotificationRemoveDetectService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="sg.bigo.sdk.libnotification.strategies.notify.TimeoutReceiver">
+            <intent-filter>
+                <action android:name="sg.bigo.sdk.libnotification.timeout"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="video.like.lite.content.provider.initializer" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.BigoProvider"/>
+        <provider android:authorities="video.like.lite.content.provider.chat" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.database.content.ChatProvider"/>
+        <provider android:authorities="video.like.lite.content.provider.message" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.database.content.MessageProvider"/>
+        <provider android:authorities="video.like.lite.content.provider.service" android:exported="false" android:multiprocess="false" android:name="sg.bigo.sdk.message.service.ServiceProvider" android:process=":service"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="true" android:label="YYMediaService" android:name="com.bigosdk.goose.mediasdk.YYMediaService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="video.like.lite.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoAccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <provider android:authorities="video.like.lite.content.provider.accountsync" android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoSyncContentProvider" android:syncable="true"/>
+        <service android:exported="true" android:name="sg.bigo.alive.awake.sync.BigoSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+        </service>
+        <provider android:authorities="video.like.lite.sg.bigo.alive.awake.bepulled.AwakeContentProvider" android:exported="true" android:name="sg.bigo.alive.awake.bepulled.AwakeContentProvider" android:permission="video.like.lite.permission.Bepulled">
+            <intent-filter>
+                <action android:name="android.intent.bigo.wakeup.action"/>
+            </intent-filter>
+        </provider>
+        <service android:name="video.like.live.floatwindow.LiveFloatWindowService"/>
+        <activity android:label="@string/push_manager" android:name="video.like.live.settings.LivePushSettingActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="sg.bigo.live.profit.WalletActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="sg.bigo.live.pay.ui.PayActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.proxy.ad.adbusiness.helper.NotificationHelper$NotificationReceiver"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.proxy.ad.proxyadmob.AdmobVideoPlayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.proxy.ad.impl.interstitial.ui.BigoInterstitialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.proxy.ad.impl.banner.mraid.MraidVideoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.proxy.ad.proxyserver.ui.ServerVideoPlayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.proxy.ad.proxyserver.ui.ServerVideoDrawerPlayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.proxy.ad.impl.AdActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:launchMode="singleTop" android:name="sg.bigo.likee.produce.record.VideoRecordActivity" android:screenOrientation="portrait" android:theme="@style/VideoRecordStyle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="sg.bigo.likee.produce.album.VideoAlbumInputActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="sg.bigo.likee.produce.cover.VideoChooseCoverActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatFullScreenActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.edit.EditorActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatFullScreenActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.music.musiclist.MusicListActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.music.musiclist.MusicCategoryListActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.music.musiclist.UploadMusicActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.music.musiclist.MusicSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="sg.bigo.likee.produce.album.videocut.VideoCutActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="sg.bigo.likee.produce.publish.PublishActivity" android:screenOrientation="portrait" android:theme="@style/LightStatusBarTheme" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:name="sg.bigo.likee.produce.publish.visibility.ChoosePrivateActivity" android:screenOrientation="portrait" android:theme="@style/LightStatusBarTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="sg.bigo.likee.produce.publish.permission.ChoosePermissionActivity" android:screenOrientation="portrait" android:theme="@style/LightStatusBarTheme"/>
+        <activity android:name="sg.bigo.likee.produce.albumshare.AlbumShareActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <service android:name="video.like.lite.imchat.fgservice.FgWorkService"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="video.like.lite.imchat.ui.TimelineActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:name="video.like.lite.imchat.impeach.ImpeachActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="video.like.lite.imchat.impeach.ImpeachDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:label="@string/app_name" android:name="video.like.lite.imchat.impeach.ImpeachSelectActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/pic_all_pics" android:name="video.like.lite.imchat.picture.AllPicBrowserActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:label="@string/stragers_messages" android:launchMode="singleTask" android:name="video.like.lite.imchat.ui.TempChatHistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:label="@string/app_name" android:name="video.like.lite.imchat.ui.TxtMsgShowActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatActivityTheme"/>
+        <activity android:name="video.like.lite.recommend.SyncRecommendActivity" android:screenOrientation="portrait" android:theme="@style/DefaultWhite"/>
+        <activity android:name="video.like.lite.recommend.friends.FindFriendsActivityV2" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

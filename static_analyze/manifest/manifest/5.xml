@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="com.weieyu.yalla" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.intent.action.HEADSET_PLUG"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <permission android:name="com.weieyu.yalla.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.weieyu.yalla.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <queries>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.yallatech.yallachat"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+    </queries>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="com.yallatech.support.READ_VERSIONS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.weieyu.yalla.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.weieyu.yalla.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher" android:isSplitRequired="true" android:label="@string/single_Yalla" android:largeHeap="true" android:name="com.yalla.yalla.app.application.App" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:uiOptions="splitActionBarWhenNarrow" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="640"/>
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <meta-data android:name="android.app.lib_name" android:value="gift"/>
+        <meta-data android:name="com.weieyu.yalla.MyAppGlideModule" android:value="AppGlideModule"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/icon_notification_small"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/single_facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/single_facebook_app_token"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="100555747"/>
+        <meta-data android:name="com.huawei.hms.client.cpid" android:value="\ 890971000000000115"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5368696301227874~4353385853"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="@string/single_twitter_key"/>
+        <meta-data android:name="CHANNEL" android:value="Google Play"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider988589504552597" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <provider android:authorities="com.weieyu.yalla.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.weieyu.yalla.baseProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.yalla.yalla.util.FileProviderUtils">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:allowBackup="false" android:exported="false" android:foregroundServiceType="remoteMessaging" android:name="com.yalla.yalla.mixedroom.service.RoomLiveService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.yalla.yalla.service.room.RoomLiveService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.yalla.yalla.service.im.firebase.YLFirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.yalla.yalla.util.sendPostTask.MomentSendService"/>
+        <service android:allowBackup="false" android:exported="false" android:name="com.yalla.yalla.service.im.IMMessageService">
+            <intent-filter android:priority="-20">
+                <action android:name="com.yalla.yalla.message.service.MessageService"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/single_Yalla" android:name="com.yalla.yalla.ui.activity.main.StartActivity" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:screenOrientation="portrait" android:theme="@style/Theme.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="launch" android:scheme="yalla"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher" android:name="com.weieyu.yalla.changeQuickLauncher" android:roundIcon="@mipmap/ic_launcher_round" android:screenOrientation="portrait" android:targetActivity="com.yalla.yalla.ui.activity.main.StartActivity" android:theme="@style/Theme.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="launch" android:scheme="yalla"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_ramdan" android:name="com.weieyu.yalla.YallaRamdan" android:screenOrientation="portrait" android:targetActivity="com.yalla.yalla.ui.activity.main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="launch" android:scheme="yalla"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_every_year" android:name="com.weieyu.yalla.YallaAnniversary" android:screenOrientation="portrait" android:targetActivity="com.yalla.yalla.ui.activity.main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="launch" android:scheme="yalla"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.SchemeEnterActivity" android:theme="@style/Theme.StartActivity">
+            <intent-filter>
+                <data android:host="screen" android:scheme="yalla"/>
+                <data android:host="enterroom" android:scheme="com.weieyu.yalla"/>
+                <data android:host="event" android:scheme="com.weieyu.yalla"/>
+                <data android:host="start" android:scheme="com.weieyu.yalla"/>
+                <data android:host="main" android:scheme="com.weieyu.yalla"/>
+                <data android:host="account_binding" android:scheme="com.weieyu.yalla"/>
+                <data android:host="web" android:scheme="com.weieyu.yalla"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.fragment.MainMomentsTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicBlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.MomentMessageListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.AddTopicListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.JoinTopicListActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicCreateCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicCreateNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicEditDescActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicEditRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.TopicSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.AtFriendsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:launchMode="singleTop" android:name="com.yalla.yalla.ui.activity.ShowImageActivity" android:theme="@style/AppTheme_translucent"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.moment.activity.MomentDetailActivity" android:screenOrientation="portrait" android:theme="@style/NoWindowBackgroundTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.RoomThemeMineActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.yalla.yalla.module.store.ui.activity.RoomThemeStoreActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.LuckyPacketDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.PacketHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.MemberListRemoveActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.PurchaseLockRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.VoteGameCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.VoteHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.VoteHistoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.CustomizeThemePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.yalla.yalla.module.room.mixedroom.MixedRoomActivity" android:persistent="true" android:screenOrientation="portrait" android:theme="@style/Theme.RoomActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.VisitorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.CoinCrystalDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.yalla.yalla.module.message.activity.ActivitiesNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.yalla.yalla.module.room.room.OpenRedRnvelopesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.ChangePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.AristocracyPresentationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.media.music.MusicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserCountrySelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.TaskActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.StoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.PurchaseTopCardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.RoomSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.RoomReNameActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.RoomReAnnouncementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.RoomReTagActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.BlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.MomentSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.MomentPowerSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.moment.activity.MomentReplyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Activity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fb988589504552597"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.weieyu.yalla" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/single_Yalla" android:name="com.weieyu.yalla.wxapi.WXEntryActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.PurchaseSkillCardActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.SkillCarDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.PrivacyActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.MedalRankActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.SearchFriendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.FollowerActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.event.ui.activity.CountryTagActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.SelectRoomTagActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.UpgradeRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yalla.yalla.module.media.music.SearchMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.media.music.SelectMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserHeaderFrameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.media.music.DeleteMusicActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.TopCardPresentationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.ShareToFriendsActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.BanEnterRoomListActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.RoomMoraGameHistoryActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.room.room.CreateRoomActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.ChangeRegionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/single_Yalla" android:launchMode="singleTop" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="standard" android:name="com.yalla.yalla.ui.activity.main.WebActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Activity"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.ReOpenAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.UntieAccountBindActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.PhoneBindActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.DeleteAccountCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.DeleteAccountSubmitActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.PasswordActivity" android:screenOrientation="portrait" android:theme="@style/NoWindowBackgroundTheme" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.account.ui.acitivity.PhoneNumberActivity" android:screenOrientation="portrait" android:theme="@style/NoWindowBackgroundTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.SmsCodeActivity" android:screenOrientation="portrait" android:theme="@style/NoWindowBackgroundTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.LoginActivity" android:theme="@style/AppTheme_translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.account.ui.acitivity.LoginOnRoomDialogActivity" android:theme="@style/account_LoginOnRoomDialogActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.PhoneCountryCodeSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.AccountProtectionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.TurnOnLoginProtectionActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.account.ui.acitivity.ProtectionDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.TopActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/single_Yalla" android:launchMode="singleTask" android:name="com.yalla.yalla.module.main.activity.MainActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.MainActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.MainSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.WrmTestActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.event.ui.activity.ExploreCountryRoomListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.event.ui.activity.ExploreTagRoomListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.ArrearsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.BadgeWearActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.BadgeRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.BadgeRankActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.user.activity.BadgeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.BadgeNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.SupportTopActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.SystemMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.FriendRequestMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.PrivateChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.message.activity.YallaTeamMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserInfoEditRemarkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.main.activity.NoticeSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTask" android:name="com.yalla.yalla.module.store.ui.activity.VehicleStoreActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.VehicleMineActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.WalletActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.PremiumActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserDefaultHeadActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserInfoEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.user.activity.UserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserInfoEditBioActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserInfoTagActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserRoomsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:launchMode="standard" android:name="com.yalla.yalla.ui.screen.ScreenNavigationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ComposeActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:exported="false" android:name="com.yalla.yalla.ui.activity.empty.EmptySimpleActivity" android:theme="@style/AppTheme_translucent_fullscreen"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:launchMode="singleTop" android:name="com.yalla.yalla.module.store.ui.activity.RechargeActivity" android:theme="@style/AppTheme_translucent"/>
+        <activity android:name="com.yalla.yalla.developer.TestVideoActivity"/>
+        <activity android:name="com.yalla.yalla.developer.TestXbfActivity" android:theme="@style/Theme.ComposeActivity"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserWelfareMallActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.user.activity.UserWelfareRecordActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="!{applicationId}.startup" android:exported="false" android:name="com.yalla.yalla.app.startup.provider.StartUpProvider"/>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize" android:name="com.yalla.yalla.module.moment.activity.ExoPlayVideoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.media.camera.CameraActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.weieyu.yalla.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.yalla.yalla.module.media.MediaModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.report.service.ReportModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.account.AccountModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.event.EventModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.main.service.MainModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.message.service.MessageModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.moment.service.MomentModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.room.RoomModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.store.service.StoreModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.user.service.UserModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.yalla.yalla.module.web.service.WebModuleServiceInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.yalla.yalla.module.event.ui.screen.EventDisplayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.yallatech.support.platform.base.PlatformActivity" android:theme="@style/BasePlatformAuthActivity"/>
+        <provider android:authorities="com.yallatech.support.platform.YallaChatContentProvidercom.weieyu.yalla" android:exported="true" android:name="com.yallatech.support.platform.YallaChatContentProvider"/>
+        <provider android:authorities="com.yallatech.support.platform.fileprovidercom.weieyu.yalla" android:exported="false" android:grantUriPermissions="true" android:name="com.yallatech.support.platform.YCSDKFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/yc_open_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="com.yalla.album.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="com.yalla.album.AlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="com.yalla.album.PreviewImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation" android:name="com.yalla.album.BigImageSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:name="com.yalla.android.videoplayer.download.MyDownloadService">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:theme="@style/MediaTheme"/>
+        <activity android:name="com.twitter.sdk.android.tweetui.GalleryActivity" android:theme="@style/MediaTheme"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <provider android:authorities="com.weieyu.yalla.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.weieyu.yalla.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.weieyu.yalla.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="5.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

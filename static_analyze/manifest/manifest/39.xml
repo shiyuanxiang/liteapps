@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="th.co.gofive.empeo" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH" android:required="false"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.huawei.hff"/>
+        <package android:name="com.huawei.hms"/>
+        <package android:name="com.huawei.hwid"/>
+        <package android:name="com.huawei.hwid.tv"/>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+        <package android:name="com.huawei.works"/>
+    </queries>
+    <queries>
+        <package android:name="com.facebook.katana"/>
+    </queries>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="th.co.gofive.empeo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="th.co.gofive.empeo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="layoutDirection|locale" android:dataExtractionRules="@xml/data_extraction_rules" android:debuggable="false" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher_empeo" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="th.co.prismsolutions.venio2.CustomApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="android.resource_visibility" android:value="public"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.connectAccount.ConnectAccountsActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/line_integration_url" android:pathPrefix="@string/email_integration_url_prefix" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.feature.connectAccount.email.presentation.integration.EmailIntegrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.huawei.maps.ShowHuaweiMapActivity"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.MapLocationDetailActivity"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.huawei.ui.SelectCheckInHuaweiLocationActivity"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.huawei.maps.PlaceHuaweiPickerChooseLocationActivity"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.huawei.maps.HuaweiMapLocationDetailActivity"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.login.LoginWithEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.selfservice.SelfServiceProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.collecttime.CreateEditCollectTimeWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warningletter.CreateEditWarningLetterWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warningletter.WarningLetterDialogWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warningletter.WarningLetterDetailWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.redeemtime.CreateEditRedeemTimeWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.endorse.EndorseTimeRequestListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.notification.NotificationParentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.map.KeyActivityPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.map.MapWithStaffLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.checkinadhoc.CheckInAdhocActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.conversation.ConversationDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.activityreport.CreateEditActivityReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.customer.customerpicker.CustomerPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.createedit.CreateEditPlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.contact.ContactPhoneBookActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.createedit.createfromagreement.CreateEditPlanFromAgreementActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.document.documentdetail.DocumentDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.document.documentrequest.CreateEditDocumentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.customer.CreateEditLocationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.leave.LeaveDetailRedesignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.core.platform.WarningDialog404Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.core.warning.WarningJailBreakActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.saleorder.CreateEditSalesOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.ordermanagement.salesorder.SaleOrderDetailActivity2" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.quotation.QuotationDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.quotation.ProductSelectionListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.quotation.CreateEditQuotationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.customer.ContactDetailRedesignActivity"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatUserPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatNoteEditorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.customer.ConvertToCustomerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.ActivitySelectionListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.expense.createedit.CreateEditExpenseDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.expense.detail.ExpenseDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.expense.createedit.CreateEditExpenseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.locationpicker.LocationListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.signature.MySignatureSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.signature.AddSignatureSettingActivity" android:screenOrientation="landscape"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatConversationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatCustomerDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatContactDetailRedesignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.updatedeal.DealLinkActivityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.updatedeal.DealLinkContractActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.updatedeal.UpdateDealActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.dealdetail.DealLinkQuotationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.passcode.activity.PasscodeRedesignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.activitydetail.ListConversationForLinkActivityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.activitydetail.ListDealForLinkActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.chat.ChatParentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="th.co.prismsolutions.venio2.feature.home.MainOfflineActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.empeooutsidefieldework.CreateOutSideFieldWorkRequestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.empeochangeshiftrequest.CreateChangeShiftRequestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.emstation.EmStationFacialWorkInActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.signinwithqrcode.SignInWithQRCodeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="approve-signin" android:scheme="empeo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.TrialVersionActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="th.co.gofive.empeo.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="th.co.prismsolutions.venio2.feature.pdfPreviewQSO.PdfPreviewQSOActivity"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.announcement.activity.ShowAllAnnouncementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.announcement.activity.AttachmentViewerForUrlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.expense.CreateOrEditExpenseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.WebViewInAppNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.WebViewEmailNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.movement.MovementWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.training.CreateEditTrainingWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.training.TrainingDetailWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.training.CourseDetailWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.deeplink.DeeplinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="goto" android:scheme="empeo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="th.co.prismsolutions.venio2.feature.peoplepicker.TeamMemberListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.peoplepicker.PeoplePickerListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.passcode.activity.ForgotPasscodeWithoutPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.passcode.activity.ForgotPasscodeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="forgot-passcode" android:scheme="empeo"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="th.co.prismsolutions.venio2.feature.signaturecapture.SignaturePadActivity" android:screenOrientation="landscape"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.DynamicFormWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.DealLinkConversationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.EditContractActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.payslip.activity.PaySlipDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_edit_service_agreement_detail" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.EditServiceAgreementDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SearchMapLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.RequireNewVersionUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.DealCentricSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.TodoAfterCheckOutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_require_permission" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.RequirePermissionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ContractManagementDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.BasicCheckInDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.AuthenWithDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ActivityForReplaceFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.PDFPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.VideoPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SuperAdminActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.MyTeamActivityRedesignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.AnnouncementDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CustomerCentricMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ChooseContactActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CaseDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateCaseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CustomerCentricSearchRedesignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.PlacePickerChooseLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.HomeMapViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.assessment.AssessmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.assessment.AssessmentPeoplePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.forceupdate.ForceUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.TeamListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.WebViewDownloadFileActivity"/>
+        <provider android:authorities="th.co.gofive.empeo" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <grant-uri-permission android:pathPattern=".*"/>
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:label="@string/title_activity_scrolling" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ScrollingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.DealDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateEditLeaveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateEditOverTimeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateEditEndorseTimeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CustomerCentricSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CustomerTargetDetailActivity"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateCustomerTargetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.launcher.SplashScreen2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/emStationDeepLink" android:pathPrefix="@string/emStationDeepLinkPrefix" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/expense" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/customer" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/salesorder" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/employee" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/emconnect" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/activity" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/deal" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/product/list" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/contract" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/quotation" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/support" android:scheme="https"/>
+                <data android:host="@string/deeplink_url" android:pathPrefix="/chat" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ClickAction"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="th.co.prismsolutions.venio2.feature.welcome.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.login.Login2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.Office365HandlerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="signin" android:scheme="empeo"/>
+                <data android:host="signout" android:scheme="empeo"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.PasscodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SearchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.activity.activitydetail.ActivityDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.PlanEventsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.FeedbackDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SearchListMyActivityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.MyActivitySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.PendingCheckInActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.AddCustomerContactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SelectCheckInLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.MyTeamActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CustomerDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.connectAccount.email.presentation.webview.EmailDetailWebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ContactDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateEditCustomerContactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.InventoryRequestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SecuritySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SecuritySettingPasscodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SkipablePasscodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.NotificationEventsForegroundActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.MapviewSelectLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ActivityFeedbackAnswer" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.EmployeeListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_location_detail" android:name="th.co.prismsolutions.venio2.feature.legacy.activity.LocationDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateInventoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.onboarding.OnboardingVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.onboarding.ActivityOnboardingMain" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.onboarding.usageguide.OnboardingUsageGuideActivity" android:screenOrientation="portrait"/>
+        <service android:exported="true" android:name="th.co.prismsolutions.venio2.feature.legacy.VenioFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ActivityPreviewFileAttachment" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateEditPurchaseRequestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreatePurchaseRequestDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.TestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.sharefragment.ShareFragmentShowDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.fragment.WebViewAuthenticationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.sharefragment.ShareFragmentConversationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateDealActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.CreateDealDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.EditDealActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.SearchListItemActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.ShareFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.legacy.activity.LeaveDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.taskcenter.CreateEditTaskCenterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.taskcenter.TaskCenterDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warranty.CreateEditWarrantyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warranty.ProductSingleSelectionListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.saleorder.SalesOrderPickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warranty.ScannerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.warranty.CodeGuardListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.customer.CustomerSearchWithRDActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.facerecognition.FaceRecognitionActivity" android:screenOrientation="portrait" android:theme="@style/faceTheme"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.ordermanagement.quotation.CreateEditQuotationRedesignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.ordermanagement.salesorder.CreateEditSalesOrderRedesignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.launcher.ServiceMaintenanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.dynamicform.FormActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.companypolicy.ShowAllCompanyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="th.co.prismsolutions.venio2.feature.integrationsetting.IntegrationSettingActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/line_integration_url" android:pathPrefix="@string/line_integration_url_prefix" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="th.co.prismsolutions.venio2.feature.ordermanagement.quotation.SendEmailQuotationWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.todotask.TaskParentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.feature.onboarding.resetpassword.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="th.co.prismsolutions.venio2.feature.onboarding.signinwithoutemail.SignInWithoutEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.home.ShowMapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.integrationsetting.IntegrationSettingWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.emstation.EmStationLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.emstation.EmStationRequestLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.emstation.EmStationHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="th.co.prismsolutions.venio2.feature.emstation.EmStationSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity" android:permission="">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.th.co.gofive.empeo" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <receiver android:exported="false" android:name="com.estimote.proximity_sdk.api.TriggerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.estimote.proximity_trigger"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="@string/firebasePerformance"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <provider android:authorities="th.co.gofive.empeo.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="th.co.prismsolutions.venio2.initializer.FirebaseInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="th.co.prismsolutions.venio2.initializer.SharePreferencesInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="th.co.prismsolutions.venio2.initializer.PhraseInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.huawei.hms.client.channel.androidMarket" android:value="false"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=109857875"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.appcompat.app.AppLocalesMetadataHolderService">
+            <meta-data android:name="autoStoreLocales" android:value="true"/>
+        </service>
+        <activity android:name="com.vincent.filepicker.activity.ImagePickActivity" android:screenOrientation="portrait" android:theme="@style/vw_FilePickerTheme"/>
+        <activity android:hardwareAccelerated="false" android:name="com.vincent.filepicker.activity.ImageBrowserActivity" android:screenOrientation="portrait" android:theme="@style/vw_FilePickerTheme"/>
+        <activity android:name="com.vincent.filepicker.activity.VideoPickActivity" android:screenOrientation="portrait" android:theme="@style/vw_FilePickerTheme"/>
+        <activity android:name="com.vincent.filepicker.activity.AudioPickActivity" android:screenOrientation="portrait" android:theme="@style/vw_FilePickerTheme"/>
+        <activity android:name="com.vincent.filepicker.activity.NormalFilePickActivity" android:screenOrientation="portrait" android:theme="@style/vw_FilePickerTheme"/>
+        <activity android:exported="true" android:name="com.shaon2016.propicker.pro_image_picker.ui.ProPickerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="true" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="com.rtchagas.pingplacepicker.ui.PlacePickerActivity" android:theme="@style/PingTheme.NoStatus"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="th.co.gofive.feature.workin.ui.WorkInCameraActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MyApplication"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="im.crisp.client.ChatActivity" android:theme="@style/CrispTheme.NoActionBar.Blue"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:exported="false" android:name="org.altbeacon.beacon.startup.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:isolatedProcess="false" android:label="beacon" android:name="org.altbeacon.beacon.service.BeaconService"/>
+        <service android:enabled="true" android:exported="false" android:name="org.altbeacon.beacon.BeaconIntentProcessor"/>
+        <service android:exported="false" android:name="org.altbeacon.beacon.service.ScanJob" android:permission="android.permission.BIND_JOB_SERVICE">
+            <meta-data android:name="immediateScanJobId" android:value="208352939"/>
+            <meta-data android:name="periodicScanJobId" android:value="208352940"/>
+        </service>
+        <service android:exported="false" android:name="org.altbeacon.bluetooth.BluetoothTestJob" android:permission="android.permission.BIND_JOB_SERVICE">
+            <meta-data android:name="jobId" android:value="1799803768"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.auth0.android.provider.AuthenticationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.auth0.android.provider.RedirectActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="login.gofive.co.th/connect" android:pathPrefix="/android/th.co.gofive.empeo/callback" android:scheme="empeo"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <service android:exported="false" android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"/>
+        <service android:exported="false" android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"/>
+        <service android:exported="false" android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="false" android:exported="@bool/enable_gcm_scheduler_default" android:name="androidx.work.impl.background.gcm.WorkManagerGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="th.co.gofive.empeo.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService">
+            <intent-filter>
+                <action android:name="com.google.firebase.auth.api.gms.service.START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="th.co.gofive.empeo.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="th.co.gofive.empeo.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="th.co.gofive.empeo.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.huawei.hms.map.version" android:value="6.2.0.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:maps" android:value="maps:6.11.2.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:maps:huawei_module_huaweimaps" android:value="24"/>
+        <provider android:authorities="th.co.gofive.empeo.easyphotopicker.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="pl.aprilapps.easyphotopicker.EasyImageFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/easyimage_filepaths"/>
+        </provider>
+        <meta-data android:name="com.rollbar.android._notifier.version" android:value="1.7.8"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.11.0.302"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:dynamic-api" android:value="dynamic-api:1.0.25.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:dynamic-api:huawei_module_dynamicloader" android:value="11"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="th.co.gofive.empeo.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

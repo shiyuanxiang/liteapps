@@ -1,0 +1,18 @@
+package: com.spotify.lite
+uses-permission: name='android.permission.READ_PHONE_STATE' maxSdkVersion='22'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'
+uses-permission-sdk-23: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+permission: com.spotify.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.spotify.lite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+uses-permission: name='com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE'

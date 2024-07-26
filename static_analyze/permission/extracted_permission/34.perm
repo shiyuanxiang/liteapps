@@ -1,0 +1,14 @@
+package: com.dinux.Digitaltvlivelite
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.google.android.c2dm.permission.RECEIVE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_ATTRIBUTION'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_TOPICS'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+permission: com.dinux.Digitaltvlivelite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.dinux.Digitaltvlivelite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

@@ -1,0 +1,1782 @@
+- [layout] apk: 1.apk
+-- [dir_size] layout-watch: 1138
+-- [dir_size] layout.2: 7972
+-- [root_tag] Layout: 12
+-- [root_tag] Unknown: 4
+-- [component_type] Button: 4
+-- [component_type] Image View: 4
+-- [component_type] Layout: 4
+-- [component_type] Text Control: 1
+-- [component_type] Unknown: 3
+-- [text] filled: 16
+-- [text] nan: 0
+- [layout] apk: 2.apk
+-- [dir_size] layout: 35866
+-- [root_tag] Layout: 108
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 1
+-- [component_type] Display Control: 1
+-- [component_type] Image View: 36
+-- [component_type] Layout: 42
+-- [component_type] Text Control: 24
+-- [component_type] Unknown: 3
+-- [text] filled: 108
+-- [text] nan: 0
+- [layout] apk: 3.apk
+-- [dir_size] layout: 4313433
+-- [dir_size] layout-land: 9387
+-- [dir_size] layout-land-v17: 9135
+-- [dir_size] layout-ldrtl-v17: 627
+-- [dir_size] layout-v17: 3254480
+-- [dir_size] layout-v21: 64276
+-- [dir_size] layout-v22: 1009587
+-- [dir_size] layout-v26: 1684
+-- [dir_size] layout-watch-v20: 2094
+-- [root_tag] Button: 6
+-- [root_tag] Layout: 25297
+-- [root_tag] Text Control: 2
+-- [root_tag] Unknown: 3244
+-- [component_type] Advanced View: 6
+-- [component_type] Button: 561
+-- [component_type] Display Control: 370
+-- [component_type] Image View: 6470
+-- [component_type] Input Control: 63
+-- [component_type] Layout: 8842
+-- [component_type] Picker: 7
+-- [component_type] Text Control: 8516
+-- [component_type] Unknown: 3714
+-- [text] filled: 28549
+-- [text] nan: 0
+- [layout] apk: 4.apk
+-- [dir_size] layout: 4228969
+-- [dir_size] layout-land: 9373
+-- [dir_size] layout-land-v17: 9114
+-- [dir_size] layout-ldrtl-v17: 627
+-- [dir_size] layout-v17: 3150459
+-- [dir_size] layout-v21: 64202
+-- [dir_size] layout-v22: 1006085
+-- [dir_size] layout-v26: 1684
+-- [dir_size] layout-watch-v20: 2093
+-- [root_tag] Button: 6
+-- [root_tag] Layout: 25061
+-- [root_tag] Text Control: 2
+-- [root_tag] Unknown: 2989
+-- [component_type] Advanced View: 6
+-- [component_type] Button: 554
+-- [component_type] Display Control: 370
+-- [component_type] Image View: 6336
+-- [component_type] Input Control: 63
+-- [component_type] Layout: 8796
+-- [component_type] Picker: 7
+-- [component_type] Text Control: 8266
+-- [component_type] Unknown: 3660
+-- [text] filled: 28058
+-- [text] nan: 0
+- [layout] apk: 5.apk
+-- [dir_size] layout: 1745470
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4813
+-- [root_tag] Unknown: 220
+-- [component_type] Advanced View: 5
+-- [component_type] Button: 130
+-- [component_type] Display Control: 17
+-- [component_type] Image View: 1061
+-- [component_type] Input Control: 5
+-- [component_type] Layout: 1208
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 1516
+-- [component_type] Unknown: 1092
+-- [text] filled: 5037
+-- [text] nan: 0
+- [layout] apk: 6.apk
+-- [dir_size] layout: 803093
+-- [dir_size] layout-land: 17191
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-sw600dp: 1430
+-- [dir_size] layout-sw600dp-land: 927
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w270dp-h560dp: 713
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2217
+-- [root_tag] Unknown: 160
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 93
+-- [component_type] Display Control: 26
+-- [component_type] Image View: 454
+-- [component_type] Input Control: 2
+-- [component_type] Layout: 556
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 749
+-- [component_type] Unknown: 494
+-- [text] filled: 2381
+-- [text] nan: 0
+- [layout] apk: 7.apk
+-- [dir_size] layout: 4510642
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-sw600dp: 3665
+-- [dir_size] layout-tr: 4473
+-- [dir_size] layout-tr-v22: 4641
+-- [dir_size] layout-v22: 2217020
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 14753
+-- [root_tag] Text Control: 22
+-- [root_tag] Unknown: 2431
+-- [component_type] Advanced View: 15
+-- [component_type] Button: 362
+-- [component_type] Display Control: 101
+-- [component_type] Image View: 3874
+-- [component_type] Input Control: 38
+-- [component_type] Layout: 4015
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 6736
+-- [component_type] Unknown: 2064
+-- [text] filled: 17210
+-- [text] nan: 0
+- [layout] apk: 8.apk
+-- [dir_size] layout: 4471155
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-sw600dp: 3665
+-- [dir_size] layout-tr: 4473
+-- [dir_size] layout-tr-v22: 4641
+-- [dir_size] layout-v22: 2201864
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 14660
+-- [root_tag] Text Control: 22
+-- [root_tag] Unknown: 2391
+-- [component_type] Advanced View: 15
+-- [component_type] Button: 362
+-- [component_type] Display Control: 101
+-- [component_type] Image View: 3849
+-- [component_type] Input Control: 38
+-- [component_type] Layout: 3985
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 6675
+-- [component_type] Unknown: 2047
+-- [text] filled: 17077
+-- [text] nan: 0
+- [layout] apk: 9.apk
+-- [dir_size] layout: 1116854
+-- [dir_size] layout-h500dp: 7034
+-- [dir_size] layout-h700dp: 1015
+-- [dir_size] layout-land: 6488
+-- [dir_size] layout-sw321dp: 7411
+-- [dir_size] layout-sw400dp: 7260
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2624
+-- [root_tag] Unknown: 366
+-- [component_type] Button: 348
+-- [component_type] Display Control: 19
+-- [component_type] Image View: 325
+-- [component_type] Input Control: 7
+-- [component_type] Layout: 711
+-- [component_type] Picker: 8
+-- [component_type] Text Control: 787
+-- [component_type] Unknown: 789
+-- [text] filled: 2994
+-- [text] nan: 0
+- [layout] apk: 10.apk
+-- [dir_size] layout: 465881
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw321dp: 10777
+-- [dir_size] layout-sw400dp: 7198
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1003
+-- [root_tag] Unknown: 196
+-- [component_type] Button: 135
+-- [component_type] Display Control: 8
+-- [component_type] Image View: 151
+-- [component_type] Input Control: 4
+-- [component_type] Layout: 258
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 322
+-- [component_type] Unknown: 321
+-- [text] filled: 1203
+-- [text] nan: 0
+- [layout] apk: 11.apk
+-- [dir_size] layout: 2521115
+-- [dir_size] layout-land: 121680
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-sw585dp: 11851
+-- [dir_size] layout-sw585dp-land: 5219
+-- [dir_size] layout-sw600dp: 60194
+-- [dir_size] layout-sw600dp-land: 45265
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 6
+-- [root_tag] Layout: 6049
+-- [root_tag] Text Control: 7
+-- [root_tag] Unknown: 674
+-- [component_type] Advanced View: 25
+-- [component_type] Button: 762
+-- [component_type] Display Control: 112
+-- [component_type] Image View: 724
+-- [component_type] Input Control: 13
+-- [component_type] Layout: 1953
+-- [component_type] Picker: 7
+-- [component_type] Text Control: 1845
+-- [component_type] Unknown: 1295
+-- [text] filled: 6736
+-- [text] nan: 0
+- [layout] apk: 12.apk
+-- [dir_size] layout: 194221
+-- [dir_size] layout-land: 11656
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 446
+-- [root_tag] Unknown: 64
+-- [component_type] Advanced View: 6
+-- [component_type] Button: 79
+-- [component_type] Display Control: 14
+-- [component_type] Image View: 57
+-- [component_type] Layout: 92
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 134
+-- [component_type] Unknown: 129
+-- [text] filled: 514
+-- [text] nan: 0
+- [layout] apk: 13.apk
+-- [dir_size] layout: 4329199
+-- [dir_size] layout-hdpi: 6902
+-- [dir_size] layout-land: 66340
+-- [dir_size] layout-ldrtl: 2493
+-- [dir_size] layout-v22: 183778
+-- [dir_size] layout-v26: 1557
+-- [dir_size] layout-v31: 3008
+-- [dir_size] layout-watch: 1910
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 13188
+-- [root_tag] Unknown: 1232
+-- [component_type] Advanced View: 23
+-- [component_type] Button: 228
+-- [component_type] Display Control: 116
+-- [component_type] Image View: 2947
+-- [component_type] Input Control: 26
+-- [component_type] Layout: 3023
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 4698
+-- [component_type] Unknown: 3358
+-- [text] filled: 14424
+-- [text] nan: 0
+- [layout] apk: 14.apk
+-- [dir_size] layout: 635003
+-- [dir_size] layout-land: 3255
+-- [dir_size] layout-ldrtl: 2673
+-- [dir_size] layout-v21: 16731
+-- [dir_size] layout-v22: 15785
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-v31: 4226
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Layout: 1790
+-- [root_tag] Unknown: 105
+-- [component_type] Advanced View: 4
+-- [component_type] Button: 64
+-- [component_type] Display Control: 32
+-- [component_type] Image View: 314
+-- [component_type] Input Control: 4
+-- [component_type] Layout: 513
+-- [component_type] Text Control: 584
+-- [component_type] Unknown: 380
+-- [text] filled: 1895
+-- [text] nan: 0
+- [layout] apk: 15.apk
+-- [dir_size] layout: 1287463
+-- [dir_size] layout-land: 23519
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-v26: 4719
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2608
+-- [root_tag] Unknown: 554
+-- [component_type] Advanced View: 7
+-- [component_type] Button: 114
+-- [component_type] Display Control: 44
+-- [component_type] Image View: 539
+-- [component_type] Input Control: 13
+-- [component_type] Layout: 693
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 1189
+-- [component_type] Unknown: 563
+-- [text] filled: 3166
+-- [text] nan: 0
+- [layout] apk: 16.apk
+-- [dir_size] layout: 928313
+-- [dir_size] layout-land: 1517
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 1789
+-- [root_tag] Unknown: 790
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 154
+-- [component_type] Display Control: 33
+-- [component_type] Image View: 343
+-- [component_type] Input Control: 4
+-- [component_type] Layout: 823
+-- [component_type] Text Control: 772
+-- [component_type] Unknown: 447
+-- [text] filled: 2579
+-- [text] nan: 0
+- [layout] apk: 17.apk
+-- [dir_size] layout: 8988321
+-- [dir_size] layout-land: 47210
+-- [dir_size] layout-land-v22: 9053
+-- [dir_size] layout-ldrtl: 6559
+-- [dir_size] layout-v22: 3121562
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 12
+-- [root_tag] Layout: 31867
+-- [root_tag] Unknown: 2438
+-- [component_type] Advanced View: 13
+-- [component_type] Button: 958
+-- [component_type] Display Control: 227
+-- [component_type] Image View: 6459
+-- [component_type] Input Control: 75
+-- [component_type] Layout: 10396
+-- [component_type] Picker: 9
+-- [component_type] Text Control: 9475
+-- [component_type] Unknown: 6705
+-- [text] filled: 34317
+-- [text] nan: 0
+- [layout] apk: 18.apk
+-- [dir_size] layout: 8988315
+-- [dir_size] layout-land: 47210
+-- [dir_size] layout-land-v22: 9053
+-- [dir_size] layout-ldrtl: 6559
+-- [dir_size] layout-v22: 3121670
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 12
+-- [root_tag] Layout: 31867
+-- [root_tag] Unknown: 2438
+-- [component_type] Advanced View: 13
+-- [component_type] Button: 958
+-- [component_type] Display Control: 227
+-- [component_type] Image View: 6459
+-- [component_type] Input Control: 75
+-- [component_type] Layout: 10394
+-- [component_type] Picker: 9
+-- [component_type] Text Control: 9475
+-- [component_type] Unknown: 6707
+-- [text] filled: 34317
+-- [text] nan: 0
+- [layout] apk: 19.apk
+-- [dir_size] layout: 4674582
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 1977
+-- [dir_size] layout-v22: 1166106
+-- [dir_size] layout-v26: 4069
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 14735
+-- [root_tag] Unknown: 446
+-- [component_type] Advanced View: 9
+-- [component_type] Button: 316
+-- [component_type] Display Control: 113
+-- [component_type] Image View: 3617
+-- [component_type] Input Control: 26
+-- [component_type] Layout: 4245
+-- [component_type] Picker: 12
+-- [component_type] Text Control: 4409
+-- [component_type] Unknown: 2438
+-- [text] filled: 15185
+-- [text] nan: 0
+- [layout] apk: 20.apk
+-- [dir_size] layout: 4622848
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 1977
+-- [dir_size] layout-v22: 1114811
+-- [dir_size] layout-v26: 4069
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 14509
+-- [root_tag] Unknown: 446
+-- [component_type] Advanced View: 9
+-- [component_type] Button: 316
+-- [component_type] Display Control: 109
+-- [component_type] Image View: 3572
+-- [component_type] Input Control: 26
+-- [component_type] Layout: 4184
+-- [component_type] Picker: 12
+-- [component_type] Text Control: 4326
+-- [component_type] Unknown: 2405
+-- [text] filled: 14959
+-- [text] nan: 0
+- [layout] apk: 21.apk
+-- [dir_size] layout: 38848
+-- [dir_size] layout-v26: 1323
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 83
+-- [root_tag] Unknown: 16
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 6
+-- [component_type] Display Control: 1
+-- [component_type] Image View: 21
+-- [component_type] Layout: 24
+-- [component_type] Text Control: 21
+-- [component_type] Unknown: 25
+-- [text] filled: 99
+-- [text] nan: 0
+- [layout] apk: 22.apk
+-- [dir_size] layout: 156116
+-- [dir_size] layout-land: 39940
+-- [dir_size] layout-sw600dp: 12221
+-- [dir_size] layout-sw600dp-land: 12552
+-- [dir_size] layout-v22: 1450
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 517
+-- [root_tag] Unknown: 109
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 90
+-- [component_type] Display Control: 10
+-- [component_type] Image View: 117
+-- [component_type] Layout: 199
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 115
+-- [component_type] Unknown: 94
+-- [text] filled: 630
+-- [text] nan: 0
+- [layout] apk: 25.apk
+-- [dir_size] layout: 69012
+-- [dir_size] layout-v22: 1362
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 168
+-- [root_tag] Unknown: 23
+-- [component_type] Button: 11
+-- [component_type] Display Control: 7
+-- [component_type] Image View: 36
+-- [component_type] Layout: 52
+-- [component_type] Text Control: 38
+-- [component_type] Unknown: 47
+-- [text] filled: 191
+-- [text] nan: 0
+- [layout] apk: 26.apk
+-- [dir_size] layout: 69012
+-- [dir_size] layout-v22: 1362
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 168
+-- [root_tag] Unknown: 23
+-- [component_type] Button: 11
+-- [component_type] Display Control: 7
+-- [component_type] Image View: 36
+-- [component_type] Layout: 52
+-- [component_type] Text Control: 38
+-- [component_type] Unknown: 47
+-- [text] filled: 191
+-- [text] nan: 0
+- [layout] apk: 27.apk
+-- [dir_size] layout: 585767
+-- [dir_size] layout-land: 24426
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1579
+-- [root_tag] Unknown: 260
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 143
+-- [component_type] Display Control: 8
+-- [component_type] Image View: 249
+-- [component_type] Input Control: 27
+-- [component_type] Layout: 664
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 538
+-- [component_type] Unknown: 208
+-- [text] filled: 1843
+-- [text] nan: 0
+- [layout] apk: 28.apk
+-- [dir_size] layout: 1247334
+-- [dir_size] layout-land: 24426
+-- [dir_size] layout-v22: 228582
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 3993
+-- [root_tag] Unknown: 296
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 323
+-- [component_type] Display Control: 35
+-- [component_type] Image View: 556
+-- [component_type] Input Control: 42
+-- [component_type] Layout: 1602
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 1292
+-- [component_type] Unknown: 435
+-- [text] filled: 4293
+-- [text] nan: 0
+- [layout] apk: 29.apk
+-- [dir_size] layout: 439211
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1122
+-- [root_tag] Unknown: 220
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 144
+-- [component_type] Display Control: 31
+-- [component_type] Image View: 278
+-- [component_type] Input Control: 3
+-- [component_type] Layout: 406
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 295
+-- [component_type] Unknown: 184
+-- [text] filled: 1346
+-- [text] nan: 0
+- [layout] apk: 30.apk
+-- [dir_size] layout: 439211
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1122
+-- [root_tag] Unknown: 220
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 144
+-- [component_type] Display Control: 31
+-- [component_type] Image View: 278
+-- [component_type] Input Control: 3
+-- [component_type] Layout: 406
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 295
+-- [component_type] Unknown: 184
+-- [text] filled: 1346
+-- [text] nan: 0
+- [layout] apk: 31.apk
+-- [dir_size] layout: 555416
+-- [dir_size] layout-h640dp: 7007
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1346
+-- [root_tag] Unknown: 293
+-- [component_type] Advanced View: 4
+-- [component_type] Button: 135
+-- [component_type] Display Control: 26
+-- [component_type] Image View: 198
+-- [component_type] Layout: 442
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 449
+-- [component_type] Unknown: 385
+-- [text] filled: 1643
+-- [text] nan: 0
+- [layout] apk: 32.apk
+-- [dir_size] layout: 679741
+-- [dir_size] layout-h640dp: 7007
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1716
+-- [root_tag] Unknown: 296
+-- [component_type] Advanced View: 4
+-- [component_type] Button: 167
+-- [component_type] Display Control: 26
+-- [component_type] Image View: 205
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 552
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 583
+-- [component_type] Unknown: 474
+-- [text] filled: 2016
+-- [text] nan: 0
+- [layout] apk: 33.apk
+-- [dir_size] layout: 119047
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v22: 13437
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 264
+-- [root_tag] Unknown: 100
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 43
+-- [component_type] Display Control: 1
+-- [component_type] Image View: 42
+-- [component_type] Layout: 110
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 64
+-- [component_type] Unknown: 101
+-- [text] filled: 368
+-- [text] nan: 0
+- [layout] apk: 34.apk
+-- [dir_size] layout: 119623
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v22: 13437
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 266
+-- [root_tag] Unknown: 100
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 43
+-- [component_type] Display Control: 2
+-- [component_type] Image View: 43
+-- [component_type] Layout: 110
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 64
+-- [component_type] Unknown: 101
+-- [text] filled: 370
+-- [text] nan: 0
+- [layout] apk: 35.apk
+-- [dir_size] layout: 13142059
+-- [dir_size] layout-land: 8376
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw600dp: 8380
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 30
+-- [root_tag] Image View: 4
+-- [root_tag] Layout: 37745
+-- [root_tag] Unknown: 2681
+-- [component_type] Advanced View: 51
+-- [component_type] Button: 1902
+-- [component_type] Display Control: 433
+-- [component_type] Image View: 6073
+-- [component_type] Input Control: 170
+-- [component_type] Layout: 14169
+-- [component_type] Picker: 26
+-- [component_type] Text Control: 10970
+-- [component_type] Unknown: 6666
+-- [text] filled: 40460
+-- [text] nan: 0
+- [layout] apk: 36.apk
+-- [dir_size] layout: 13149904
+-- [dir_size] layout-land: 8376
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw600dp: 8380
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 30
+-- [root_tag] Image View: 4
+-- [root_tag] Layout: 37767
+-- [root_tag] Unknown: 2682
+-- [component_type] Advanced View: 51
+-- [component_type] Button: 1907
+-- [component_type] Display Control: 434
+-- [component_type] Image View: 6075
+-- [component_type] Input Control: 170
+-- [component_type] Layout: 14173
+-- [component_type] Picker: 26
+-- [component_type] Text Control: 10980
+-- [component_type] Unknown: 6667
+-- [text] filled: 40483
+-- [text] nan: 0
+- [layout] apk: 37.apk
+-- [dir_size] layout: 579783
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-v22: 183890
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2175
+-- [root_tag] Unknown: 149
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 74
+-- [component_type] Display Control: 13
+-- [component_type] Image View: 473
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 728
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 732
+-- [component_type] Unknown: 300
+-- [text] filled: 2328
+-- [text] nan: 0
+- [layout] apk: 38.apk
+-- [dir_size] layout: 579769
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-v22: 183888
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2175
+-- [root_tag] Unknown: 149
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 74
+-- [component_type] Display Control: 13
+-- [component_type] Image View: 473
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 728
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 732
+-- [component_type] Unknown: 300
+-- [text] filled: 2328
+-- [text] nan: 0
+- [layout] apk: 39.apk
+-- [dir_size] layout: 5818810
+-- [dir_size] layout-land: 16928
+-- [dir_size] layout-ldrtl: 2675
+-- [dir_size] layout-sw600dp: 1430
+-- [dir_size] layout-sw600dp-land: 927
+-- [dir_size] layout-w270dp-h560dp: 713
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 16549
+-- [root_tag] Unknown: 134
+-- [component_type] Advanced View: 30
+-- [component_type] Button: 633
+-- [component_type] Display Control: 147
+-- [component_type] Image View: 2091
+-- [component_type] Input Control: 8
+-- [component_type] Layout: 7013
+-- [component_type] Picker: 7
+-- [component_type] Text Control: 5129
+-- [component_type] Unknown: 1629
+-- [text] filled: 16687
+-- [text] nan: 0
+- [layout] apk: 40.apk
+-- [dir_size] layout: 186621
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v22: 74981
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 707
+-- [root_tag] Unknown: 62
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 138
+-- [component_type] Display Control: 4
+-- [component_type] Image View: 62
+-- [component_type] Input Control: 5
+-- [component_type] Layout: 244
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 160
+-- [component_type] Unknown: 154
+-- [text] filled: 773
+-- [text] nan: 0
+- [layout] apk: 41.apk
+-- [dir_size] layout: 1100221
+-- [dir_size] layout-land: 32693
+-- [dir_size] layout-v22: 323285
+-- [dir_size] layout-v23: 514
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 3824
+-- [root_tag] Unknown: 429
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 272
+-- [component_type] Display Control: 58
+-- [component_type] Image View: 964
+-- [component_type] Input Control: 3
+-- [component_type] Layout: 1138
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 1161
+-- [component_type] Unknown: 653
+-- [text] filled: 4257
+-- [text] nan: 0
+- [layout] apk: 42.apk
+-- [dir_size] layout: 1100221
+-- [dir_size] layout-land: 32693
+-- [dir_size] layout-v22: 323285
+-- [dir_size] layout-v23: 514
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 3824
+-- [root_tag] Unknown: 429
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 272
+-- [component_type] Display Control: 58
+-- [component_type] Image View: 964
+-- [component_type] Input Control: 3
+-- [component_type] Layout: 1138
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 1161
+-- [component_type] Unknown: 653
+-- [text] filled: 4257
+-- [text] nan: 0
+- [layout] apk: 43.apk
+-- [dir_size] layout: 276649
+-- [dir_size] layout-sw600dp: 2975
+-- [dir_size] layout-v22: 45263
+-- [dir_size] layout-v23: 460
+-- [root_tag] Layout: 916
+-- [root_tag] Unknown: 120
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 119
+-- [component_type] Display Control: 29
+-- [component_type] Image View: 213
+-- [component_type] Layout: 338
+-- [component_type] Text Control: 237
+-- [component_type] Unknown: 98
+-- [text] filled: 1036
+-- [text] nan: 0
+- [layout] apk: 44.apk
+-- [dir_size] layout: 276649
+-- [dir_size] layout-sw600dp: 2975
+-- [dir_size] layout-v22: 45263
+-- [dir_size] layout-v23: 460
+-- [root_tag] Layout: 916
+-- [root_tag] Unknown: 120
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 119
+-- [component_type] Display Control: 29
+-- [component_type] Image View: 213
+-- [component_type] Layout: 338
+-- [component_type] Text Control: 237
+-- [component_type] Unknown: 98
+-- [text] filled: 1036
+-- [text] nan: 0
+- [layout] apk: 45.apk
+-- [dir_size] layout: 10385540
+-- [dir_size] layout-h726dp: 1797
+-- [dir_size] layout-land: 16126
+-- [dir_size] layout-land-v22: 7129
+-- [dir_size] layout-ldrtl: 538
+-- [dir_size] layout-sw321dp: 2656
+-- [dir_size] layout-v22: 2976058
+-- [dir_size] layout-v26: 5260
+-- [dir_size] layout-watch: 1761
+-- [root_tag] Button: 3
+-- [root_tag] Input Control: 64
+-- [root_tag] Layout: 46415
+-- [root_tag] Unknown: 6403
+-- [component_type] Advanced View: 26
+-- [component_type] Button: 145
+-- [component_type] Display Control: 38
+-- [component_type] Image View: 2690
+-- [component_type] Input Control: 10
+-- [component_type] Layout: 13337
+-- [component_type] Text Control: 8800
+-- [component_type] Unknown: 27839
+-- [text] filled: 52885
+-- [text] nan: 0
+- [layout] apk: 47.apk
+-- [dir_size] layout: 3803906
+-- [dir_size] layout-h400dp: 8444
+-- [dir_size] layout-h400dp-v22: 4302
+-- [dir_size] layout-h600dp: 6218
+-- [dir_size] layout-land: 112747
+-- [dir_size] layout-land-v22: 31782
+-- [dir_size] layout-sw600dp: 12211
+-- [dir_size] layout-sw600dp-land: 18226
+-- [dir_size] layout-sw720dp: 6686
+-- [dir_size] layout-sw720dp-land: 6425
+-- [dir_size] layout-v22: 1513602
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w600dp: 4201
+-- [dir_size] layout-w600dp-h528dp: 38995
+-- [dir_size] layout-w600dp-h528dp-v22: 38189
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Image View: 7
+-- [root_tag] Layout: 10136
+-- [root_tag] Unknown: 1236
+-- [component_type] Advanced View: 43
+-- [component_type] Button: 1343
+-- [component_type] Display Control: 159
+-- [component_type] Image View: 839
+-- [component_type] Input Control: 47
+-- [component_type] Layout: 2501
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 3339
+-- [component_type] Unknown: 3108
+-- [text] filled: 11383
+-- [text] nan: 0
+- [layout] apk: 48.apk
+-- [dir_size] layout: 494959
+-- [dir_size] layout-land: 31350
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 59069
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1111
+-- [root_tag] Unknown: 195
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 126
+-- [component_type] Display Control: 37
+-- [component_type] Image View: 98
+-- [component_type] Input Control: 10
+-- [component_type] Layout: 322
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 376
+-- [component_type] Unknown: 332
+-- [text] filled: 1310
+-- [text] nan: 0
+- [layout] apk: 49.apk
+-- [dir_size] layout: 133616
+-- [dir_size] layout-land: 6805
+-- [dir_size] layout-port: 1146
+-- [dir_size] layout-v22: 9079
+-- [dir_size] layout-v26: 1323
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 393
+-- [root_tag] Unknown: 33
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 50
+-- [component_type] Display Control: 18
+-- [component_type] Image View: 57
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 117
+-- [component_type] Text Control: 116
+-- [component_type] Unknown: 66
+-- [text] filled: 426
+-- [text] nan: 0
+- [layout] apk: 50.apk
+-- [dir_size] layout: 992979
+-- [dir_size] layout-land: 7653
+-- [dir_size] layout-land-v22: 3568
+-- [dir_size] layout-v22: 524120
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4253
+-- [root_tag] Unknown: 147
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 171
+-- [component_type] Display Control: 69
+-- [component_type] Image View: 693
+-- [component_type] Input Control: 12
+-- [component_type] Layout: 1232
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 1644
+-- [component_type] Unknown: 576
+-- [text] filled: 4404
+-- [text] nan: 0
+- [layout] apk: 51.apk
+-- [dir_size] layout: 284044
+-- [dir_size] layout-land: 9735
+-- [dir_size] layout-ldrtl: 618
+-- [dir_size] layout-v22: 6310
+-- [dir_size] layout-v26: 1676
+-- [dir_size] layout-watch: 2089
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1151
+-- [root_tag] Unknown: 74
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 115
+-- [component_type] Display Control: 13
+-- [component_type] Image View: 79
+-- [component_type] Input Control: 26
+-- [component_type] Layout: 420
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 418
+-- [component_type] Unknown: 151
+-- [text] filled: 1229
+-- [text] nan: 0
+- [layout] apk: 52.apk
+-- [dir_size] layout: 248258
+-- [dir_size] layout-land: 11630
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v21: 10333
+-- [dir_size] layout-v22: 7801
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 912
+-- [root_tag] Unknown: 78
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 119
+-- [component_type] Display Control: 8
+-- [component_type] Image View: 84
+-- [component_type] Input Control: 11
+-- [component_type] Layout: 302
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 308
+-- [component_type] Unknown: 156
+-- [text] filled: 994
+-- [text] nan: 0
+- [layout] apk: 53.apk
+-- [dir_size] layout: 395246
+-- [dir_size] layout-land: 65638
+-- [dir_size] layout-land-v22: 10830
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v21: 33237
+-- [dir_size] layout-v22: 35649
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1424
+-- [root_tag] Unknown: 192
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 148
+-- [component_type] Display Control: 12
+-- [component_type] Image View: 197
+-- [component_type] Input Control: 30
+-- [component_type] Layout: 480
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 505
+-- [component_type] Unknown: 241
+-- [text] filled: 1620
+-- [text] nan: 0
+- [layout] apk: 54.apk
+-- [dir_size] layout: 238764
+-- [dir_size] layout-land: 11630
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v21: 29669
+-- [dir_size] layout-v22: 7801
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 938
+-- [root_tag] Unknown: 78
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 124
+-- [component_type] Display Control: 9
+-- [component_type] Image View: 82
+-- [component_type] Input Control: 13
+-- [component_type] Layout: 317
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 308
+-- [component_type] Unknown: 161
+-- [text] filled: 1020
+-- [text] nan: 0
+- [layout] apk: 55.apk
+-- [dir_size] layout: 487283
+-- [dir_size] layout-land: 15074
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw600dp: 3665
+-- [dir_size] layout-v22: 46557
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1211
+-- [root_tag] Unknown: 310
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 135
+-- [component_type] Display Control: 42
+-- [component_type] Image View: 307
+-- [component_type] Input Control: 5
+-- [component_type] Layout: 488
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 331
+-- [component_type] Unknown: 209
+-- [text] filled: 1525
+-- [text] nan: 0
+- [layout] apk: 56.apk
+-- [dir_size] layout: 399698
+-- [dir_size] layout-land: 15074
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw600dp: 3665
+-- [dir_size] layout-v22: 44478
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1137
+-- [root_tag] Unknown: 174
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 130
+-- [component_type] Display Control: 38
+-- [component_type] Image View: 255
+-- [component_type] Input Control: 4
+-- [component_type] Layout: 431
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 267
+-- [component_type] Unknown: 182
+-- [text] filled: 1315
+-- [text] nan: 0
+- [layout] apk: 57.apk
+-- [dir_size] layout: 901382
+-- [dir_size] layout-ar: 36899
+-- [dir_size] layout-fa: 38386
+-- [dir_size] layout-iw: 38441
+-- [dir_size] layout-land: 22574
+-- [dir_size] layout-ldpi: 661
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-sw480dp: 1296
+-- [dir_size] layout-sw480dp-land: 1265
+-- [dir_size] layout-sw720dp: 1265
+-- [dir_size] layout-sw720dp-land: 1265
+-- [dir_size] layout-ur: 38441
+-- [dir_size] layout-v22: 93444
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Advanced View: 10
+-- [root_tag] Button: 4
+-- [root_tag] Input Control: 3
+-- [root_tag] Layout: 2862
+-- [root_tag] Unknown: 480
+-- [component_type] Advanced View: 4
+-- [component_type] Button: 275
+-- [component_type] Display Control: 28
+-- [component_type] Image View: 611
+-- [component_type] Input Control: 18
+-- [component_type] Layout: 1072
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 747
+-- [component_type] Unknown: 599
+-- [text] filled: 3359
+-- [text] nan: 0
+- [layout] apk: 58.apk
+-- [dir_size] layout: 774849
+-- [dir_size] layout-ar: 37567
+-- [dir_size] layout-ar-v21: 9399
+-- [dir_size] layout-fa: 39105
+-- [dir_size] layout-fa-v21: 9399
+-- [dir_size] layout-iw: 39105
+-- [dir_size] layout-iw-v21: 9399
+-- [dir_size] layout-land: 16544
+-- [dir_size] layout-ldpi-v4: 661
+-- [dir_size] layout-sw480dp-land-v13: 788
+-- [dir_size] layout-sw480dp-v13: 819
+-- [dir_size] layout-sw720dp-land-v13: 788
+-- [dir_size] layout-sw720dp-v13: 788
+-- [dir_size] layout-ur: 39109
+-- [dir_size] layout-ur-v21: 9399
+-- [dir_size] layout-v16: 3416
+-- [dir_size] layout-v17: 52337
+-- [dir_size] layout-v21: 19651
+-- [dir_size] layout-v22: 1382
+-- [dir_size] layout-v26: 1337
+-- [dir_size] layout-watch-v20: 2270
+-- [root_tag] Advanced View: 10
+-- [root_tag] Input Control: 3
+-- [root_tag] Layout: 2625
+-- [root_tag] Unknown: 500
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 155
+-- [component_type] Display Control: 28
+-- [component_type] Image View: 667
+-- [component_type] Input Control: 18
+-- [component_type] Layout: 1062
+-- [component_type] Text Control: 669
+-- [component_type] Unknown: 536
+-- [text] filled: 3138
+-- [text] nan: 0
+- [layout] apk: 59.apk
+-- [dir_size] layout: 865380
+-- [dir_size] layout-land: 4382
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 60919
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2326
+-- [root_tag] Unknown: 611
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 239
+-- [component_type] Display Control: 42
+-- [component_type] Image View: 457
+-- [component_type] Input Control: 20
+-- [component_type] Layout: 1009
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 787
+-- [component_type] Unknown: 379
+-- [text] filled: 2941
+-- [text] nan: 0
+- [layout] apk: 60.apk
+-- [dir_size] layout: 865191
+-- [dir_size] layout-land: 4382
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 64608
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2328
+-- [root_tag] Unknown: 611
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 240
+-- [component_type] Display Control: 42
+-- [component_type] Image View: 459
+-- [component_type] Input Control: 20
+-- [component_type] Layout: 1006
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 787
+-- [component_type] Unknown: 381
+-- [text] filled: 2943
+-- [text] nan: 0
+- [layout] apk: 61.apk
+-- [dir_size] layout: 5911763
+-- [dir_size] layout-800x480: 20693
+-- [dir_size] layout-land: 94676
+-- [dir_size] layout-ldrtl: 1450
+-- [dir_size] layout-sw600dp-hdpi: 647
+-- [dir_size] layout-v22: 305656
+-- [dir_size] layout-v26: 1053
+-- [dir_size] layout-watch: 1910
+-- [root_tag] Layout: 20339
+-- [root_tag] Text Control: 1
+-- [root_tag] Unknown: 1092
+-- [component_type] Advanced View: 27
+-- [component_type] Button: 632
+-- [component_type] Display Control: 209
+-- [component_type] Image View: 4107
+-- [component_type] Input Control: 38
+-- [component_type] Layout: 4953
+-- [component_type] Text Control: 6730
+-- [component_type] Unknown: 4736
+-- [text] filled: 21432
+-- [text] nan: 0
+- [layout] apk: 63.apk
+-- [dir_size] layout: 1565383
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-ldrtl: 2675
+-- [dir_size] layout-v22: 40961
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 3955
+-- [root_tag] Unknown: 679
+-- [component_type] Advanced View: 5
+-- [component_type] Button: 111
+-- [component_type] Display Control: 27
+-- [component_type] Image View: 1272
+-- [component_type] Input Control: 2
+-- [component_type] Layout: 1239
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 1263
+-- [component_type] Unknown: 713
+-- [text] filled: 4638
+-- [text] nan: 0
+- [layout] apk: 64.apk
+-- [dir_size] layout: 1464054
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-ldrtl: 2675
+-- [dir_size] layout-v22: 36815
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 3736
+-- [root_tag] Unknown: 621
+-- [component_type] Advanced View: 5
+-- [component_type] Button: 84
+-- [component_type] Display Control: 27
+-- [component_type] Image View: 1153
+-- [component_type] Input Control: 2
+-- [component_type] Layout: 1206
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 1214
+-- [component_type] Unknown: 664
+-- [text] filled: 4361
+-- [text] nan: 0
+- [layout] apk: 65.apk
+-- [dir_size] layout: 1528841
+-- [dir_size] layout-land: 9004
+-- [dir_size] layout-ldrtl: 1840
+-- [dir_size] layout-small: 37187
+-- [dir_size] layout-sw300dp: 12170
+-- [dir_size] layout-sw360dp: 12173
+-- [dir_size] layout-sw480dp: 12182
+-- [dir_size] layout-sw600dp: 20262
+-- [dir_size] layout-sw600dp-land: 3385
+-- [dir_size] layout-sw720dp: 12182
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w270dp-h560dp: 871
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4177
+-- [root_tag] Unknown: 924
+-- [component_type] Advanced View: 28
+-- [component_type] Button: 429
+-- [component_type] Display Control: 77
+-- [component_type] Image View: 414
+-- [component_type] Input Control: 50
+-- [component_type] Layout: 1557
+-- [component_type] Picker: 12
+-- [component_type] Text Control: 1961
+-- [component_type] Unknown: 577
+-- [text] filled: 5105
+-- [text] nan: 0
+- [layout] apk: 66.apk
+-- [dir_size] layout: 1035928
+-- [dir_size] layout-land: 8985
+-- [dir_size] layout-land-v17: 3294
+-- [dir_size] layout-ldrtl-v17: 2779
+-- [dir_size] layout-small: 34400
+-- [dir_size] layout-small-v17: 35905
+-- [dir_size] layout-sw300dp: 10902
+-- [dir_size] layout-sw300dp-v17: 12170
+-- [dir_size] layout-sw360dp: 10905
+-- [dir_size] layout-sw360dp-v17: 12173
+-- [dir_size] layout-sw480dp: 10911
+-- [dir_size] layout-sw480dp-v17: 12182
+-- [dir_size] layout-sw600dp: 16016
+-- [dir_size] layout-sw600dp-land: 3385
+-- [dir_size] layout-sw600dp-v17: 12182
+-- [dir_size] layout-sw720dp: 10911
+-- [dir_size] layout-sw720dp-v17: 12182
+-- [dir_size] layout-v16: 42602
+-- [dir_size] layout-v17: 831935
+-- [dir_size] layout-v21: 40890
+-- [dir_size] layout-v22: 35526
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w270dp-h560dp: 871
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 6
+-- [root_tag] Layout: 6222
+-- [root_tag] Unknown: 642
+-- [component_type] Advanced View: 39
+-- [component_type] Button: 559
+-- [component_type] Display Control: 94
+-- [component_type] Image View: 351
+-- [component_type] Input Control: 98
+-- [component_type] Layout: 2005
+-- [component_type] Picker: 16
+-- [component_type] Text Control: 3199
+-- [component_type] Unknown: 509
+-- [text] filled: 6870
+-- [text] nan: 0
+- [layout] apk: 67.apk
+-- [dir_size] layout: 634119
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v22: 55585
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1955
+-- [root_tag] Unknown: 198
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 159
+-- [component_type] Display Control: 41
+-- [component_type] Image View: 439
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 658
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 590
+-- [component_type] Unknown: 262
+-- [text] filled: 2157
+-- [text] nan: 0
+- [layout] apk: 68.apk
+-- [dir_size] layout: 613395
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-v22: 57364
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1886
+-- [root_tag] Unknown: 198
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 165
+-- [component_type] Display Control: 41
+-- [component_type] Image View: 421
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 633
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 558
+-- [component_type] Unknown: 262
+-- [text] filled: 2088
+-- [text] nan: 0
+- [layout] apk: 69.apk
+-- [dir_size] layout: 682021
+-- [dir_size] layout-land: 1517
+-- [dir_size] layout-sw600dp: 3498
+-- [dir_size] layout-v22: 42320
+-- [dir_size] layout-v26: 1940
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 2064
+-- [root_tag] Unknown: 204
+-- [component_type] Advanced View: 26
+-- [component_type] Button: 156
+-- [component_type] Display Control: 33
+-- [component_type] Image View: 480
+-- [component_type] Input Control: 20
+-- [component_type] Layout: 716
+-- [component_type] Text Control: 597
+-- [component_type] Unknown: 240
+-- [text] filled: 2268
+-- [text] nan: 0
+- [layout] apk: 70.apk
+-- [dir_size] layout: 687181
+-- [dir_size] layout-land: 4417
+-- [dir_size] layout-ldrtl: 939
+-- [dir_size] layout-sw600dp: 3498
+-- [dir_size] layout-v22: 45721
+-- [dir_size] layout-v26: 1940
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2055
+-- [root_tag] Unknown: 231
+-- [component_type] Advanced View: 26
+-- [component_type] Button: 163
+-- [component_type] Display Control: 32
+-- [component_type] Image View: 475
+-- [component_type] Input Control: 20
+-- [component_type] Layout: 719
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 598
+-- [component_type] Unknown: 252
+-- [text] filled: 2290
+-- [text] nan: 0
+- [layout] apk: 71.apk
+-- [dir_size] layout: 312834
+-- [dir_size] layout-land: 55275
+-- [dir_size] layout-v22: 4977
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w360dp: 5471
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1008
+-- [root_tag] Unknown: 77
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 195
+-- [component_type] Display Control: 21
+-- [component_type] Image View: 138
+-- [component_type] Input Control: 9
+-- [component_type] Layout: 345
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 231
+-- [component_type] Unknown: 146
+-- [text] filled: 1089
+-- [text] nan: 0
+- [layout] apk: 72.apk
+-- [dir_size] layout: 309911
+-- [dir_size] layout-land: 50663
+-- [dir_size] layout-v22: 4977
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-w360dp: 5471
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 994
+-- [root_tag] Unknown: 77
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 195
+-- [component_type] Display Control: 20
+-- [component_type] Image View: 127
+-- [component_type] Input Control: 9
+-- [component_type] Layout: 348
+-- [component_type] Picker: 3
+-- [component_type] Text Control: 226
+-- [component_type] Unknown: 146
+-- [text] filled: 1075
+-- [text] nan: 0
+- [layout] apk: 73.apk
+-- [dir_size] layout: 992979
+-- [dir_size] layout-land: 7653
+-- [dir_size] layout-land-v22: 3568
+-- [dir_size] layout-v22: 524120
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4253
+-- [root_tag] Unknown: 147
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 171
+-- [component_type] Display Control: 69
+-- [component_type] Image View: 693
+-- [component_type] Input Control: 12
+-- [component_type] Layout: 1232
+-- [component_type] Picker: 6
+-- [component_type] Text Control: 1644
+-- [component_type] Unknown: 576
+-- [text] filled: 4404
+-- [text] nan: 0
+- [layout] apk: 74.apk
+-- [dir_size] layout: 226467
+-- [dir_size] layout-land: 4601
+-- [dir_size] layout-sw600dp: 1111
+-- [dir_size] layout-v22: 23313
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-v30: 431
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 505
+-- [root_tag] Unknown: 114
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 55
+-- [component_type] Display Control: 7
+-- [component_type] Image View: 72
+-- [component_type] Layout: 150
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 150
+-- [component_type] Unknown: 183
+-- [text] filled: 623
+-- [text] nan: 0
+- [layout] apk: 75.apk
+-- [dir_size] layout: 346777
+-- [dir_size] layout-v26: 1323
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 961
+-- [root_tag] Unknown: 135
+-- [component_type] Advanced View: 21
+-- [component_type] Button: 63
+-- [component_type] Display Control: 15
+-- [component_type] Image View: 194
+-- [component_type] Input Control: 17
+-- [component_type] Layout: 351
+-- [component_type] Text Control: 296
+-- [component_type] Unknown: 139
+-- [text] filled: 1096
+-- [text] nan: 0
+- [layout] apk: 76.apk
+-- [dir_size] layout: 15819
+-- [dir_size] layout-hdpi: 1504
+-- [dir_size] layout-ldpi: 1504
+-- [dir_size] layout-mdpi: 1504
+-- [dir_size] layout-v17: 8266
+-- [dir_size] layout-v21: 5646
+-- [dir_size] layout-xhdpi: 1504
+-- [root_tag] Layout: 95
+-- [root_tag] Unknown: 6
+-- [component_type] Button: 1
+-- [component_type] Image View: 32
+-- [component_type] Layout: 33
+-- [component_type] Text Control: 25
+-- [component_type] Unknown: 10
+-- [text] filled: 101
+-- [text] nan: 0
+- [layout] apk: 77.apk
+-- [dir_size] layout: 1077355
+-- [dir_size] layout-land: 900
+-- [dir_size] layout-sw360dp: 819
+-- [dir_size] layout-sw600dp: 9308
+-- [root_tag] Button: 17
+-- [root_tag] Layout: 2326
+-- [root_tag] Unknown: 950
+-- [component_type] Button: 380
+-- [component_type] Display Control: 38
+-- [component_type] Image View: 443
+-- [component_type] Input Control: 25
+-- [component_type] Layout: 847
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 929
+-- [component_type] Unknown: 627
+-- [text] filled: 3293
+-- [text] nan: 0
+- [layout] apk: 78.apk
+-- [dir_size] layout: 1077355
+-- [dir_size] layout-land: 900
+-- [dir_size] layout-sw360dp: 819
+-- [dir_size] layout-sw600dp: 9308
+-- [root_tag] Button: 17
+-- [root_tag] Layout: 2326
+-- [root_tag] Unknown: 950
+-- [component_type] Button: 380
+-- [component_type] Display Control: 38
+-- [component_type] Image View: 443
+-- [component_type] Input Control: 25
+-- [component_type] Layout: 847
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 929
+-- [component_type] Unknown: 627
+-- [text] filled: 3293
+-- [text] nan: 0
+- [layout] apk: 79.apk
+-- [dir_size] layout: 396845
+-- [dir_size] layout-sw360dp: 3428
+-- [dir_size] layout-sw400dp: 3250
+-- [dir_size] layout-sw600dp: 2975
+-- [dir_size] layout-v26: 1323
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 1079
+-- [root_tag] Unknown: 173
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 145
+-- [component_type] Display Control: 38
+-- [component_type] Image View: 242
+-- [component_type] Input Control: 5
+-- [component_type] Layout: 379
+-- [component_type] Text Control: 270
+-- [component_type] Unknown: 171
+-- [text] filled: 1252
+-- [text] nan: 0
+- [layout] apk: 80.apk
+-- [dir_size] layout: 71658
+-- [dir_size] layout-v21: 6927
+-- [dir_size] layout-v22: 1362
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Layout: 191
+-- [root_tag] Unknown: 23
+-- [component_type] Button: 12
+-- [component_type] Display Control: 7
+-- [component_type] Image View: 42
+-- [component_type] Layout: 59
+-- [component_type] Text Control: 42
+-- [component_type] Unknown: 52
+-- [text] filled: 214
+-- [text] nan: 0
+- [layout] apk: 82.apk
+-- [dir_size] layout: 902676
+-- [dir_size] layout-v21: 6927
+-- [dir_size] layout-v22: 1362
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 1
+-- [root_tag] Display Control: 5
+-- [root_tag] Image View: 5
+-- [root_tag] Layout: 2431
+-- [root_tag] Unknown: 454
+-- [component_type] Advanced View: 7
+-- [component_type] Button: 95
+-- [component_type] Display Control: 23
+-- [component_type] Image View: 683
+-- [component_type] Input Control: 10
+-- [component_type] Layout: 921
+-- [component_type] Text Control: 769
+-- [component_type] Unknown: 388
+-- [text] filled: 2896
+-- [text] nan: 0
+- [layout] apk: 84.apk
+-- [dir_size] layout: 1837748
+-- [dir_size] layout-land: 4180
+-- [dir_size] layout-ldrtl: 710
+-- [dir_size] layout-sw600dp: 3665
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4534
+-- [root_tag] Unknown: 263
+-- [component_type] Advanced View: 10
+-- [component_type] Button: 356
+-- [component_type] Display Control: 88
+-- [component_type] Image View: 964
+-- [component_type] Input Control: 9
+-- [component_type] Layout: 1594
+-- [component_type] Picker: 4
+-- [component_type] Text Control: 1270
+-- [component_type] Unknown: 506
+-- [text] filled: 4801
+-- [text] nan: 0
+- [layout] apk: 86.apk
+-- [dir_size] layout: 201512
+-- [dir_size] layout-v26: 1322
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Layout: 572
+-- [root_tag] Unknown: 100
+-- [component_type] Advanced View: 2
+-- [component_type] Button: 27
+-- [component_type] Display Control: 5
+-- [component_type] Image View: 100
+-- [component_type] Input Control: 1
+-- [component_type] Layout: 273
+-- [component_type] Text Control: 183
+-- [component_type] Unknown: 81
+-- [text] filled: 672
+-- [text] nan: 0
+- [layout] apk: 88.apk
+-- [dir_size] layout: 359579
+-- [dir_size] layout-land: 9223
+-- [dir_size] layout-v21: 10244
+-- [dir_size] layout-v22: 36357
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch-v20: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1009
+-- [root_tag] Unknown: 111
+-- [component_type] Advanced View: 3
+-- [component_type] Button: 134
+-- [component_type] Display Control: 11
+-- [component_type] Image View: 105
+-- [component_type] Input Control: 22
+-- [component_type] Layout: 300
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 297
+-- [component_type] Unknown: 247
+-- [text] filled: 1124
+-- [text] nan: 0
+- [layout] apk: 89.apk
+-- [dir_size] layout: 1462939
+-- [dir_size] layout-land: 31848
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 52386
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4118
+-- [root_tag] Unknown: 372
+-- [component_type] Advanced View: 11
+-- [component_type] Button: 293
+-- [component_type] Display Control: 50
+-- [component_type] Image View: 819
+-- [component_type] Input Control: 43
+-- [component_type] Layout: 1258
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 1240
+-- [component_type] Unknown: 775
+-- [text] filled: 4494
+-- [text] nan: 0
+- [layout] apk: 91.apk
+-- [dir_size] layout: 1571710
+-- [dir_size] layout-land: 4445
+-- [dir_size] layout-v22: 13797
+-- [dir_size] layout-v26: 1940
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 4864
+-- [root_tag] Unknown: 60
+-- [component_type] Advanced View: 8
+-- [component_type] Button: 280
+-- [component_type] Display Control: 48
+-- [component_type] Image View: 946
+-- [component_type] Input Control: 12
+-- [component_type] Layout: 1574
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 1521
+-- [component_type] Unknown: 534
+-- [text] filled: 4928
+-- [text] nan: 0
+- [layout] apk: 96.apk
+-- [dir_size] layout: 166148
+-- [dir_size] layout-v21: 1743
+-- [root_tag] Layout: 455
+-- [component_type] Button: 64
+-- [component_type] Image View: 108
+-- [component_type] Input Control: 3
+-- [component_type] Layout: 121
+-- [component_type] Text Control: 151
+-- [component_type] Unknown: 8
+-- [text] filled: 455
+-- [text] nan: 0
+- [layout] apk: 99.apk
+-- [dir_size] layout: 408531
+-- [dir_size] layout-land: 4443
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 106885
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [dir_size] layout-zh-rCN: 6165
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 1195
+-- [root_tag] Unknown: 123
+-- [component_type] Advanced View: 1
+-- [component_type] Button: 147
+-- [component_type] Display Control: 59
+-- [component_type] Image View: 139
+-- [component_type] Layout: 310
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 410
+-- [component_type] Unknown: 251
+-- [text] filled: 1322
+-- [text] nan: 0
+- [layout] apk: 100.apk
+-- [dir_size] layout: 738005
+-- [dir_size] layout-land: 4443
+-- [dir_size] layout-ldrtl: 904
+-- [dir_size] layout-v22: 151963
+-- [dir_size] layout-v23: 460
+-- [dir_size] layout-v26: 1941
+-- [dir_size] layout-watch: 2250
+-- [root_tag] Button: 4
+-- [root_tag] Layout: 2221
+-- [root_tag] Unknown: 304
+-- [component_type] Advanced View: 22
+-- [component_type] Button: 233
+-- [component_type] Display Control: 71
+-- [component_type] Image View: 344
+-- [component_type] Input Control: 17
+-- [component_type] Layout: 704
+-- [component_type] Picker: 5
+-- [component_type] Text Control: 755
+-- [component_type] Unknown: 378
+-- [text] filled: 2529
+-- [text] nan: 0

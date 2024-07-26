@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" package="com.uptodown" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.uptodown.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/home_screen_banner" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher_uptodown" android:label="@string/app_name" android:largeHeap="true" android:name="com.uptodown.UptodownApp" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/AppThemeBar">
+        <meta-data android:name="android.app.default_searchable" android:value="com.uptodown.activities.SearchActivity"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <activity android:exported="true" android:name="com.uptodown.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="utd"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="market"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="market.android.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="play.google.com" android:scheme="https"/>
+                <data android:host="play.google.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dw.uptodown.com" android:pathPrefix="/dwn" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/vnd.android.package-archive"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.uptodown.tv.ui.activity.TvMainActivity" android:theme="@style/Theme.Leanback">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uptodown.tv.ui.activity.TvAppDetailActivity" android:parentActivityName="com.uptodown.tv.ui.activity.TvMainActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.ui.activity.TvMyDownloadsActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.ui.activity.TvMyAppsActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.ui.activity.TvOldVersionsActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.ui.activity.TvSearchActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.ui.activity.TvAppsListActivity" android:theme="@style/Theme.Leanback.Details"/>
+        <activity android:name="com.uptodown.tv.preferences.TvPrivacyPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.uptodown.core.activities.InstallerActivity" android:parentActivityName="com.uptodown.activities.MainActivity" android:theme="@style/AppCompatDialogNoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <data android:mimeType="*/*"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*.xapk"/>
+                <data android:pathPattern=".*..*.xapk"/>
+                <data android:pathPattern=".*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*.xapk"/>
+                <data android:pathPattern=".*..*..*..*..*..*..*..*..*..*..*..*.xapk"/>
+            </intent-filter>
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="application/xapk-package-archive"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="application/vnd.xapk"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:mimeType="application/*" android:pathPattern=".*.xapk" android:scheme="file"/>
+                <data android:host="*" android:mimeType="application/*" android:pathPattern=".*.xapk" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="*"/>
+                <data android:host="*"/>
+                <data android:mimeType="application/vnd.xapk"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:scheme="file"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uptodown.activities.preferences.SettingsPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.preferences.NotificationsPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.preferences.FeedbackPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.preferences.TosPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.preferences.AboutPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.preferences.AdvancedPreferences" android:theme="@style/PreferencesThemeBar"/>
+        <activity android:name="com.uptodown.activities.MyApps" android:parentActivityName="com.uptodown.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.Updates" android:parentActivityName="com.uptodown.activities.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.RollbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.MyDownloads" android:parentActivityName="com.uptodown.activities.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.WishlistActivity" android:parentActivityName="com.uptodown.activities.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.UpcomingReleasesActivity" android:parentActivityName="com.uptodown.activities.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.SecurityActivity" android:parentActivityName="com.uptodown.activities.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.uptodown.core.activities.FileExplorerActivity" android:parentActivityName="com.uptodown.activities.MyDownloads" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uptodown.activities.MyDownloads"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.PasswordRecoveryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.Gallery" android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:name="com.uptodown.activities.Suggestions" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="density|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.uptodown.activities.YouTubeActivity" android:theme="@style/AppTheme.FullScreen"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.uptodown.activities.SearchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name="com.uptodown.activities.OldVersionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.ReviewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.RepliesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.VirusTotalReport" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.MoreInfo" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.AppInstalledDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.AppFilesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.CustomWebView"/>
+        <activity android:name="com.uptodown.activities.GdprPrivacySettings" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.AppDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.NotificationsRegistryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.LanguageSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.UserCommentsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.OrganizationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.InformationActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:name="com.uptodown.core.activities.ConfirmationIntentWrapperActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:name="com.uptodown.activities.UserCredentialsEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.uptodown.activities.UserAvatarActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.uptodown.services.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:name="com.uptodown.core.service.SplitApksEventsService"/>
+        <receiver android:exported="true" android:name="com.uptodown.receivers.BootDeviceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.uptodown.receivers.MyAppUpdatedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.uptodown.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.uptodown.gcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.uptodown.receivers.DownloadNotificationReceiver">
+            <intent-filter>
+                <action android:name="CANCEL"/>
+                <action android:name="PAUSE"/>
+                <action android:name="RESUME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.uptodown.receivers.DownloadUpdateNotificationReceiver">
+            <intent-filter>
+                <action android:name="CANCEL"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.inmobi.cmp.presentation.components.CmpActivity" android:theme="@style/CmpActivityTheme"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.uptodown.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.uptodown.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.uptodown.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.mbridge.msdk.reward.player.MBRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.mbridge.msdk.activity.MBCommonActivity" android:theme="@style/mbridge_transparent_common_activity_style"/>
+        <activity android:name="com.mbridge.msdk.out.LoadingActivity"/>
+    </application>
+</manifest>

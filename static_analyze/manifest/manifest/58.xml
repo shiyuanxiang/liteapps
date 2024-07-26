@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:sharedUserId="com.jb.gokeyboard.shared" package="com.jb.gokeyboard" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.jb.gokeyboard.setting" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/ime_name" android:largeHeap="true" android:name="com.jb.gokeyboard.GoKeyboardApplication" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/BaseAppTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:name="com.jb.gokeyboard.GoKeyboard" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+        </service>
+        <activity android:label="@string/ime_name" android:name="com.jb.gokeyboard.MainActivity" android:theme="@style/LaunchStyle">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.start"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.twemoji"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.emojione"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.langpack.es_us"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.sticker"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="false" android:name="com.jb.gokeyboard.cropImage.CropImageActivity">
+            <intent-filter android:label="@string/crop_label">
+                <action android:name="com.jb.goime.action.CROP"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.jb.gokeyboard.BootupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jb.gokeyboard.GoKeyboardServer"/>
+        <service android:name="com.jb.gokeyboard.common.util.GOMemPrintService"/>
+        <activity android:label="@string/L3_CustomTheme_Main" android:name="com.jb.gokeyboard.shop.activity.CustomBackgroundActivity" android:process=":store" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.jb.gokeyboard.gostore.LocalAppDetailActivity" android:process=":store" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.gostore.LocalAppDetailActivity"/>
+                <action android:name="com.jb.gokeyboard.gostore.LocalFragmentActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.jb.gokeyboard.provider.ProviderForAttach" android:exported="true" android:name="com.jb.gokeyboard.provider.ProviderForAttachEmoji"/>
+        <provider android:authorities="com.jb.gokeyboard.settings" android:exported="true" android:name="com.jb.gokeyboard.provider.GoKeyboardDataProviderEmoji" android:permission="com.jb.gokeyboard.setting"/>
+        <provider android:authorities="com.jb.gokeyboard.gokeyboardprovider" android:exported="true" android:name="com.jb.gokeyboard.gostore.GoKeyboardProviderEmoji"/>
+        <receiver android:name="com.jb.gokeyboard.statistics.AlarmStatisticReceiver">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.STATISTIC"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.jb.gokeyboard.crashreport.CrashReportDialog" android:theme="@style/NormalDialogTheme"/>
+        <receiver android:name="com.jb.gokeyboard.gostore.NotificationGuideToStoreReceiver">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.gostore.NotificationGuideToStoreReceiver"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.jb.gokeyboard.messagecenter.MessageContentActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.messagecenter.msgcontentactivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jb.gokeyboard.messagecenter.MsgNotifyActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.messagecenter.msgnotifyactivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/topmenu_left_btn_text" android:launchMode="singleTask" android:name="com.jb.gokeyboard.preferences.KeyboardSettingMainActivity" android:process=":store" android:screenOrientation="portrait" android:theme="@style/LaunchStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_DisplaysSetting_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingDisplayActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_DisplaysSetting_Summary" android:name="com.jb.gokeyboard.preferences.KeyboardSettingKeyHightFontsizeActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/pref_group_display_popup" android:name="com.jb.gokeyboard.preferences.KeyboardSettingPopupActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L3_EnableSwipe_title" android:name="com.jb.gokeyboard.preferences.KeyboardSettingGestureSwitchActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L3_MenuOp_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingArcMenuActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/KeyEffect" android:name="com.jb.gokeyboard.preferences.KeyboardSettingKeyEffectActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.Effect"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_ForeignSetting_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingForeignLanguageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_ChineseSetting_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingChineseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/pref_group_question" android:name="com.jb.gokeyboard.preferences.KeyboardSettingQuestionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/Help_title" android:name="com.jb.gokeyboard.preferences.KeyboardSettingAboutActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_Feedback_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingFeedbackActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L3_DictionaryManage_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingDictionaryActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.jb.gokeyboard.preferences.KeyboardSettingCustomizeLeftColumnActivity" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L3_PadMode_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingPadSetActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.PadSet"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/how_to_use_emoji" android:name="com.jb.gokeyboard.preferences.KeyboardSettingHelpActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L2_About_Main" android:name="com.jb.gokeyboard.preferences.KeyboardSettingAboutUsActivity"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.jb.gokeyboard.preferences.KeyboardEnableGKActivity" android:screenOrientation="portrait" android:theme="@style/LaunchStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/setting_language" android:name="com.jb.gokeyboard.preferences.KeyboardSettingFirstLanguageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/pref_title_language_selected" android:launchMode="singleTop" android:name="com.jb.gokeyboard.preferences.KeyboardSettingLanguageActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.LanguageSetting"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.jb.gokeyboard.preferences.KeyboardSettingSetMenuOpActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/L3_FantasyTextPlugin" android:name="com.jb.gokeyboard.preferences.KeyboardSettingFantasyTextSetting"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/emoji" android:name="com.jb.gokeyboard.preferences.KeyboardSettingEmojiStyleActivity">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.action.plugin.EmojiStyle"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.ui.FacebookNativeAdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="APPKEY" android:value="@string/wecloud_app_key"/>
+        <meta-data android:name="Channel" android:value="200"/>
+        <service android:name="com.jb.gokeyboard.language.downloadzip.controller.DownloadLanguageService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:multiprocess="true" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:name="com.google.android.voiceime.ServiceHelper"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name="com.google.android.voiceime.ActivityHelper" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="true" android:name="com.jb.gokeyboard.theme.pay.ThemeConmunicationService" android:process=":store">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.ThemeConmunicationService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.jb.gokeyboard.ad.PayNoAdActivity" android:process=":store" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.jb.gokeyboard.theme.pay.InAppBillingActivity" android:process=":store" android:theme="@style/CustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.InAppBillingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jb.gokeyboard.theme.pay.InAppBillingActivityForTheme" android:process=":store" android:theme="@style/CustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.InAppBillingActivityForTheme"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.jb.gokeyboard.theme.pay.ApplyActivity" android:process=":store" android:theme="@style/CustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.ApplyActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.jb.gokeyboard.theme.pay.ApplyActivityForMain" android:theme="@style/CustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.ApplyActivityForMain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.jb.gokeyboard.theme.pay.ApplyActivityForTheme" android:process=":store" android:theme="@style/CustomDialogTheme">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.pay.ApplyActivityForTheme"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jiubang.commerce.ad.h5.H5AdActivity" android:screenOrientation="portrait"/>
+        <service android:label="Intelligent Preload Service" android:name="com.jiubang.commerce.service.IntelligentPreloadService" android:process=":com.jiubang.commerce.service.IntelligentPreloadService"/>
+        <receiver android:name="com.jiubang.commerce.receiver.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiubang.commerce.receiver.AppBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.jb.gokeyboard.google.analytic.ReferrerInfoReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jb.gokeyboard.gosearch.NavigationAlarmReceiverBroadCast">
+            <intent-filter>
+                <action android:name="MYALARMRECEIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jb.gokeyboard.engine.latin.DictionaryDecayBroadcastReciever">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.newengine.latin.userdictionary.DICT_DECAY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/gosearch_widget_name" android:name="com.jb.gokeyboard.widget.GoSearchWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click.gotosearchactivitysamll"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/gosearch_widget"/>
+        </receiver>
+        <receiver android:label="@string/gosearch_widget_name" android:name="com.jb.gokeyboard.widget.GoSearchWidgetProvider4x3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click.refresh"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click.requestdata"/>
+                <action android:name="com.jb.gokeyboard.widget.gosearch.click.gotosearchactivity"/>
+                <action android:name="android.intent.action.SEND"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/gosearch_widget_black"/>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.facebook.ads.AudienceNetworkActivity" android:process=":store" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.jb.gokeyboard.provider.openinterface.lite" android:exported="true" android:name="com.jb.gokeyboard.provider.ProviderForOpenInterface"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.jb.gokeyboard.gosearch.GoSearchActivity" android:theme="@style/GosearchStyle" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:label="@string/wallpaper_name" android:name="com.jb.gokeyboard.wallpaper.LiveWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/livewallpaper"/>
+        </service>
+        <provider android:authorities="com.jb.gokeyboard.chargelocker.MultiprocessSharedPreferences" android:exported="false" android:name="com.jb.ga0.commerce.util.io.MultiprocessSharedPreferences"/>
+        <service android:label="Ad Service" android:name="com.jiubang.commerce.service.AdService"/>
+        <activity android:name="com.jiubang.commerce.ad.url.AdUrlPreParseLoadingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.jb.gokeyboard.theme.ThemeNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.theme.ThemeNotificationReceiver"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.jb.gokeyboard.facebook.messenger.FacebookMessengerProxyActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.facebook.orca.category.PLATFORM_THREAD_20150314"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.intowow.sdk.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.intowow.sdk.ScheduleReceiver">
+            <intent-filter>
+                <action android:name="com.intowow.sdk.prefetch"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="CRYSTAL_ID" android:value="@string/crystal_id"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/pref_group_title_test" android:name="com.jb.gokeyboard.test.view.KeyboardSettingTestActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/pref_group_title_test" android:name="com.jb.gokeyboard.test.view.KeyboardSettingTestItemActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.svip.SVipPayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.svip.SVipPayGuideActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.svip.SVipThemePayActivity" android:process=":store" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.svip.SVipOptimizeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:name="com.jb.gokeyboard.ramclear.ui.RamCleanActivityA" android:screenOrientation="portrait" android:taskAffinity=""/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:hardwareAccelerated="true" android:name="com.jb.gokeyboard.ramclear.ui.RamCleanActivityB" android:screenOrientation="portrait" android:taskAffinity=""/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jb.gokeyboard.preferences.KeyboardSecurityDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.mopub.mobileads.MoPubActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.RewardedMraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.MraidActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.common.MoPubBrowser"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"/>
+        <service android:name="com.gomo.abtestcenter.statics.SchedulerStaticsService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.monet.bidder.AdActivity"/>
+        <provider android:authorities="com.jb.gokeyboard.staticsdkprovider" android:name="com.gau.go.gostaticsdk.StaticDataContentProvider"/>
+        <activity android:name="com.jb.gokeyboard.permission.PermissionSettingDialogActivity" android:theme="@style/TransparentActivity2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.jb.gokeyboard.permission.StorePermissionActivity" android:process=":store" android:theme="@style/Permission.Theme.Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.jb.gokeyboard.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:name="com.jb.gokeyboard.theme.pay.PaySuccessReceiver">
+            <intent-filter>
+                <action android:name="com.jb.gokeyboard.PaySuccessReceiver"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.jb.gokeyboard.shop.subscribe.SubscribeGuideActivity" android:screenOrientation="portrait" android:theme="@style/LauncherTheme.NoAnimation"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.jb.gokeyboard.shop.subscribe.SubscribeGuideActivityStore" android:process=":store" android:screenOrientation="portrait"/>
+        <activity android:name="com.jb.gokeyboard.shop.subscribe.SubscribeDialogActivity" android:process=":store" android:taskAffinity=".svip" android:theme="@style/TransparentActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:authorities="com.jb.gokeyboard.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <activity android:label="@string/app_name" android:name="com.jiubang.bussinesscenter.plugin.navigationpage.main.MainActivity" android:screenOrientation="portrait" android:theme="@style/mainStyle" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" android:theme="@style/Theme.IAPTheme"/>
+        <activity android:name="com.keyboard.gdpr.ui.GdprCheckActivity" android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.keyboard.gdpr.ui.PermissionSettingActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name="com.keyboard.gdpr.ui.GdprAgreementActivity" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <meta-data android:name="isCommonStatisticSDK" android:value="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.yanzhenjie.permission.PermissionActivity" android:theme="@style/Permission.Theme.Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.jb.gokeyboard.file.path.share" android:exported="false" android:grantUriPermissions="true" android:name="com.yanzhenjie.permission.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/permission_file_paths"/>
+        </provider>
+    </application>
+</manifest>

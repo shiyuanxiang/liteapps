@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" dist:requiredSplitTypes="" dist:splitTypes="" package="com.live.honey" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <dist:module dist:instant="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+    </queries>
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.ss.android.ugc.trill"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.live.honey.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.live.honey.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:gwpAsanMode="always" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.live.honey.XApplication" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.live.honey.module.bindaccount.AccountPasswordSettingActivity"/>
+        <activity android:exported="false" android:name="com.live.honey.module.bindaccount.email.EmailEnterActivity"/>
+        <activity android:exported="false" android:name="com.live.honey.module.bindaccount.EnterEmailVerifyCodeActivity"/>
+        <activity android:exported="false" android:name="com.live.honey.module.bindaccount.BindAccountActivity"/>
+        <property android:name=".REQUIRE_SECURE_ENV" android:value="1"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="CHANNEL" android:value="1001"/>
+        <service android:exported="false" android:name="com.live.honey.module.push.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_launcher_small"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/notification_channel_message"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.live.honey.module.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.live.honey" android:pathPrefix="/login" android:scheme="honeyjar"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="growing.e21e21846eadf6ff"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="honeyjar"/>
+                <data android:host="oauthresponse"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.main.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.live.honey.module.feed.ui.MomentCreateActivity" android:screenOrientation="portrait" android:theme="@style/CreateMomentThemeStyle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.live.honey.module.me.ui.OtherProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.voice.views.VoiceCallingActivity" android:screenOrientation="portrait" android:theme="@style/VoiceCallingThemeStyle"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.live.settings.RoomSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.live.settings.RoomTitleSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.PrivacySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.debug.DebugActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.live.honey.module.me.ui.PersonalInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.me.ui.ProfileEditActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.me.ui.ProfileEditHobbiesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.BlackListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.webview.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.webview.WebViewGameActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.widget.imagepicker.ViewLargerImageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.feed.ui.MomentPreviewImagesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.regist.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.message.chat.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.live.honey.module.message.roomchat.LiveHalfChatActivity" android:theme="@style/TranslucentFullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.message.focus.ui.FocusListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.hot.live.hot.HotLivingRoomActivityNew" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.hot.live.hot.RoomSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.hot.live.collect.ui.CollectRoomActivityNew" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="false"/>
+        <activity android:exported="false" android:name="com.live.honey.module.match.MatchCardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.base.ContainerToolbarActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.sud.SudGameActivity" android:theme="@style/TranslucentFullscreen"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.wallet.ui.WalletActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.voiceIndentify.IdentifyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.FeedBackActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.setting.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.live.honey.live.LiveActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.live.honey.module.notification.NotificationTransferActivity" android:theme="@style/TranslucentFullscreen">
+            <intent-filter>
+                <action android:name="com.live.honey.notification"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.live.honey.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.live.honey.module.phone.SelectCountryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.live.honey.module.rank.RankActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.bindaccount.AccountBindStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.phone.PhoneVerifyCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.live.honey.module.hot.live.hot.CountryRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.hot.live.hot.CountryActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.live.honey.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.live.honey.com.facebook.app.FacebookContentProvider776931639651656" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <provider android:authorities="com.live.honey.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="fb776931639651656"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.live.honey" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.live.honey.module.feed.ui.MomentDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.feed.ui.MomentListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.module.group.GroupUserSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.live.honey.module.group.GroupChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.live.honey.module.group.GroupDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.live.honey.module.group.GroupChangeNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.live.honey.logger.picker.LoganUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.live.honey.logger.env.ChangeEnvActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.live.honey.account.provide" android:exported="false" android:name="com.live.honey.account.AccountProvider" android:syncable="true"/>
+        <service android:exported="false" android:name="com.live.honey.account.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="true" android:name="com.live.honey.account.AccountSyncService">
+            <intent-filter>
+                <action android:name="android.content.AccountSyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.AccountSyncAdapter" android:resource="@xml/sync_adapter"/>
+        </service>
+        <service android:exported="false" android:name="com.live.honey.live.service.RoomForegroundService"/>
+        <service android:exported="false" android:name="com.live.honey.module.login.service.LoginForegroundService"/>
+        <service android:exported="false" android:name="com.live.honey.module.voice.service.VoiceCallForegroundService"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.immomo.image.imagepicker.ui.MatisseActivity"/>
+        <activity android:exported="false" android:name="com.immomo.image.imagepicker.internal.ui.AlbumPreviewActivity"/>
+        <activity android:exported="false" android:name="com.immomo.image.imagepicker.internal.ui.SelectedPreviewActivity"/>
+        <activity android:exported="false" android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.live.honey.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.live.honey.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.live.honey.GrowingIOSettingsProvider" android:name="com.growingio.android.sdk.collection.GrowingIOSettingsProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="im.zego.internal.screencapture.ZegoScreenCaptureManager$ZegoScreenCaptureAssistantActivity" android:screenOrientation="fullUser" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="im.zego.internal.screencapture.ZegoScreenCaptureService"/>
+        <receiver android:enabled="false" android:exported="false" android:name="cn.thinkingdata.analytics.utils.broadcast.TDReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="5"/>
+    </application>
+</manifest>
