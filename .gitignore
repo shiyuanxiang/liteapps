@@ -1,0 +1,8 @@
+/apks
+/static_analyze/18
+/static_analyze/jar
+/static_analyze/diffuse
+/static_analyze/decompiled
+/static_analyze/simidroid
+/test
+.DS_Store
