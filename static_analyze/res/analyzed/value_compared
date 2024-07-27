@@ -1,0 +1,260 @@
+[pair]: 3-4
+[pair]: 5-6
+-- attr_type_Security: 759 < 879
+[pair]: 7-8
+-- attr_type_Security: 715 < 726
+[pair]: 9-10
+[pair]: 11-12
+[pair]: 13-14
+-- attr_type_Security: 235 < 267
+[pair]: 15-16
+[pair]: 17-18
+-- dir_size: 29329599 < 29333072
+-- root_tag_Unknown: 299508 < 299551
+-- file_type_colors: 1741 < 1759
+-- file_type_other: 54567 < 54591
+-- file_type_string: 226425 < 226428
+-- attr_type_Input: 8912 < 8915
+-- attr_type_Other: 223388 < 223410
+-- attr_type_UI: 21782 < 21802
+[pair]: 19-20
+-- attr_type_Action: 539 < 541
+[pair]: 21-22
+-- dir_size: 256206 < 790545
+-- root_tag_Unknown: 2793 < 8970
+-- file_type_colors: 79 < 166
+-- file_type_dimens: 117 < 545
+-- file_type_other: 1825 < 5494
+-- file_type_string: 72 < 235
+-- file_type_styles: 700 < 2501
+-- attr_type_Action: 8 < 48
+-- attr_type_Input: 57 < 100
+-- attr_type_Media: 17 < 89
+-- attr_type_Notification: 67 < 140
+-- attr_type_Other: 1305 < 4405
+-- attr_type_Permission: 70 < 74
+-- attr_type_Storage: 8 < 36
+-- attr_type_UI: 1261 < 4031
+-- security_security: 146 < 220
+[pair]: 25-26
+[pair]: 27-28
+-- dir_size: 3546287 < 4630639
+-- root_tag_Unknown: 48660 < 63178
+-- file_type_arrays: 11 < 103
+-- file_type_colors: 787 < 1033
+-- file_type_dimens: 18611 < 18791
+-- file_type_other: 10294 < 14314
+-- file_type_string: 13771 < 23165
+-- file_type_styles: 5186 < 5772
+-- attr_type_Action: 177 < 244
+-- attr_type_Input: 480 < 725
+-- attr_type_Media: 227 < 859
+-- attr_type_Network: 66 < 697
+-- attr_type_Notification: 693 < 997
+-- attr_type_Other: 37226 < 47080
+-- attr_type_Permission: 220 < 513
+-- attr_type_Security: 134 < 191
+-- attr_type_Storage: 128 < 760
+-- attr_type_UI: 9309 < 11112
+-- security_security: 803 < 1349
+[pair]: 29-30
+[pair]: 31-32
+-- dir_size: 1948847 < 1976963
+-- root_tag_Unknown: 22233 < 22698
+-- file_type_colors: 804 < 810
+-- file_type_dimens: 841 < 845
+-- file_type_other: 12018 < 12468
+-- file_type_styles: 7176 < 7188
+-- attr_type_Input: 526 < 545
+-- attr_type_Other: 10680 < 11054
+-- attr_type_Storage: 310 < 314
+-- attr_type_UI: 9571 < 9639
+-- security_security: 726 < 728
+[pair]: 33-34
+-- dir_size: 1263308 < 1263991
+-- root_tag_Unknown: 13482 < 13492
+-- file_type_other: 6908 < 6918
+-- attr_type_Media: 55 < 57
+-- attr_type_Other: 6085 < 6089
+-- attr_type_UI: 6878 < 6882
+[pair]: 35-36
+-- dir_size: 8836727 < 8870130
+-- root_tag_Unknown: 116450 < 116864
+-- file_type_colors: 3103 < 3105
+-- file_type_dimens: 4981 < 4982
+-- file_type_other: 78786 < 79068
+-- file_type_string: 17806 < 17860
+-- file_type_styles: 10009 < 10084
+-- attr_type_Action: 976 < 978
+-- attr_type_Input: 4719 < 4739
+-- attr_type_Media: 2610 < 2629
+-- attr_type_Notification: 759 < 761
+-- attr_type_Other: 66433 < 66671
+-- attr_type_Permission: 462 < 482
+-- attr_type_Storage: 6641 < 6671
+-- attr_type_UI: 30524 < 30607
+-- security_security: 24004 < 24032
+[pair]: 37-38
+[pair]: 39-40
+-- file_type_styles: 5705 < 6381
+[pair]: 41-42
+-- dir_size: 3750254 < 3750258
+[pair]: 43-44
+-- dir_size: 274165 < 1093241
+-- root_tag_Unknown: 3511 < 12093
+-- file_type_arrays: 14 < 574
+-- file_type_other: 2527 < 2807
+-- file_type_string: 234 < 7976
+-- attr_type_Action: 48 < 50
+-- attr_type_Input: 14 < 16
+-- attr_type_Media: 271 < 625
+-- attr_type_Network: 11 < 171
+-- attr_type_Notification: 89 < 746
+-- attr_type_Other: 1873 < 7822
+-- attr_type_Storage: 42 < 602
+-- attr_type_UI: 1089 < 1987
+-- security_security: 108 < 155
+[pair]: 47-48
+-- file_type_colors: 1089 < 2668
+-- file_type_styles: 6387 < 8825
+[pair]: 49-50
+-- dir_size: 553092 < 4130663
+-- root_tag_Unknown: 6542 < 46554
+-- file_type_arrays: 4 < 361
+-- file_type_colors: 205 < 694
+-- file_type_dimens: 278 < 868
+-- file_type_other: 4010 < 13257
+-- file_type_string: 535 < 26681
+-- file_type_styles: 1510 < 4688
+-- attr_type_Action: 43 < 509
+-- attr_type_Input: 82 < 1031
+-- attr_type_Media: 61 < 477
+-- attr_type_Network: 31 < 343
+-- attr_type_Notification: 74 < 1338
+-- attr_type_Other: 3328 < 30794
+-- attr_type_Permission: 74 < 327
+-- attr_type_Security: 92 < 662
+-- attr_type_Storage: 66 < 2048
+-- attr_type_UI: 2691 < 9025
+-- security_security: 297 < 2363
+[pair]: 51-52
+-- dir_size: 808623 < 2251396
+-- root_tag_Unknown: 14802 < 24597
+-- file_type_colors: 481 < 485
+-- file_type_string: 713 < 10543
+-- file_type_styles: 4463 < 5644
+-- attr_type_Action: 2 < 71
+-- attr_type_Input: 8 < 510
+-- attr_type_Other: 13887 < 13897
+-- attr_type_UI: 905 < 8884
+-- security_security: 126 < 812
+[pair]: 53-54
+-- file_type_colors: 491 < 538
+-- file_type_dimens: 612 < 639
+[pair]: 55-56
+[pair]: 57-58
+[pair]: 59-60
+-- root_tag_Unknown: 38855 < 38863
+-- file_type_colors: 723 < 725
+-- file_type_string: 19110 < 19155
+-- attr_type_Media: 561 < 591
+-- attr_type_Notification: 1059 < 1143
+-- attr_type_UI: 9969 < 10057
+[pair]: 63-64
+[pair]: 65-66
+[pair]: 67-68
+-- attr_type_Notification: 159 < 160
+-- security_security: 381 < 384
+[pair]: 69-70
+-- dir_size: 2154960 < 2426194
+-- root_tag_Unknown: 25126 < 27784
+-- file_type_other: 8524 < 8618
+-- file_type_string: 12323 < 15292
+-- file_type_styles: 2739 < 2895
+-- attr_type_Action: 155 < 158
+-- attr_type_Input: 350 < 658
+-- attr_type_Other: 14867 < 17347
+-- attr_type_Security: 300 < 333
+-- attr_type_UI: 6426 < 7005
+-- security_security: 968 < 1056
+[pair]: 71-72
+-- file_type_colors: 591 < 592
+-- attr_type_Media: 2783 < 2785
+[pair]: 73-74
+-- file_type_dimens: 868 < 913
+-- file_type_styles: 4688 < 5322
+-- attr_type_UI: 9025 < 9215
+[pair]: 75-76
+[pair]: 77-78
+-- dir_size: 2948607 < 2948894
+[pair]: 79-80
+[pair]: 99-100
+-- file_type_colors: 541 < 617
+-- file_type_dimens: 620 < 668
+-- file_type_other: 8112 < 9734
+-- file_type_styles: 4582 < 4831
+-- attr_type_Action: 62 < 100
+-- attr_type_Media: 263 < 440
+[abnormal_pairs] 24
+[all]: lite
+-- dir_size: 157769493
+-- root_tag_Unknown: 1807185
+-- file_type_colors: 32845
+-- file_type_dimens: 60277
+-- file_type_other: 570283
+-- file_type_string: 936686
+-- file_type_styles: 182626
+-- attr_type_Action: 12098
+-- attr_type_Input: 41521
+-- attr_type_Media: 42637
+-- attr_type_Network: 17613
+-- attr_type_Notification: 50368
+-- attr_type_Other: 1175472
+-- attr_type_Permission: 10826
+-- attr_type_Security: 24287
+-- attr_type_Storage: 63340
+-- attr_type_UI: 369023
+-- security_security: 104760
+-- file_type_arrays: 24216
+-- file_type_nan: 252
+[all]: full
+-- dir_size: 291066091
+-- root_tag_Unknown: 3217021
+-- file_type_arrays: 33187
+-- file_type_colors: 38727
+-- file_type_dimens: 68571
+-- file_type_nan: 396
+-- file_type_other: 896299
+-- file_type_string: 1981956
+-- file_type_styles: 197885
+-- attr_type_Action: 22708
+-- attr_type_Input: 87124
+-- attr_type_Media: 81405
+-- attr_type_Network: 33079
+-- attr_type_Notification: 126782
+-- attr_type_Other: 2176149
+-- attr_type_Permission: 50032
+-- attr_type_Storage: 125708
+-- attr_type_UI: 464039
+-- security_security: 229087
+-- attr_type_Security: 49995
+[abnormal_count]
+-- dir_size: 12
+-- file_type_colors: 12
+-- attr_type_UI: 12
+-- root_tag_Unknown: 11
+-- file_type_styles: 11
+-- file_type_other: 10
+-- attr_type_Other: 10
+-- file_type_string: 9
+-- attr_type_Input: 9
+-- attr_type_Action: 9
+-- attr_type_Media: 9
+-- security_security: 9
+-- file_type_dimens: 8
+-- attr_type_Notification: 7
+-- attr_type_Security: 6
+-- attr_type_Storage: 6
+-- attr_type_Permission: 4
+-- file_type_arrays: 3
+-- attr_type_Network: 3

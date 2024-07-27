@@ -1,0 +1,150 @@
+[pair]: 1-2
+-- dir_size: 9110 < 35866
+-- root_tag_Layout: 12 < 108
+-- component_type_Layout: 4 < 42
+-- text_filled: 16 < 108
+[pair]: 3-4
+[pair]: 5-6
+-- component_type_Picker: 3 < 6
+[pair]: 7-8
+[pair]: 9-10
+[pair]: 11-12
+[pair]: 13-14
+[pair]: 15-16
+-- root_tag_Unknown: 554 < 790
+-- component_type_Button: 114 < 154
+-- component_type_Layout: 693 < 823
+[pair]: 17-18
+-- dir_size: 12177356 < 12177458
+-- component_type_Unknown: 6705 < 6707
+[pair]: 19-20
+[pair]: 21-22
+-- dir_size: 42421 < 226930
+-- root_tag_Layout: 83 < 517
+-- root_tag_Unknown: 16 < 109
+-- component_type_Button: 6 < 90
+-- component_type_Layout: 24 < 199
+-- component_type_Unknown: 25 < 94
+-- text_filled: 99 < 630
+[pair]: 25-26
+[pair]: 27-28
+-- dir_size: 614384 < 1504533
+-- root_tag_Layout: 1579 < 3993
+-- root_tag_Unknown: 260 < 296
+-- component_type_Button: 143 < 323
+-- component_type_Layout: 664 < 1602
+-- component_type_Picker: 4 < 6
+-- component_type_Unknown: 208 < 435
+-- text_filled: 1843 < 4293
+[pair]: 29-30
+[pair]: 31-32
+-- dir_size: 570794 < 695119
+-- root_tag_Layout: 1346 < 1716
+-- root_tag_Unknown: 293 < 296
+-- component_type_Button: 135 < 167
+-- component_type_Layout: 442 < 552
+-- component_type_Unknown: 385 < 474
+-- text_filled: 1643 < 2016
+[pair]: 33-34
+-- dir_size: 140855 < 141431
+-- root_tag_Layout: 264 < 266
+-- text_filled: 368 < 370
+[pair]: 35-36
+-- dir_size: 13163945 < 13171790
+-- root_tag_Layout: 37745 < 37767
+-- root_tag_Unknown: 2681 < 2682
+-- component_type_Button: 1902 < 1907
+-- component_type_Layout: 14169 < 14173
+-- component_type_Unknown: 6666 < 6667
+-- text_filled: 40460 < 40483
+[pair]: 37-38
+[pair]: 39-40
+[pair]: 41-42
+[pair]: 43-44
+[pair]: 47-48
+-- component_type_Picker: 4 < 6
+[pair]: 49-50
+-- dir_size: 154219 < 1532511
+-- root_tag_Layout: 393 < 4253
+-- root_tag_Unknown: 33 < 147
+-- component_type_Button: 50 < 171
+-- component_type_Layout: 117 < 1232
+-- component_type_Unknown: 66 < 576
+-- text_filled: 426 < 4404
+[pair]: 51-52
+-- root_tag_Unknown: 74 < 78
+-- component_type_Button: 115 < 119
+-- component_type_Unknown: 151 < 156
+[pair]: 53-54
+[pair]: 55-56
+[pair]: 57-58
+-- root_tag_Unknown: 480 < 500
+[pair]: 59-60
+-- dir_size: 935776 < 939276
+-- root_tag_Layout: 2326 < 2328
+-- component_type_Button: 239 < 240
+-- component_type_Unknown: 379 < 381
+-- text_filled: 2941 < 2943
+[pair]: 63-64
+[pair]: 65-66
+-- dir_size: 1654288 < 2201225
+-- root_tag_Button: 4 < 6
+-- root_tag_Layout: 4177 < 6222
+-- component_type_Button: 429 < 559
+-- component_type_Layout: 1557 < 2005
+-- component_type_Picker: 12 < 16
+-- text_filled: 5105 < 6870
+[pair]: 67-68
+-- component_type_Button: 159 < 165
+[pair]: 69-70
+-- dir_size: 733546 < 745946
+-- root_tag_Unknown: 204 < 231
+-- component_type_Button: 156 < 163
+-- component_type_Layout: 716 < 719
+-- component_type_Unknown: 240 < 252
+-- text_filled: 2268 < 2290
+[pair]: 71-72
+-- component_type_Layout: 345 < 348
+[pair]: 73-74
+[pair]: 75-76
+[pair]: 77-78
+[pair]: 79-80
+[pair]: 99-100
+-- dir_size: 531119 < 899966
+-- root_tag_Layout: 1195 < 2221
+-- root_tag_Unknown: 123 < 304
+-- component_type_Button: 147 < 233
+-- component_type_Layout: 310 < 704
+-- component_type_Unknown: 251 < 378
+-- text_filled: 1322 < 2529
+[abnormal_pairs] 19
+[all]: lite
+-- dir_size: 71983506
+-- root_tag_Layout: 189157
+-- component_type_Button: 9592
+-- component_type_Layout: 63770
+-- component_type_Unknown: 32437
+-- text_filled: 209330
+-- root_tag_Button: 180
+-- root_tag_Unknown: 19942
+-- component_type_Picker: 197
+[all]: full
+-- dir_size: 109665074
+-- root_tag_Layout: 299929
+-- root_tag_Unknown: 30507
+-- component_type_Button: 12876
+-- component_type_Layout: 95017
+-- component_type_Unknown: 74656
+-- text_filled: 330738
+-- root_tag_Button: 182
+-- component_type_Picker: 200
+[abnormal_count]
+-- dir_size: 12
+-- component_type_Button: 12
+-- component_type_Layout: 11
+-- text_filled: 11
+-- root_tag_Layout: 10
+-- root_tag_Unknown: 10
+-- component_type_Unknown: 10
+-- component_type_Picker: 4
+-- root_tag_Button: 1
