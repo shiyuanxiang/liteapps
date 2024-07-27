@@ -1,6 +1,6 @@
 # liteapps
 
-## analyzed result paths:
+## analyzed result paths
 
 static_analyze/res/analyzed
 static_analyze/permission/analyzed_permission
