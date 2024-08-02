@@ -526,8 +526,56 @@
 99-100 service: 18 21
 99-100 provider: 7 11
 
-[abnormal apks] 9
+[abnormal apks] 9 apk*id:
+Jainam_Lite
+Update_Software_Latest_Lite
+WPS_Office_Lite
+Arena_Breakout_Lite
+GO_Keyboard_Lite
+1DM_Lite:\_Browser*&_Downloader
+iPlayer_Lite-\_Video_Plalyer
+Dual_Space_Lite-Multi_Accounts
+PandaVPN_Lite_-\_Hotspot_Proxy
 -- activity: 8 times
 -- service: 4 times
 -- receiver: 5 times
 -- provider: 5 times
+
+[activity introduced by lite (count)]
+50 52/54 0.96
+6 48/75 0.64
+28 34/81 0.42
+100 30/64 0.47
+58 25/74 0.34
+68 25/71 0.35
+48 24/38 0.63
+14 23/83 0.28
+16 17/55 0.31
+52 11/17 0.65
+80 10/25 0.40
+22 6/14 0.43
+36 5/712 0.01
+10 3/10 0.30
+66 3/75 0.04
+76 3/6 0.50
+4 2/267 0.01
+12 2/14 0.14
+40 2/6 0.33
+56 2/66 0.03
+70 2/375 0.01
+74 2/4 0.50
+72 1/39 0.03
+8 0/197 0.00
+18 0/471 0.00
+20 0/254 0.00
+26 0/9 0.00
+30 0/55 0.00
+32 0/11 0.00
+34 0/7 0.00
+38 0/46 0.00
+42 0/100 0.00
+44 0/51 0.00
+54 0/13 0.00
+60 0/325 0.00
+64 0/65 0.00
+78 0/2 0.00

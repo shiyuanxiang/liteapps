@@ -1,0 +1,2 @@
+static_analyze/feature/add.txt filter=lfs diff=lfs merge=lfs -text
+static_analyze/feature/remove.txt filter=lfs diff=lfs merge=lfs -text
