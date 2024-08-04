@@ -8,5 +8,8 @@
 .DS_Store
 /static_analyze/feature/topic_assign.csv
 /static_analyze/feature/all.txt
+/static_analyze/feature/add.txt
 /static_analyze/feature/methods
 /static_analyze/feature/remove.txt
+/static_analyze/feature/topic_assign.csv
+/static_analyze/feature/topic_assign_refined.csv
