@@ -7,15 +7,19 @@ def refine(csv_path, output_path):
             lines = fr.readlines()
             amount = len(lines)
             fw.write("topic: method\n")
+            x = 0
             for cnt, line in enumerate(lines[1:]):
-                if line.__contains__(":"):
-                    line = line.split("=")[1].replace('"', "")
-                if line.__contains__(","):
+                if cnt % 2 == 0 and "," in line:
+                    x += 1
                     depart_loc = line.find(",")
                     topic = line[:depart_loc].strip()
                     method = line[depart_loc + 2 :].strip()
+                    if method.__contains__("="):
+                        method = method.replace('"', "")
+                        method = method.split("=")[-1]
                     fw.write(f"{topic}:{method}\n")
-                    print(f"{cnt/amount*100:.2f}%,  {cnt}/{amount}", end="\r")
+
+            print(f"total: {x}")
 
 
 def check(path):
@@ -26,7 +30,7 @@ def check(path):
 
 
 if __name__ == "__main__":
-    csv_path = "./ta_100000.csv"
-    output_path = "./ta_100000_refined.csv"
+    csv_path = "./topic_assign.csv"
+    output_path = "./topic_assign_refined.csv"
     refine(csv_path, output_path)
-    # check(output_path)
+    check(output_path)

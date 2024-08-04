@@ -1,0 +1,20 @@
+['+'] topic count
+Graphics Manipulation           : 92531, 10.08
+Configuration and Settings      : 92090, 10.03
+Background Task Management      : 92040, 10.02
+Android Compatibility Libraries : 92016, 10.02
+Media Session Management        : 91911, 10.01
+UI Components                   : 91720, 9.99
+Data Transfer                   : 91613, 9.98
+Ad Management                   : 91523, 9.97
+Media Playback and Processing   : 91196, 9.93
+['-'] topic count
+Media Playback and Processing   : 325081, 10.03
+Data Transfer                   : 324648, 10.01
+Media Session Management        : 324331, 10.00
+Android Compatibility Libraries : 324263, 10.00
+UI Components                   : 324196, 10.00
+Background Task Management      : 323860, 9.99
+Configuration and Settings      : 323827, 9.99
+Ad Management                   : 323797, 9.99
+Graphics Manipulation           : 323404, 9.98

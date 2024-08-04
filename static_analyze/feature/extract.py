@@ -32,6 +32,9 @@ def extract_step2():
     _all = {}
     add = {}
     remove = {}
+    add_ids = []
+    remove_ids = []
+    cnt = 0
     for root, dirs, files in os.walk("./methods"):
         for cur, file in enumerate(files):
             _all[file] = []
@@ -45,11 +48,20 @@ def extract_step2():
                         _all[file].append(m)
                         if line.startswith("  +"):
                             add[file].append(m)
-                        else:
+                            add_ids.append(cnt)
+                        elif line.startswith("  -"):
                             remove[file].append(m)
+                            remove_ids.append(cnt)
+                        cnt += 1
 
             print(f"[progress] {cur+1}/{len(files)}")
 
+    with open("./add_ids.txt", "w") as fw:
+        for i in add_ids:
+            fw.write(f"{i}\n")
+    with open("./remove_ids.txt", "w") as fw:
+        for i in remove_ids:
+            fw.write(f"{i}\n")
     with open("./all.txt", "w") as fw:
         write2txt(_all, fw)
     with open("./add.txt", "w") as fw:

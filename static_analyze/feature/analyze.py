@@ -1,103 +1,69 @@
-import re
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
-import nltk
-import os
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.decomposition import LatentDirichletAllocation
-import pandas as pd
+class TopicAnalyzer:
+    def __init__(self, csv_path):
+        self.csv_path = csv_path
+        self.add_ids = []
+        self.methods_count = {"add": 0, "remove": 0}
+        topic_0 = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0}
+        self.topic_count = {
+            "add": topic_0,
+            "remove": topic_0,
+        }
+        self.topic2name = {
+            0: "Media and Ad Handling",
+            1: "UI Elements and Graphics",
+            2: "Media and Adapters",
+            3: "User Interface Components",
+            4: "Initialization and Setup",
+            5: "Ads and Parcelization",
+            6: "Audio and Media Handling",
+            7: "Icon and Ad Management",
+            8: "Media Sessions and Receivers",
+            9: "Event Handling in Media and Ads",
+        }
 
+    def load_add_ids(self):
+        with open("./add_ids.txt", "r") as fr:
+            self.add_ids = [int(line.strip()) for line in fr.readlines()]
+            self.methods_count["add"] = len(self.add_ids)
 
-class MethodLDA:
-    def __init__(
-        self, use_npy=False, topics=10, dataset="./all.txt", npy_dir="/data1/syx/"
-    ):
-        nltk.download("punkt")
-        nltk.download("stopwords")
-        nltk.download("wordnet")
-        self.methods = []
-        self.ori_methods = []
-        self.use_npy = use_npy
-        self.topics = topics
-        self.vectorizer = None
-        self.lda = None
-        self.dataset = dataset
-        self.npy_dir = npy_dir
+    def count(self):
+        with open(self.csv_path, "r") as fr:
+            lines = fr.readlines()[1:1000000]
+            amout = len(lines)
+            self.methods_count["remove"] = amout - self.methods_count["add"]
+            for cnt, line in enumerate(lines):
+                topic = int(lines[cnt].split(":")[0])
+                if cnt in self.add_ids:
+                    self.topic_count["add"][topic] += 1
+                else:
+                    self.topic_count["remove"][topic] += 1
 
-    def prepare_data(self):
-        if self.use_npy:
-            self.ori_methods = np.load(os.path.join(self.npy_dir, "ori_methods.npy"))
-            print(f"[prepare_data] loaded from npy")
-            return
-        data = []
-        with open(self.dataset, "r") as fr:
-            data = fr.readlines()
+                print(f"[count] {cnt/amout*100:.2f}, {cnt}/{amout}", end="\r")
 
-        self.ori_methods = data
-        np.save(os.path.join(self.npy_dir, "ori_methods.npy"), self.ori_methods)
-
-        new_data = []
-        amount = len(data)
-        for cnt, d in enumerate(data):
-            text = re.sub(r"[^a-zA-Z\s]", "", d)
-            text = text.lower()
-            words = word_tokenize(text)
-            stop_words = set(stopwords.words("english"))
-            words = [w for w in words if not w in stop_words]
-            lemmatizer = WordNetLemmatizer()
-            words = [lemmatizer.lemmatize(w) for w in words]
-            new_data.append("".join(words))
-
-            print(
-                f"[prepare_data] {100*(cnt+1)/amount:.2f}%, {cnt+1}/{amount}", end="\r"
+    def output(self):
+        # count
+        with open("./topic_count.txt", "w") as fw:
+            self.topic_count["add"] = dict(sorted(self.topic_count["add"].items()))
+            self.topic_count["remove"] = dict(
+                sorted(self.topic_count["remove"].items())
             )
-
-        self.methods = new_data
-        print(f"[prepare_data] methods: {len(new_data)}")
-
-    def convert2numercial(self):
-        if self.use_npy:
-            self.methods = np.load(os.path.join(self.npy_dir, "methods(numercial).npy"))
-            print(f"[convert2numercial] loaded from npy")
-            return
-        print(f"[convert2numercial] converting ...")
-        self.vectorizer = TfidfVectorizer()
-        self.methods = self.vectorizer.fit_transform(self.methods)
-        np.save(os.path.join(self.npy_dir, "methods(numercial).npy"), self.methods)
-        print(f"[convert2numercial] converted")
-
-    def applay_lda(self):
-        if self.use_npy:
-            self.lda = np.load(os.path.join(self.npy_dir, "lda.npy"))
-            print(f"[applay_lda] loaded from npy")
-            return
-        print(f"[applay_lda] applaying ...")
-        self.lda = LatentDirichletAllocation(n_components=self.topics, random_state=42)
-        self.lda.fit(self.methods)
-        np.save(os.path.join(self.npy_dir, "lda.npy"), self.lda)
-        print(f"[applay_lda] applayed")
-
-    def assign_topic(self):
-        print(f"[assign_topic] assigning ...")
-        topic_assign = self.lda.transform(self.methods)
-        topic_assign = np.argmax(topic_assign, axis=1)
-        assigned = {"topic": [], "method": []}
-        for m, topic in zip(self.ori_methods, topic_assign):
-            assigned["topic"].append(topic)
-            assigned["method"].append(m)
-        df = pd.DataFrame(assigned)
-        df.to_csv("./topic_assign.csv", index=False)
-        print(f"[assign_topic] assigned")
+            fw.write(f"['+'] topic count\n")
+            for topic, count in self.topic_count["add"].items():
+                fw.write(
+                    f"{self.topic2name[topic]:<32}: {count:<8}, {count/self.methods_count['add']*100:.2f}\n"
+                )
+            fw.write(f"['-'] topic count\n")
+            for topic, count in self.topic_count["remove"].items():
+                fw.write(
+                    f"{self.topic2name[topic]:<32}: {count:<8}, {count/self.methods_count['remove']*100:.2f}\n"
+                )
 
     def run(self):
-        self.prepare_data()
-        self.convert2numercial()
-        self.applay_lda()
-        self.assign_topic()
+        self.load_add_ids()
+        self.count()
+        self.output()
 
 
 if __name__ == "__main__":
-    mLDA = MethodLDA()
-    mLDA.run()
+    ta = TopicAnalyzer(csv_path="./topic_assign_refined.csv")
+    ta.run()
